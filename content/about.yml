@@ -1,27 +1,27 @@
 title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+description: Hi, I'm Jennifer Bland. I am a Senior Software Engineer. Google Developers Expert. Entrepreneur. Mountain Climber. Neil Diamond fanatic. MBA grad. World traveler.
+
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Let me give you some interesting insights about me:
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  * I have visited 103 countries
+  * I have climbed the highest mountain on 4 of the 7 continents
+  * I have worked and/or lived on 3 continents
+  * I graduated from University before the IBM PC was introduced
+  * I earned my MBA before the Internet was introduced
 
-  ### My Design Philosophy
+  After graduating from University in 1984, I went to work in the Customer Service department for DCA in Alpharetta, Georgia. I was responsible for the support for their IRMA product which connected IBM PCs to IBM System 390 Mainframe Computers. During this time Apple Computer white-labeled the IRMA product and I spent my time crisscrossing the US to handle trade shows demonstrating the product.
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  Within a year Apple hired me and moved me out to California. During my initial interview at Apple I was able to meet John Sculley Apple's President and CEO. While I was at Apple Computer I created the very first telephone support program. This paid support program was for MacTCP. It was later expanded for support for MacIRMA and A/UX which is Apple's implementation of Unix.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  For anybody in the technology industry, working for Apple Computer in Silicon Valley was a dream job! I was so excited about the opportunity. The only problem was that I arrived in Silicon Valley just a few short months before the Loma Prieta earthquake in 1989. After that experience I immediately started making plans to move back home to Georgia. Luckily I was able to transition to Sales with Apple Computer and was transferred to the Atlanta, GA office.
 
-  ### What Drives Me
+  Coca Cola was one of my assigned accounts in Sales. Apple had just released the Newton which was the first hand-held PDA device. I would demonstrate the capability of the Newton to the executives at Coca Cola. Coke decided to create an application that would be used by their route sales team and their delivery drivers to control inventory and orders. The only thing they were missing was a Project Manager. Coke hired me away from Apple Computer to create this application.
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  If you every saw or used the Newton PDA you might remember the heavy-duty case that Apple sold. This case was designed by me in response to problems we encountered with our delivery drivers. When you have several thousand delivery drivers using your application and you end up with 10-20 of them being returned as non-functional every day then you have to figure out why.
 
-  ### Beyond the Screen
+  I went out with a delivery driver one day and it took less than an hour to discover the cause of all the returned units. Those big Coca-Cola delivery trucks have zero padding or floor mats in them. Plus you have to literally climb up a ladder to get into the driver's seat. The delivery drivers would open the door and then throw the Newton into the cab. While they were driving between locations the Newton would bounce up and down on the metal floors. As a result we created a custom case with a flip closing lid. Apple loved it and licensed the design from Coke.
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  While working at Coke I read about the JET Program. This program brings people to Japan to teach English. Of all the Asian countries, Japan ranked 2nd worst in the ability of their citizens to speak English. When I got accepted into the program, I moved to Japan to live and teach English.
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  At this point you can figure out the rest of my story by reading my resume here.
