@@ -4,7 +4,8 @@ type Event = {
   date: string
   location: string
   url?: string
-  category: 'Conference' | 'Live talk' | 'Podcast'
+  description?: string
+  category: 'Keynote Speaker' | 'Conference' | 'Workshop' | 'Meetup' | 'Panel'
 }
 
 const { data: page } = await useAsyncData('speaking', () => {
@@ -25,42 +26,52 @@ useSeoMeta({
   ogDescription: page.value?.seo?.description || page.value?.description
 })
 
-const { global } = useAppConfig()
-
 const groupedEvents = computed((): Record<Event['category'], Event[]> => {
-  const events = page.value?.events || []
+  const events = (page.value?.events || []) as Event[]
+  const validCategories: Event['category'][] = [
+    'Keynote Speaker',
+    'Conference',
+    'Workshop',
+    'Meetup',
+    'Panel'
+  ]
   const grouped: Record<Event['category'], Event[]> = {
+    'Keynote Speaker': [],
     'Conference': [],
-    'Live talk': [],
-    'Podcast': []
+    'Workshop': [],
+    'Meetup': [],
+    'Panel': []
   }
   for (const event of events) {
-    if (grouped[event.category]) grouped[event.category].push(event)
+    // Normalize category: capitalize first letter if needed
+    const normalizedCategory = event.category.charAt(0).toUpperCase() + event.category.slice(1).toLowerCase()
+    // Handle "Keynote Speaker" special case
+    const category = (normalizedCategory === 'Keynote speaker' ? 'Keynote Speaker' : normalizedCategory) as Event['category']
+    if (validCategories.includes(category)) {
+      grouped[category].push(event)
+    }
   }
   return grouped
 })
-
-function formatDate(dateString: string): string {
-  return new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
-}
 </script>
 
 <template>
   <UPage v-if="page">
     <UPageHero
       :title="page.title"
-      :description="page.description"
+
       :ui="{
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
         links: 'justify-start'
       }"
     >
-      <template #links>
-        <UButton
-          v-if="page.links"
-          :to="`mailto:${global.email}`"
-          v-bind="page.links[0]"
+      <template #description>
+        <p class="text-2xl font-semibold text-left">
+          Speaker Bio:
+        </p>
+        <MDC
+          :value="page.description"
         />
       </template>
     </UPageHero>
@@ -88,38 +99,19 @@ function formatDate(dateString: string): string {
             :key="`${category}-${index}`"
             class="group relative pl-6 border-l border-default"
           >
-            <NuxtLink
-              v-if="event.url"
-              :to="event.url"
-              class="absolute inset-0"
-            />
             <div class="mb-1 text-sm font-medium text-muted">
               <span>{{ event.location }}</span>
-              <span
-                v-if="event.location && event.date"
-                class="mx-1"
-              >·</span>
-              <span v-if="event.date">{{ formatDate(event.date) }}</span>
             </div>
 
             <h3 class="text-lg font-semibold text-highlighted">
               {{ event.title }}
             </h3>
 
-            <UButton
-              v-if="event.url"
-              target="_blank"
-              :label="event.category === 'Podcast' ? 'Listen' : 'Watch'"
-              variant="link"
-              class="p-0 pt-2 gap-0"
-            >
-              <template #trailing>
-                <UIcon
-                  name="i-lucide-arrow-right"
-                  class="size-4 transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-                />
-              </template>
-            </UButton>
+            <MDC
+              v-if="event.description"
+              :value="event.description"
+              unwrap="p"
+            />
           </div>
         </div>
       </div>

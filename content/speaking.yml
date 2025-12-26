@@ -1,48 +1,197 @@
 title: Talks & Workshops
-description: Explore talks and workshops I've given on UX design, front-end development, and building better digital products.
-links:
-  - label: Invite me to speak
-    size: md
+description: |
+  Jennifer Bland is a Senior Software Developer and Google Developers Expert. She has more than ten years of development experience working for companies like CNN, Coca-Cola and Apple Computer. Jennifer is the author of the book "Developing e-Business Applications Using Lotus Domino on the AS/400", published by IBM.
+
+  She runs the website codeprep.io which provides interview questions to assist programmers in preparation for job interviews. Her personal website is jenniferbland.com.
+
+  Jennifer holds a B.A. in History from Furman University and an MBA from San Jose State University.
+
+# links:
+#   - label: Invite me to speak
+#     size: md
 events:
   - category: Conference
-    title: "Bridging the Gap: Design Systems for Designer-Developer Collaboration"
+    title: "Testing Your Vue Application"
     date: "2024-10-26"
-    location: "VueConf US, Miami, FL"
-    url: "#"
+    location: "Connect Tech Conference"
+    description: "Why test? Verify your application works correctly, train new developers on how the application works and reduce the number of bugs in your code. I will show you how to use Jest, Cypress, and Vue-test-utils to test your application by creating a unit, snapshot, and end-to-end tests."
   - category: Conference
-    title: "Intuitive Interfaces: Applying UX Principles in Nuxt.js Applications"
+    title: "Testing Your Vue Application"
     date: "2024-06-15"
-    location: "Nuxt Nation, Online"
-    url: "#"
-  - category: Conference
-    title: "Accessibility First: Building Inclusive Web Apps"
+    location: "VueConf Toronto"
+    description: "Why test? Verify your application works correctly, train new developers on how the application works and reduce the number of bugs in your code. I will show you how to use Jest, Cypress, and Vue-test-utils to test your application by creating a unit, snapshot, and end-to-end tests."
+  - category: Workshop
+    title: "GraphQL Workshop"
     date: "2023-11-08"
-    location: "Boston Web Performance Meetup, Boston, MA"
-  - category: Live talk
-    title: "Mastering Component Design in Figma & Vue"
+    location: "Refactr Tech Conference"
+    description: "GraphQL is a technology that is poised to replace, or at the very least, drastically change the way APIs are designed and presented. In this hands-on workshop, you'll learn GraphQL from the ground up. We start with creating a backend server using Node.js then learn about schemas, mutations and using GraphiQL to test queries. By the end of this workshop, you will understand how to install and utilize GraphQL."
+  - category: Conference
+    title: "Don't Be Afraid of the JavaScript Stack Trace"
     date: "2024-08-20"
-    location: "Design & Dev Boston Meetup, Boston, MA"
-    url: "#"
-  - category: Live talk
-    title: "From Wireframe to Web: A Practical Front-End Workflow"
+    location: "DotNetSouth Conference"
+    description: "At some point your code will not work. You could spend hours trying to google for a solution. Instead use the JavaScript stack trace to find the problem. A beginner-friendly overview of the JavaScript stack trace and tips on how to use it."
+  - category: Meetup
+    title: "Don't Be Afraid of the JavaScript Stack Trace"
     date: "2024-03-05"
-    location: "Internal Workshop @ PreviousCompany Inc."
-  - category: Live talk
-    title: "The Power of User Research in Product Development"
+    location: "North Atlanta JavaScript Meetup"
+    description: "At some point your code will not work. You could spend hours trying to google for a solution. Instead use the JavaScript stack trace to find the problem. A beginner-friendly overview of the JavaScript stack trace and tips on how to use it."
+  - category: Conference
+    title: "How to Reduce Your Vue Bundle Size With Webpack"
     date: "2023-09-12"
-    location: "Boston University Guest Lecture, Boston, MA"
-  - category: Podcast
-    title: "Designing for Developers: A UX Perspective"
+    location: "VueConf USA"
+    description: "You build a vue application. It is large in size. It takes a long time to load. Let me show you how to reduce your Vue bundle size using Webpack."
+  - category: Conference
+    title: "How to Add Charts and Graphs to Vue"
     date: "2024-07-18"
-    location: "Syntax.fm (Guest)"
-    url: "#"
-  - category: Podcast
-    title: "The Future of Front-End Frameworks & Design Tooling"
+    location: "VueConf USA"
+    description: "Every application has data. Sometimes the best way to display that data is in a chart or graph. See how easy it is to add visually attractive graphs to your Vue application"
+  - category: Meetup
+    title: "Don't Be Afraid of the JavaScript Stack Trace"
     date: "2024-01-30"
-    location: "Design Details Podcast (Guest)"
-    url: "#"
-  - category: Podcast
-    title: "Building a Career in UX/UI & Development"
+    location: "Atlanta JavaScript Meetup"
+    description: "At some point your code will not work. You could spend hours trying to google for a solution. Instead use the JavaScript stack trace to find the problem. A beginner-friendly overview of the JavaScript stack trace and tips on how to use it."
+  - category: Conference
+    title: "Don't Be Afraid of the JavaScript Stack Trace"
     date: "2023-05-22"
-    location: "TechForward Boston Podcast"
-    url: "#"
+    location: "DevNexus Conference"
+    description: "At some point your code will not work. You could spend hours trying to google for a solution. Instead use the JavaScript stack trace to find the problem. A beginner-friendly overview of the JavaScript stack trace and tips on how to use it."
+  - category: Panel
+    title: "Tips to Grow Your Technical Career"
+    date:
+    location: "DevNexus Conference"
+    description: "Speaker on a panel focused on Tips to Grow Your Technical Career. This is part of the Women's Breakfast series presented at the DevNexus Conference.
+  - category: Conference
+    title: "Getting Started with Service Workers"
+    date:
+    location: "DevNexus Conference"
+    description: "A Service Worker is a relatively new API that's been introduced in modern web browsers in the last few years. It's a special kind of web worker that can be installed in your browser to provide features that were previously unavailable to ordinary web pages. Find out how to create them and use them in a Progressive Web App."
+  - category: Meetup
+    title: "Want to Start a Podcast? Don't Do This"
+    date:
+    location: "Women Who Code Atlanta"
+    description: "Starting a podcast seems like a fun and easy way to get a message out, and share with the world. You record yourself speaking, and voila! How hard can it be?! Doing it right requires a lot of forethought, and preparation, as it turns out."
+  - category: Meetup
+    title: "The Power of Custom Directives in Vue"
+    date:
+    location: "Atlanta VueJS Meetup"
+    description: "Vue ships with a default set of directives like v-model and v-show. Sometimes you reach a point working with Vue where you have a use-case that the framework does not cover. Luckily, Vue allows you to register your own custom directives. A custom directive allows you to perform a critical task that you must have in your application and you cannot live without. I will show you how to create a custom directives."
+  - category: Conference
+    title: "Choosing a JavaScript Framework"
+    date:
+    location: "Connect Tech Conference"
+    description: "Over the last couple of years, JavaScript has become on the of the most popular programming languages. As a result, there has been a large number of JavaScript frameworks and libraries that have been created. I will walk you through a simple todo application using Angular, React and Vue."
+  - category: Conference
+    title: "How to Build Something with GraphQL"
+    date:
+    location: "Connect Tech Conference"
+    description: "GraphQL presents new ways for clients to fetch data by focusing on the needs of product developers and client applications. Building a product with GraphQL is easy once you wrap your head around the key concepts. Learn what is GraphQL and how to use it."
+  - category: Keynote Speaker
+    title: "Why You Should Become a Programmer"
+    date:
+    location: "Free Code Camp Atlanta"
+    description: "Being a programmer is like winning the lottery every day. You get to make things all day long in environments that are usually very fun and casual. Let me show you how you can get a winning lottery ticket by becoming a programmer."
+  - category: Conference
+    title: "Introduction to GraphQL"
+    date:
+    location: "GDG DevFest"
+    description: "GraphQL is a new API standard that provides a more efficient, powerful and flexible alternative to REST. In this talk I will give you an introduction to GraphQL and then show you how to use it to access Github's GraphQL API."
+  - category: Keynote Speaker
+    title: "A Front Row Seat To A Revolution"
+    date:
+    location: "WWCAtl 5th Anniversary"
+    description: "Three years ago I attended my first WWC event where there were 6 attendees. Two years later I spoke at a tech conference for women by women where women were the majority of attendees. What it has been like for me to have a front row seat to a revolution for women in tech."
+  - category: Keynote Speaker
+    title: "A Front Row Seat To A Revolution"
+    date:
+    location: "We Rise Conference"
+    description: "Three years ago I attended my first WWC event where there were 6 attendees. Two years later I spoke at a tech conference for women by women where women were the majority of attendees. What it has been like for me to have a front row seat to a revolution for women in tech."
+  - category: Meetup
+    title: "Web Components"
+    date:
+    location: "Women Techmakers Google Developers Group"
+    description: "As developers, we all know that reusing code as much as possible is a good idea. Yet trying to reuse the custom UI you created for one application in another application is nearly impossible. Web Components aims to solve such problems. Learn how web components can make your design life easier and reusability a reality for web development."
+  - category: conference
+    title: "Progressive Web Apps - What, Why & How"
+    date:
+    location: "OpenSource 101"
+    description: "Progressive Web Apps combine the best of the web and the best of apps. They load quickly, even on flaky networks, can re-engage with users by sending web push notifications, have an icon on the home screen, and load as top-level, full-screen experiences. Learn the what, why, and how of PWAs."
+  - category: Workshop
+    title: "Advanced JavaScript Workshop"
+    date:
+    location: "Women Who Code"
+    description: "JavaScript. So you have learned about loops, arrays and objects, what is the next thing to learn? Take your JavaScript skills to the next level by learning about recursion, inheritance and prototype chain. We will also cover the new features in JavaScript that were introduced in ES7 and ES8 so you can keep your JavaScript skills current."
+  - category: Conference
+    title: "Choosing a JavaScript Framework"
+    date:
+    location: "DevNexus Conference"
+    description: "Over the last couple of years, JavaScript has become on the of the most popular programming languages. As a result, there has been a large number of JavaScript frameworks and libraries that have been created. I will walk you through a simple todo application using Angular, React and Vue."
+  - category: Conference
+    title: "How to Hire Good Programmers"
+    date:
+    location: "DevNexus Conference"
+    description: "Few things will ruin a great team faster than a bad hire so how do you recognize a talented software developer in a 30-minute interview? The traditional method of hiring programmers is to hire based on what they know. I will argue that you should instead hire a programmer based on what they can learn."
+  - category: Meetup
+    title: "Webpack - Your New BFF"
+    date:
+    location: "ngAtlanta"
+    description: "Webpack is JavaScript module bundler that has taken the world by storm, but a lack of great docs and wealth of boilerplates have led to many people using it, but not understand it. I will show you how to utilize Webpack for building out your applications. Once you see the magic available, Webpack will become your new BFF!"
+  - category: Panel
+    title: "WWCode Speaker Panel"
+    date:
+    location: "Women Who Code"
+    description: "Connect.Tech is Atlanta's premier web and mobile development conference, September 20th - 22nd. Join us for a conversation with some of this year's conference speakers as we discuss how they got into tech, what they're doing now, what you can expect to hear from them. We'll also take audience questions."
+  - category: Conference
+    title: "Intro to Flexbox with Real World Examples"
+    date:
+    location: "JazzCon.Tech"
+    description: "If you hate floats, you will love flexbox. If you hate media queries, you will love Flexbox. Flexbox gives you more control in creating a responsive layout than the traditional box model. In this session I will introduce you to Flexbox by showing how to use it to solve common website problems. You will learn how easy it is to implement Flexbox into your existing website design."
+  - category: Conference
+    title: "Using Gulp to Improve Your Angular Workflows"
+    date:
+    location: "JazzCon.Tech"
+    description: "Maintaining the build process for an Angular app can be quite involved. A typical build pipeline will involve validating the source code for styling, passing unit tests and end-to-end tests, minifying, annotating, bundling, creating source maps, transpiling and more. In this seminar I will show you how to use Gulp to manage your entire Angular workflow."
+  - category: Meetup
+    title: "Using Components in Angular 1.5"
+    date:
+    location: "ATL Angular.js Meetup"
+    description: "Components allow you to create custom HTML features. Components are a new feature in Angular 1.5 and learning how to utilize them will help you to transition to Angular 2. Learn how and why you should use components and then watch as I build several simple components."
+  - category: Conference
+    title: "Promises and Generators in ES6"
+    date:
+    location: "DevNexus"
+    description: "All JavaScript programmers know two things - Asynchronous programming using callbacks is a required skill and all functions run to completion. ES6 introduced Promises and Generators. Promises address the significant shortcomings of callbacks. Generators are functions that can pause itself in mid-execution and can be resumed either right away or at a later time. In this session I will discuss the impact of these two new features in ES6."
+  - category: Conference
+    title: "Introduction to npm as a Build Tool"
+    date:
+    location: "Connect:Tech"
+    description: "Grunt and Gulp are the heavyweights in the JavaScript build tool landscape. These tools can automate almost anything you find yourself doing repeatedly in a project. But the question is, do you need them? In this session I will discuss what npm is capable of as a build tool."
+  - category: Meetup
+    title: "Learn and Understand Node.js"
+    date:
+    location: "Women Who Code Atlanta"
+    description: "Node.js is an interesting new phenomenon to hit the development scene. Companies like Netflix, Walmart, Sams Club, PayPal, Medium, LinkedIn and Uber are just a few of the companies that are using it in production. Node.js is a server technology used to build and run web applications. In this class, we'll learn the basics of working with Node.js."
+  - category: Meetup
+    title: "Introduction to npm as a Build Tool"
+    date:
+    location: "Atlanta Node.js Meetup"
+    description: "Grunt and Gulp are the heavyweights in the JavaScript build tool landscape. These tools can automate almost anything you find yourself doing repeatedly in a project. But the question is, do you need them? In this session I will discuss what npm is capable of as a build tool."
+  - category: Meetup
+    title: "Professional You: LinkedIn"
+    date:
+    location: "Women Who Code Atlanta"
+    description: "Jennifer will cover how to trick out your LinkedIn profile to make yourself more attractive to recruiters. She'll explain LinkedIn Recruiter, the program used by recruiters and how expert recruiters use it to find candidates. At this meet-up you will learn how to optimize your profile to be most easily found for the right potential opportunities."
+  - category: Meetup
+    title: "Job Attraction Tips for Developers"
+    date:
+    location: "Viking Code School"
+    description: "How to craft an attention-worthy LinkedIn profile and utilize GitHub code presentation tips for maximum hireability."
+  - category: Meetup
+    title: "Using Postman to test your Web API"
+    date:
+    location: "ATL Angular.js Meetup"
+    description: "Learn how to get the most out of using Postman and how to format your HTTP requests. Jennifer will demonstrate ways to use postman and go through examples from some of the most popular APIs."
+  - category: Meetup
+    title: "How to get Hired Quicker"
+    date:
+    location: "Hack Reactor"
+    description: "Are you looking for a new job? Do you want to get hired quicker? Jennifer Bland will explain how you can use LinkedIn and your Github account to attract recruiters and hiring managers."
