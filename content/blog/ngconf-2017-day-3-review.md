@@ -11,7 +11,7 @@ author:
     alt: Jennifer Bland
 ---
 
-<a href="http://www.jenniferbland.com/ngconf-2017-day-1-review/">Read review of Day 1 here</a>. <a href="http://www.jenniferbland.com/ngconf-2017-day-2-review/">Read review of Day 2 here</a>.
+<a href="/blog/ngconf-2017-day-1-review/">Read review of Day 1 here</a>. <a href="/blog/ngconf-2017-day-2-review/">Read review of Day 2 here</a>.
 
 The third and final day of ngConf switched back to a single track format. Again every attendee was in one massive ballroom to hear speaker after speaker.
 

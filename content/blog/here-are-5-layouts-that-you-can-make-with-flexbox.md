@@ -29,11 +29,11 @@ All of the examples that I am going to show can be <a href="https://github.com/r
 <!--more-->
 
 
-<img class="size-medium wp-image-1193 alignnone" src="https://www.jenniferbland.com/wp-content/uploads/image1-300x194.png" alt="" width="300" height="194" />
+<img class="size-medium wp-image-1193 alignnone" src="/image1-300x194.png" alt="" width="300" height="194" />
 <h2>Navigation</h2>
 Every website has a navigation. Using Flexbox you can create a navigation that has your company name on the left and menu items on the right.
 
-<img class="size-full wp-image-1194 alignnone" src="https://www.jenniferbland.com/wp-content/uploads/image2.png" alt="" width="800" height="40" />
+<img class="size-full wp-image-1194 alignnone" src="/image2.png" alt="" width="800" height="40" />
 
 &nbsp;
 
@@ -87,7 +87,7 @@ Here is the CSS for the navigation:
 <h2>Center Image on Screen</h2>
 Many websites include a full-size image. Usually, this image contains text that is centered on the screen.
 
-<img class="alignnone size-large wp-image-1296" src="https://www.jenniferbland.com/wp-content/uploads/centerImangeOnScreen-1024x551.png" alt="center image on screen" width="1024" height="551" />
+<img class="alignnone size-large wp-image-1296" src="/centerImangeOnScreen-1024x551.png" alt="center image on screen" width="1024" height="551" />
 
 The challenge is styling the image so that it fits full page regardless of whether you are viewing this on a widescreen monitor, laptop, tablet or phone and have the CSS remain centered on the screen. Flexbox makes it easy to do this. To mimic text centered on the screen I have included a button
 
@@ -124,7 +124,7 @@ Here is the css to center an image on the screen:
 <h2>Responsive Website Layout</h2>
 Almost every website has the same layout which contains a navigation across the top and a footer at the bottom. In between there are 3 columns consisting or a right and left sidebar and the main content area. Generally the main content area takes up 60% of the width of the screen and the two sidebars are allocated 20% of the screen each.
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/sidebar-1024x556.png" alt="sidebar" width="1024" height="556" class="alignleft size-large wp-image-1299" />
+<img src="/sidebar-1024x556.png" alt="sidebar" width="1024" height="556" class="alignleft size-large wp-image-1299" />
 
 The challenge for creating a responsive website is having the footer stay at the bottom of the page regardless of how much content is displayed. The content area should scroll if there is more than can be displayed on the page.
 
@@ -202,7 +202,7 @@ Here is the css code for the responsive website layout:
 <h2>AddOn for Input Field</h2>
 To improve your user experience, many designers prefer to put images or text in their input fields. This provides the user with directions on what should be included in the field.
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/inputaddon-1024x745.png" alt="input addon" width="1024" height="745" class="alignnone size-large wp-image-1300" />
+<img src="/inputaddon-1024x745.png" alt="input addon" width="1024" height="745" class="alignnone size-large wp-image-1300" />
 
 With traditional CSS that was very challenging and required you to use a table format to insert something before or after an input field. With Flexbox it is much easier.
 
@@ -267,7 +267,7 @@ Here is the css code for addon for input field:
 <h2>3 Column Layout</h2>
 It is very common for websites to include a 3 column layout on the screen.
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/3column-1024x586.png" alt="3 column layout" width="1024" height="586" class="alignnone size-large wp-image-1301" />
+<img src="/3column-1024x586.png" alt="3 column layout" width="1024" height="586" class="alignnone size-large wp-image-1301" />
 
 Here is the html for a 3 column layout:
 

@@ -15,13 +15,13 @@ With the rising interest and adoption of Web3, there has been an increased deman
 
 <!--more-->
 
-![](http://www.jenniferbland.com/wp-content/uploads/card-1024x533.png)
+![](/card-1024x533.png)
 
 ## Hardhat
 
 Hardhat bills itself as the Ethereum development environment for professionals. It was created by the team at [Nomic Labs](https://nomic.foundation/).  It facilitates performing frequent tasks, such as running tests, automatically checking code for mistakes, or interacting with a smart contract. 
 
-![](http://www.jenniferbland.com/wp-content/uploads/truffle-logo-357454171D-seeklogo.com_.png)
+![](/truffle-logo-357454171D-seeklogo.com_.png)
 
 ## Truffle
 

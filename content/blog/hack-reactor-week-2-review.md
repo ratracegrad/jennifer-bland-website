@@ -32,7 +32,7 @@ The pace at Hack Reactor is very intense. If a student starts to fall behind it 
 There are technical mentors that will pull aside a student and work with them one-on-one as soon as they know a student is struggling. This attention of excellence is one of the reasons that Hack Reactor is considered the best programming boot camp in the world.
 
  <h2>Subclassing</h2>
-In week 1 we learned about <a href="http://www.jenniferbland.com/javascript-instantiation-patterns-part-1-of-2/" target="_blank">functional and functional shared instantiation methods</a> as well as <a href="http://www.jenniferbland.com/javascript-instantiation-patterns-part-2-of-2/" target="_blank">prototypal and pseudo-classical instantiation methods</a>.
+In week 1 we learned about <a href="/blog/javascript-instantiation-patterns-part-1-of-2/" target="_blank">functional and functional shared instantiation methods</a> as well as <a href="/blog/javascript-instantiation-patterns-part-2-of-2/" target="_blank">prototypal and pseudo-classical instantiation methods</a>.
 
 We started week 2 learning about subclassing. Subclassing allows you to create a hierarchy of classes through class definitions.  
 

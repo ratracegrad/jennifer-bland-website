@@ -12,7 +12,7 @@ author:
 ---
 
 <strong><em>This is the story of my journey and how I got there</em></strong>
-[caption id="attachment_1362" align="alignnone" width="600"]<img src="https://www.jenniferbland.com/wp-content/uploads/JenniferBlandGDE-1.png" alt="" width="600" height="600" class="size-full wp-image-1362" /> I am a Google Developers Expert in Web Technologies[/caption]
+[caption id="attachment_1362" align="alignnone" width="600"]<img src="/JenniferBlandGDE-1.png" alt="" width="600" height="600" class="size-full wp-image-1362" /> I am a Google Developers Expert in Web Technologies[/caption]
 <br>
 <h2>What is a Google Developers Expert?</h2>
 Let me start with Google’s official definition, and then I will follow with my definition.
@@ -69,11 +69,11 @@ My first speaking event occurred less than six months after graduating from a co
 
 Most people worry that they are not “expert” enough to speak on anything. That is not true. I talked on something I had just gone through which was getting a job after graduating from a coding boot camp. The students who would be graduating in less than a month greatly appreciated that I shared my first-hand knowledge of the hiring process.
 <br>
-[caption id="attachment_1348" align="alignnone" width="768"]<img src="https://www.jenniferbland.com/wp-content/uploads/speaking-768x1024.jpeg" alt="" width="768" height="1024" class="size-large wp-image-1348" /> Speaking at my first Tech Conference[/caption]
+[caption id="attachment_1348" align="alignnone" width="768"]<img src="/speaking-768x1024.jpeg" alt="" width="768" height="1024" class="size-large wp-image-1348" /> Speaking at my first Tech Conference[/caption]
 <br>
 After that initial speech, I went on to speak on local meetups. The first three meetups where I spoke, were the AngularJS, Women Who Code and NodeJS meetup groups. I spoke about using Postman to test your APIs, Using LinkedIn to get hired and NPM as a Build Tool.
 
-I spoke at my first major tech conference later that year. I would speak at my second tech conference just a few months later. In the past 35 months, I have spoken 27 times. This is an average of almost once a month for three straight years. If you want to know where I spoke or what I spoke <a href="https://www.jenniferbland.com/speaking/" rel="noopener" target="_blank">check out my speaking page here</a>.
+I spoke at my first major tech conference later that year. I would speak at my second tech conference just a few months later. In the past 35 months, I have spoken 27 times. This is an average of almost once a month for three straight years. If you want to know where I spoke or what I spoke <a href="/speaking/" rel="noopener" target="_blank">check out my speaking page here</a>.
 <br>
 <h3>Women Who Code Atlanta</h3>
 I joined Women Who Code Atlanta in January 2015. There were six people present at my first meetup. There was <a href="http://www.ericastanley.io/" rel="noopener" target="_blank">Erica Stanley</a> who founded WWCAtl, myself and four other women. Two years later WWCAtl created the WeRise Conference for 400 attendees.
@@ -94,7 +94,7 @@ Earlier this year I created a series of videos that demonstrated the “whiteboa
 For the first time in the history of freeCodeCamp, Quincy Larson, the founder, recognized those campers who had contributed the most as “Top Contributors.” I am proud to be recognized as a “Top Contributor” in the inaugural year the award was given. I was able to attend the award ceremony in New York earlier this year.
 
 <h3>Writing</h3>
-I started writing while I was in my coding boot camp. After graduating, I continued to write about things I was learning. I would write about what <a href="https://www.jenniferbland.com/javascript-programming-books-reviewed/" rel="noopener" target="_blank">JavaScript books I recommend</a> for learning programming. I did a three-part series on creating your first app in Angular and adding features to it.
+I started writing while I was in my coding boot camp. After graduating, I continued to write about things I was learning. I would write about what <a href="/blog/javascript-programming-books-reviewed/" rel="noopener" target="_blank">JavaScript books I recommend</a> for learning programming. I did a three-part series on creating your first app in Angular and adding features to it.
 
 Today I write my <a href="https://medium.com/@ratracegrad" rel="noopener" target="_blank">articles on medium.com</a> and then cross post them on my personal blog. As part of my application process for GDE, I had to provide a link to every article that I have ever written. I also had to provide statistics on the number of people that have read them.
 

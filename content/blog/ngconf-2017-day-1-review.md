@@ -11,10 +11,10 @@ author:
     alt: Jennifer Bland
 ---
 
-<a href="http://www.jenniferbland.com/ngconf-2017-day-2-review/">Read review of day 2 here</a>. <a href="http://www.jenniferbland.com/ngconf-2017-day-3-review/">Read review of day 3 here</a>.
+<a href="/blog/ngconf-2017-day-2-review/">Read review of day 2 here</a>. <a href="/blog/ngconf-2017-day-3-review/">Read review of day 3 here</a>.
 Attending ngConf is a first for me on two different levels. It is my first time attending this annual conference. And secondly it is my first time speaking at this conference. After my first hour at the conference I came to the conclusion that it will not be my last time for either one. Here is my review of Day 1 of ngConf 2017.
 
-<img class="alignnone size-full wp-image-1117" src="http://www.jenniferbland.com/wp-content/uploads/ngconf1.jpeg" alt="" width="800" height="600" />
+<img class="alignnone size-full wp-image-1117" src="h/ngconf1.jpeg" alt="" width="800" height="600" />
 <h2>Schedule &amp; Location</h2>
 ngConf is held in Salt Lake City in basically one massive ballroom in a hotel in Salt Lake City, Utah. The event runs officially from April 5th — 7th. But there are optional full day workshops that are held on a wide range of topics on April 3rd and 4th.
 <h2></h2>
@@ -51,7 +51,7 @@ Here is a list of speakers on the first day of the conference: (NOTE: GDE is Goo
 <strong>Tracy Lee</strong> — Co-founder of This Dot, Inc
 <strong>Justin Searls</strong> — Co-founder Test Double
 
-<img class="size-full wp-image-1113 alignnone" src="http://www.jenniferbland.com/wp-content/uploads/ngconf2.jpeg" alt="" width="800" height="600" />
+<img class="size-full wp-image-1113 alignnone" src="/ngconf2.jpeg" alt="" width="800" height="600" />
 <h2>Single Track Conference</h2>
 This is the first tech conference that I have ever attended that is a single track event. Simply that means that every attendee sits in a big room and listens to the same speaker all day.
 
@@ -72,7 +72,7 @@ Usually conferences are multi-track. This means there are multiple speakers spea
  	<li>Animations in Angular 4</li>
  	<li>VR with Angular and WebGL</li>
 </ul>
-<img class="alignnone size-full wp-image-1115" src="http://www.jenniferbland.com/wp-content/uploads/ngconf3.jpeg" alt="" width="800" height="600" />
+<img class="alignnone size-full wp-image-1115" src="/ngconf3.jpeg" alt="" width="800" height="600" />
 <h2>Extracurricular Activities, Food and Drinks</h2>
 Sitting all day in a room listening to speaker after speaker can be challenging. The organizers realize this and they break up the day with some exciting activities.
 

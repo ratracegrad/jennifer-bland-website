@@ -227,8 +227,8 @@ export default {
 <p>I have the <a href="https://github.com/ratracegrad/Vue-Amplify-Auth-Tutorial">complete code in my GitHub account here</a>. If you get the code please do me a favor and star my repo. Thank you!</p>
 <h2>Using Other Authentication Methods</h2>
 <p>I have written several follow up articles on adding Authentication to your Vue application using other authentication methods.</p>
-<p>Want to use Firebase for authentication, <a href="https://www.jenniferbland.com/how-to-add-authentication-to-a-vue-app-using-firebase/">read this article</a>.</p>
-<p>Want to use Auth0 for authentication, <a href="https://www.jenniferbland.com/how-to-add-authentication-to-a-vue-app-using-auth0/">read this article</a>.</p>
+<p>Want to use Firebase for authentication, <a href="/blog/how-to-add-authentication-to-a-vue-app-using-firebase/">read this article</a>.</p>
+<p>Want to use Auth0 for authentication, <a href="/blog/how-to-add-authentication-to-a-vue-app-using-auth0/">read this article</a>.</p>
 <h2>Conclusion</h2>
 <p>AWS Amplify is a a great tool that you can add authentication to your application. </p>
 <p>Hope you enjoyed this article. If you like it please star or clap for it. Thanks for reading.</p>

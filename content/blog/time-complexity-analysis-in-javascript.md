@@ -30,7 +30,7 @@ As I mentioned before an algorithm are the step-by-step instructions to solve a 
 As the size of the problem gets bigger and bigger, the cost might grow quickly, slowly or barely at all. Big O Notation is used to measure how quickly your solution is in solving a problem.
 
 The following chart shows the different levels of Big O Notation and how long it takes to complete based on number of operations and elements.
-<img class="aligncenter size-full wp-image-820" src="http://www.jenniferbland.com/wp-content/uploads/big-o-complexity.png" alt="Big O Complexity chart" width="783" height="454" />
+<img class="aligncenter size-full wp-image-820" src="/big-o-complexity.png" alt="Big O Complexity chart" width="783" height="454" />
 Here are some common orders of growth and their corresponding Big O Notation values.
 <h2>O(1) - Constant Time Complexity</h2>
 The fastest time complexity on the Big O Notation scale is called Constant Time Complexity. It is given a value of O(1).
@@ -38,7 +38,7 @@ The fastest time complexity on the Big O Notation scale is called Constant Time 
 With constant time complexity, no matter how big our input is, it will always take the same amount of time to compute things.
 
 Constant time is considered the best case scenario for your JavaScript function.
-<img class="aligncenter size-full wp-image-823" src="http://www.jenniferbland.com/wp-content/uploads/O1-constant-time-complexity.jpg" alt="O(1) constant time complexity" width="416" height="312" />
+<img class="aligncenter size-full wp-image-823" src="/O1-constant-time-complexity.jpg" alt="O(1) constant time complexity" width="416" height="312" />
 
 <strong>Examples:</strong> Array Lookup, hash table insertion
 <h2>O(log n) - Logarithmic</h2>
@@ -57,7 +57,7 @@ If the phone book had 15 names then it would take at most 4 look ups to find you
 With a million names in a phone book then you would only have to do at most 20 look ups to find your targeted name.
 
 As you can see the time to complete increases but not as fast as the size of input increases.
-<img class="aligncenter size-full wp-image-822" src="http://www.jenniferbland.com/wp-content/uploads/Olog-n-logarithmic-complexity.jpg" alt="O(log n) logarithmic complexity" width="472" height="328" />
+<img class="aligncenter size-full wp-image-822" src="/Olog-n-logarithmic-complexity.jpg" alt="O(log n) logarithmic complexity" width="472" height="328" />
 
 <strong>Example:</strong> binary search
 <h2>O(n) - Linear</h2>
@@ -71,7 +71,7 @@ With one million elements it would take one million iterations.
 
 As you an see the time complexity increases as the size increase and it increases at the same rate.
 
-<img class="aligncenter size-full wp-image-821" src="http://www.jenniferbland.com/wp-content/uploads/On-Linear-Complexity.jpg" alt="O(n) Linear Complexity" width="463" height="316" />
+<img class="aligncenter size-full wp-image-821" src="/On-Linear-Complexity.jpg" alt="O(n) Linear Complexity" width="463" height="316" />
 
 <strong>Example:</strong> Printing the elements in an array
 <h2>O(n<sup>2</sup>) - Quadratic</h2>
@@ -79,6 +79,6 @@ Quadratic time complexity is almost the inverse of logarithmic complexity. With 
 
 Quadratic time suggests that the function’s run time is proportional to the square of the input size. Quadratic time is typically represented as <strong>‘order N squared’</strong> or <strong>O(n^2)</strong>. This notation is used because with quadratic time complexity you are completing usually two Operations that are O(1) or O(n) by themselves.
 
-<img class="aligncenter size-full wp-image-824" src="http://www.jenniferbland.com/wp-content/uploads/On2-quadratic-time-complexity.jpg" alt="O(n2) - quadratic time complexity" width="382" height="322" />
+<img class="aligncenter size-full wp-image-824" src="/On2-quadratic-time-complexity.jpg" alt="O(n2) - quadratic time complexity" width="382" height="322" />
 
 <strong>Example:</strong> Constant time operation inside two nested for-loops, comparing 2 integer lists against each other and a bubble sort.

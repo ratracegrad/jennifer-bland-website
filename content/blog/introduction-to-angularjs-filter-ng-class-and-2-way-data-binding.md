@@ -13,7 +13,7 @@ author:
 
 This is part two in my Introduction to AngularJS series. 
 
-In my <a href="http://www.jenniferbland.com/introduction-to-angularjs-your-first-angular-application/" target="_blank">first class I demonstrated how to create your first AngularJS application</a>. The application was the start of website for our fictional Mandarian Spa company. The website provided a list of all the services offered by the spa including their price and whether or not that service was currently available.
+In my <a href="/blog/introduction-to-angularjs-your-first-angular-application/" target="_blank">first class I demonstrated how to create your first AngularJS application</a>. The application was the start of website for our fictional Mandarian Spa company. The website provided a list of all the services offered by the spa including their price and whether or not that service was currently available.
 
 In this lesson we are going to improve on our existing website by providing these services:
 <ul>
@@ -64,7 +64,7 @@ We will use JavaScript coding to alter what is displayed. Here is the JavaScript
 <pre class='prettyprint'><xmp><div class="col-md-1">{{ (!service.available) ? "Sold Out" : ""}}</div></xmp></pre>
 
 With that change our website now looks like this.
-<a href="http://www.jenniferbland.com/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/sold-out/" rel="attachment wp-att-909"><img src="http://www.jenniferbland.com/wp-content/uploads/Sold-out.png" alt="using javascript in angular expressions" width="768" height="300" class="alignnone size-full wp-image-909" /></a>
+<a href="/blog/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/sold-out/" rel="attachment wp-att-909"><img src="/Sold-out.png" alt="using javascript in angular expressions" width="768" height="300" class="alignnone size-full wp-image-909" /></a>
 
 <h2>ng-if, ng-show and ng-hide</h2>
 Angular provides three other directives that we could use to produce the same functionality of displaying only Sold Out in the availability column.
@@ -92,7 +92,7 @@ Next we are going to dynamically add this class to our Services table if a servi
 <pre class='prettyprint'><xmp>ng-class="{strike: !service.available}"</xmp></pre>
 
 What this code does is to get the value of service.available which will be either true or false. If a service is not available it will have a value of false. We use the ! character to reverse this value and make it true. When it is true then the class <em>strike</em> will be applied to the div. Here is what our website looks like now.
-<a href="http://www.jenniferbland.com/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/strike-class-applied-with-ng-class/" rel="attachment wp-att-913"><img src="http://www.jenniferbland.com/wp-content/uploads/strike-class-applied-with-ng-class.png" alt="strike class applied with ng-class" width="764" height="280" class="alignnone size-full wp-image-913" /></a>
+<img src="/strike-class-applied-with-ng-class.png" alt="strike class applied with ng-class" width="764" height="280" class="alignnone size-full wp-image-913" />
 
 <h2>2 Way Data Binding</h2>
 The last item that I want to cover in this lesson is 2 way data binding. Angular provides 2 way data binding.
@@ -112,7 +112,7 @@ The first step in 2 way data-binding is to use the ng-model to bind and input fi
   </div></xmp></pre>
 
 With this code added here is what the website looks like with the new input field.Notice that the welcome message is not being displayed since the user has not typed anything into the firstName field yet.
-<a href="http://www.jenniferbland.com/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/2-way-data-binding-in-angular/" rel="attachment wp-att-915"><img src="http://www.jenniferbland.com/wp-content/uploads/2-way-data-binding-in-Angular.png" alt="2 way data binding in Angular" width="740" height="324" class="alignnone size-full wp-image-915" /></a>
+<img src="/2-way-data-binding-in-Angular.png" alt="2 way data binding in Angular" width="740" height="324" class="alignnone size-full wp-image-915" />
 
 Once a user starts typing into the field then the Welcome message is displayed as shown below.
-<a href="http://www.jenniferbland.com/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/2-way-data-binding-in-angular-displayed/" rel="attachment wp-att-916"><img src="http://www.jenniferbland.com/wp-content/uploads/2-way-data-binding-in-Angular-displayed.png" alt="2 way data binding in Angular" width="660" height="344" class="alignnone size-full wp-image-916" /></a>
+<img src="/2-way-data-binding-in-Angular-displayed.png" alt="2 way data binding in Angular" width="660" height="344" class="alignnone size-full wp-image-916" />

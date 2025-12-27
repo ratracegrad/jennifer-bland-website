@@ -26,7 +26,7 @@ author:
 <!--more-->
 
 
-[caption id="attachment_1467" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/cli.png" alt="" width="880" height="204" class="size-full wp-image-1467" /> Vue CLI options[/caption]
+[caption id="attachment_1467" align="alignnone" width="880"]<img src="/cli.png" alt="" width="880" height="204" class="size-full wp-image-1467" /> Vue CLI options[/caption]
 <br>
 
 <p class="graf graf--p">This will scaffold out a vue application in a folder called <code class="markup--code markup--p-code">vue-internationalization</code> since this is the name we gave at creation. Now change into that directory with this command:</p>
@@ -40,7 +40,7 @@ author:
 <pre class="prettyprint"><xmp>npm run serve</xmp></pre>
 <p class="graf graf--p">Now open your browser to localhost:8080 and you should see the following:</p>
 
-[caption id="attachment_1468" align="alignnone" width="868"]<img src="https://www.jenniferbland.com/wp-content/uploads/default.png" alt="" width="868" height="903" class="size-full wp-image-1468" /> Default vue application[/caption]
+[caption id="attachment_1468" align="alignnone" width="868"]<img src="/default.png" alt="" width="868" height="903" class="size-full wp-image-1468" /> Default vue application[/caption]
 <br>
 
 <p class="graf graf--p">Next, we will provide international translation for this application.</p>
@@ -103,7 +103,7 @@ new Vue({
 <p class="graf graf--p">Now we have to provide a Spanish translation for this phrase. Since I do not speak Spanish fluently, I am going to use Google Translate.</p>
 
 
-[caption id="attachment_1469" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/translate.png" alt="" width="880" height="232" class="size-full wp-image-1469" /> Google Translate[/caption]
+[caption id="attachment_1469" align="alignnone" width="880"]<img src="/translate.png" alt="" width="880" height="232" class="size-full wp-image-1469" /> Google Translate[/caption]
 <br>
 <p class="graf graf--p">I will copy the Spanish translation that Google Translate provides. Then I will add it to the Spanish section. Every language must use the same key. So our updated message object looks like this now:</p>
 
@@ -183,7 +183,7 @@ new Vue({
 }</xmp></pre>
 <p class="graf graf--p">Start your server. You will see the two buttons. Click the Spanish button. The welcome message should instantly change to Spanish.</p>
 
-[caption id="attachment_1470" align="alignnone" width="830"]<img src="https://www.jenniferbland.com/wp-content/uploads/textChanged.png" alt="" width="830" height="862" class="size-full wp-image-1470" /> Text changed to Spanish[/caption]
+[caption id="attachment_1470" align="alignnone" width="830"]<img src="/textChanged.png" alt="" width="830" height="862" class="size-full wp-image-1470" /> Text changed to Spanish[/caption]
 <br>
 
 <h2 class="graf graf--h2">Finishing The Translations</h2>
@@ -245,7 +245,7 @@ new Vue({
 </template></xmp></pre>
 <p class="graf graf--p">Start your server and view your application in the browser. Click between the two buttons. You will see the text automatically translate to the language you clicked. Watch this gif.</p>
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/internationalization.gif" alt="" width="600" height="629" class="alignnone size-full wp-image-1578" />
+<img src="/internationalization.gif" alt="" width="600" height="629" class="alignnone size-full wp-image-1578" />
 <h2 class="graf graf--h2">Get the Code</h2>
 <p class="graf graf--p">I have the finished code <a class="markup--anchor markup--p-anchor" href="https://github.com/ratracegrad/vue-internationalization" target="_blank" rel="noopener noreferrer" data-href="https://github.com/ratracegrad/vue-internationalization">available on GitHub</a>. Please help me out and <strong class="markup--strong markup--p-strong">star the repo</strong> when you get the code.</p>
 

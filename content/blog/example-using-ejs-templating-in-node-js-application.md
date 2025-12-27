@@ -222,7 +222,7 @@ To start the application enter the following command:
 node server.js
 </xmp></pre>
 When our application starts it will display our homepage:
-        <img class="alignleft size-large wp-image-968" src="http://www.jenniferbland.com/wp-content/uploads/home-1024x515.png" alt="Homepage" width="600" />
+        <img class="alignleft size-large wp-image-968" src="/home-1024x515.png" alt="Homepage" width="600" />
 
         If you click on the about link in the navigation, you will see the about page:
-        <img class="alignleft size-large wp-image-967" src="http://www.jenniferbland.com/wp-content/uploads/about-1024x516.png" alt="about page" width="600" />
+        <img class="alignleft size-large wp-image-967" src="/uploads/about-1024x516.png" alt="about page" width="600" />

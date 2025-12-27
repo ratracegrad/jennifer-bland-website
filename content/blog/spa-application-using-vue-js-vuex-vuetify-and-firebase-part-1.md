@@ -21,11 +21,11 @@ This tutorial is broken down into a four-part series. Here are the links to each
 
 <a href="https://wp.me/p3sG15-m3" target="_blank" rel="noreferrer noopener">Part 1: Installing Vue and Building an SPA using Vuetify and Vue Router</a>
 
-<a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a>
+<a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a>
 
-<a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a>
+<a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a>
 
-<a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a>
+<a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a>
 
 This tutorial is suitable for everyone regardless of your skill level. I only assume that you have a knowledge of ES6.
 
@@ -37,7 +37,7 @@ Creating a new application using Vue.js is done through their command line inter
 <pre class="prettyprint">npm install -g @vue/cli</pre>
 The -g flag tells npm to install the CLI globally. Once it is installed the CLI can be accessed by using the command <b>vue</b> in the terminal. Running this will show the commands available:
 
-[caption id="attachment_1369" align="alignnone" width="880"]<img class="size-full wp-image-1369" src="https://www.jenniferbland.com/wp-content/uploads/vuecommand.png" alt="" width="880" height="329" /> Vue command options.[/caption]
+[caption id="attachment_1369" align="alignnone" width="880"]<img class="size-full wp-image-1369" src="/vuecommand.png" alt="" width="880" height="329" /> Vue command options.[/caption]
 
 
 <b>NOTE:</b> <i>If you have read other articles about Vue, you might see them talking about doing an install of the CLI with this command:</i>
@@ -48,11 +48,11 @@ Now that we have installed the CLI, the next step is to create the scaffolding f
 <pre class="prettyprint">vue create meal-prep</pre>
 The Vue CLI will ask a series of questions to determine how to scaffold out your application. At the first prompt, you want to select "Manually select features".
 
-[caption id="attachment_1370" align="alignnone" width="334"]<img class="size-full wp-image-1370" src="https://www.jenniferbland.com/wp-content/uploads/vueOptions.png" alt="" width="334" height="101" /> Manually select features when creating Vue application.[/caption]
+[caption id="attachment_1370" align="alignnone" width="334"]<img class="size-full wp-image-1370" src="/vueOptions.png" alt="" width="334" height="101" /> Manually select features when creating Vue application.[/caption]
 
 Next we will be asked to select the features we want to install for our application. For this tutorial select Babel, Router, Vuex and Linter/Formatter.
 
-[caption id="attachment_1371" align="alignnone" width="554"]<img class="size-full wp-image-1371" src="https://www.jenniferbland.com/wp-content/uploads/vueLinter.png" alt="" width="554" height="262" /> Adding Babel, Router, Vuex and Linter to our application[/caption]
+[caption id="attachment_1371" align="alignnone" width="554"]<img class="size-full wp-image-1371" src="/vueLinter.png" alt="" width="554" height="262" /> Adding Babel, Router, Vuex and Linter to our application[/caption]
 
 Next, you will be asked a series of questions.
 
@@ -60,23 +60,23 @@ For the linter I selected <i>Prettier</i> and selected to <i>Lint on save</i>. I
 
 Here are the options that I selected:
 
-[caption id="attachment_1372" align="alignnone" width="880"]<img class="size-full wp-image-1372" src="https://www.jenniferbland.com/wp-content/uploads/vueselectted.png" alt="" width="880" height="154" /> Options selected for Vue application[/caption]
+[caption id="attachment_1372" align="alignnone" width="880"]<img class="size-full wp-image-1372" src="/vueselectted.png" alt="" width="880" height="154" /> Options selected for Vue application[/caption]
 
 The Vue CLI will scaffold our application using the features that you have selected. Since I told it to create an application named "meal-prep" then it will create a new folder with this name.
 
 Once the CLI has successfully created the application, it will give you the command to change into the newly created directory and the command you will need to run to start your application:
 
-[caption id="attachment_1373" align="alignnone" width="880"]<img class="size-full wp-image-1373" src="https://www.jenniferbland.com/wp-content/uploads/vueSuccess.png" alt="" width="880" height="430" /> Vue CLI successfully created our application.[/caption]
+[caption id="attachment_1373" align="alignnone" width="880"]<img class="size-full wp-image-1373" src="/vueSuccess.png" alt="" width="880" height="430" /> Vue CLI successfully created our application.[/caption]
 
 &nbsp;
 <h2>Starting our application</h2>
 To start our application, we will need to cd into the meal-prep directory and run the command <b>npm run serve</b>. Here is what our application looks like:
 
-[caption id="attachment_1374" align="alignnone" width="880"]<img class="size-full wp-image-1374" src="https://www.jenniferbland.com/wp-content/uploads/vueDefaultApp.png" alt="" width="880" height="408" /> Default Vue application.[/caption]
+[caption id="attachment_1374" align="alignnone" width="880"]<img class="size-full wp-image-1374" src="/vueDefaultApp.png" alt="" width="880" height="408" /> Default Vue application.[/caption]
 
 Vue scaffolded out a SPA application for us and installed Vue Router and Vuex. We can see the Vue Router in action by clicking on About in the menu at the top of the page. This loads the <b>About</b> page.
 
-[caption id="attachment_1375" align="alignnone" width="880"]<img class="size-full wp-image-1375" src="https://www.jenniferbland.com/wp-content/uploads/vueAbout.png" alt="" width="880" height="200" /> About page of our application.[/caption]
+[caption id="attachment_1375" align="alignnone" width="880"]<img class="size-full wp-image-1375" src="/vueAbout.png" alt="" width="880" height="200" /> About page of our application.[/caption]
 
 &nbsp;
 <h2>Adding Vuetify</h2>
@@ -84,7 +84,7 @@ Vuetify is a material design component framework. It is similar to Bootstrap. Vu
 <pre class="prettyprint">vue add vuetify</pre>
 You will be asked a series of questions. I am going to choose not to use the pre-made template because I want to keep the structure created by the default Vue application. For the rest of the questions, I took the default. Here are my answers to the questions:
 
-[caption id="attachment_1376" align="alignnone" width="776"]<img class="size-full wp-image-1376" src="https://www.jenniferbland.com/wp-content/uploads/vuetifyOptions.png" alt="" width="776" height="220" /> Options selected when installing Vuetify.[/caption]
+[caption id="attachment_1376" align="alignnone" width="776"]<img class="size-full wp-image-1376" src="/vuetifyOptions.png" alt="" width="776" height="220" /> Options selected when installing Vuetify.[/caption]
 
 &nbsp;
 <h2>Configuring Prettier</h2>
@@ -94,7 +94,7 @@ In your code editor, open the package.json file. In this file, you will see the 
 
 Here is the Prettier setting that I have added to my package.json file:
 
-[caption id="attachment_1377" align="alignnone" width="444"]<img class="size-full wp-image-1377" src="https://www.jenniferbland.com/wp-content/uploads/prettier.png" alt="" width="444" height="555" /> Prettier configuration in package.json file.[/caption]
+[caption id="attachment_1377" align="alignnone" width="444"]<img class="size-full wp-image-1377" src="/prettier.png" alt="" width="444" height="555" /> Prettier configuration in package.json file.[/caption]
 
 Next I want to reconfigure all the files to use my new Prettier settings. That means changing all indents from 2 spaces to 4 spaces and to change double quotes to single quotes. Luckily Vue provides a lint script that will fix all these issues for me automatically.
 
@@ -102,7 +102,7 @@ From the terminal run this command:
 <pre class="prettyprint">npm run lint</pre>
 This will lint all the files and change them to my new Prettier settings. This command will give you a list of all the files that have been auto-fixed.
 
-[caption id="attachment_1378" align="alignnone" width="763"]<img class="size-full wp-image-1378" src="https://www.jenniferbland.com/wp-content/uploads/lint.png" alt="" width="763" height="354" /> Lint auto-fixed all the files for us.[/caption]
+[caption id="attachment_1378" align="alignnone" width="763"]<img class="size-full wp-image-1378" src="/lint.png" alt="" width="763" height="354" /> Lint auto-fixed all the files for us.[/caption]
 
 &nbsp;
 <h2>Styling The Home Page of Our Application</h2>
@@ -128,7 +128,7 @@ This code wraps our application in the &lt;v-app&gt; tag that Vuetify requires. 
 <h2>Creating the Home Page</h2>
 Next open the Home.vue file located in the views folder. We are going to get rid of the code that is there. Remove all the content in the template. Remove the import command for HelloWorld and the comment. Remove the components object. Here is what we will be creating for the home page:
 
-[caption id="attachment_1379" align="alignnone" width="880"]<img class="size-full wp-image-1379" src="https://www.jenniferbland.com/wp-content/uploads/homepage.png" alt="" width="880" height="450" /> The home page for the Meal Prep Application[/caption]
+[caption id="attachment_1379" align="alignnone" width="880"]<img class="size-full wp-image-1379" src="/homepage.png" alt="" width="880" height="450" /> The home page for the Meal Prep Application[/caption]
 
 &nbsp;
 <h2>App Navigation</h2>
@@ -173,7 +173,7 @@ export default {
 </style></xmp></pre>
 This code will produce this menu:
 
-[caption id="attachment_1384" align="alignnone" width="880"]<img class="size-full wp-image-1384" src="https://www.jenniferbland.com/wp-content/uploads/menu.png" alt="" width="880" height="61" /> Menu toolbar[/caption]
+[caption id="attachment_1384" align="alignnone" width="880"]<img class="size-full wp-image-1384" src="/menu.png" alt="" width="880" height="61" /> Menu toolbar[/caption]
 
 Let me explain the items that I have used in the menu. For the &lt;v-toolbar&gt; I have added the prop <b>app</b>. This prop designates the component as part of the application layout. It is used for dynamically adjusting content sizing. When the side drawer slides out then the content on the screen will adjust accordingly.
 
@@ -212,7 +212,7 @@ Here is the final code:
     <v-btn color="brown lighten-3" class="hidden-sm-and-down">JOIN</v-btn>
 </v-toolbar></xmp></pre>
 If you want to see how it looks when you resize the screen, here is the first giphy I have ever created. :-)
-<img src="http://www.jenniferbland.com/wp-content/uploads/resizescreen-1024x248.gif" alt="" width="1024" height="248" class="alignnone size-large wp-image-1572" />
+<img src="/resizescreen-1024x248.gif" alt="" width="1024" height="248" class="alignnone size-large wp-image-1572" />
 <h2>Creating the Navigation for small screens</h2>
 For small screens we will use Vuetify's &lt;v-navigation-drawer&gt; component. If we add this to the template, we will immediately get an error. This is because every Vue component is expected to have just one root in the template. By having both a &lt;v-navigation-drawer&gt; and &lt;v-toolbar&gt; in our template, we have two roots. To avoid this create a &lt;span&gt; to wrap around both.
 
@@ -285,7 +285,7 @@ In data, I have added drawer and items:
 };</xmp></pre>
 When we click on the hamburger menu this is what the drawer will look like:
 
-[caption id="attachment_1390" align="alignnone" width="401"]<img class="size-full wp-image-1390" src="https://www.jenniferbland.com/wp-content/uploads/drawer.png" alt="" width="401" height="274" /> Drawer navigation for small devices[/caption]
+[caption id="attachment_1390" align="alignnone" width="401"]<img class="size-full wp-image-1390" src="/drawer.png" alt="" width="401" height="274" /> Drawer navigation for small devices[/caption]
 
 
 <h2>Adding Navigation to the Application</h2>
@@ -457,7 +457,7 @@ export default {
 </script></xmp></pre>
 When we add this new component, it causes a problem with our layout. Now the text is centered based on the total height of the image as well as the new text content. Here is what it looks like:
 
-[caption id="attachment_1391" align="alignnone" width="880"]<img class="size-full wp-image-1391" src="https://www.jenniferbland.com/wp-content/uploads/homepageproblems.png" alt="" width="880" height="453" /> Problems with our layout.[/caption]
+[caption id="attachment_1391" align="alignnone" width="880"]<img class="size-full wp-image-1391" src="/homepageproblems.png" alt="" width="880" height="453" /> Problems with our layout.[/caption]
 
 We can easily correct this problem by specifying a max-height for the container that has our image. We want this container to be 100% of the height of our viewport.
 
@@ -582,7 +582,7 @@ export default {
 </script></xmp></pre>
 This is what the meal plans section looks like:
 
-[caption id="attachment_1392" align="alignnone" width="880"]<img class="size-full wp-image-1392" src="https://www.jenniferbland.com/wp-content/uploads/mealplans.png" alt="" width="880" height="404" /> Available meal plans.[/caption]
+[caption id="attachment_1392" align="alignnone" width="880"]<img class="size-full wp-image-1392" src="/mealplans.png" alt="" width="880" height="404" /> Available meal plans.[/caption]
 
 <h2>Get the Code</h2>
 Even though this is a 4-part series, you can get the <a href="https://github.com/ratracegrad/meal-prep" target="_blank" rel="noopener noreferrer">finished code in my GitHub account</a>. Please help me out and <b>star the repo</b> when you get the code.

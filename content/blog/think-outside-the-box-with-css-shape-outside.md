@@ -13,10 +13,10 @@ author:
 
 CSS is based off a box model. If you have an image that is a circle that you want to wrap text around, it will wrap around the images’ bounding box.
 
-<img class="alignnone size-medium wp-image-1178" src="http://www.jenniferbland.com/wp-content/uploads/1-300x268.png" alt="" width="300" height="268" />
+<img class="alignnone size-medium wp-image-1178" src="/1-300x268.png" alt="" width="300" height="268" />
 <h2 id="c132" class="graf graf--h3 graf-after--figure">Shape-outside</h2>
 <p id="5b27" class="graf graf--p graf-after--h3">A new CSS property called shape-outside lets you wrap text that conforms to the shape of your image.</p>
-<img class="alignnone size-medium wp-image-1179" src="http://www.jenniferbland.com/wp-content/uploads/2-300x211.png" alt="" width="300" height="211" />
+<img class="alignnone size-medium wp-image-1179" src="/2-300x211.png" alt="" width="300" height="211" />
 
 <!--more-->
 <h2 id="cb93" class="graf graf--h3 graf-after--figure">What is shape-outside</h2>
@@ -48,7 +48,7 @@ CSS is based off a box model. If you have an image that is a circle that you wan
 <h2 id="4fc2" class="graf graf--h3 graf-after--p">Circle</h2>
 <p id="af42" class="graf graf--p graf-after--h3">Circle() is one of the functional values provided with shape-outside. The full notation for circle() is <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">circle(r at cx cy)</em></strong> where r is the radius of the circle and cx and cy are the coordinates for the center of the circle. If you omit them, the center of the image will be used as the default values.</p>
 <p id="cf3b" class="graf graf--p graf-after--p">Here is an example of using shape-outside on a circle:</p>
-<img class="alignnone size-medium wp-image-1180" src="http://www.jenniferbland.com/wp-content/uploads/3-1-300x211.png" alt="" width="300" height="211" />
+<img class="alignnone size-medium wp-image-1180" src="h/3-1-300x211.png" alt="" width="300" height="211" />
 <pre class="prettyprint">.circle {
     height: 200px;
     width: 200px;
@@ -64,7 +64,7 @@ Ellipse is a variation of the circle where the item is elongated on either the h
 
 Here is an example of using shape-outside on the ellipse:
 
-<img class="alignnone size-medium wp-image-1181" src="http://www.jenniferbland.com/wp-content/uploads/4-300x239.png" alt="" width="300" height="239" />
+<img class="alignnone size-medium wp-image-1181" src="/4-300x239.png" alt="" width="300" height="239" />
 <pre class="prettyprint">.ellipse {
     width: 100px;
     height: 200px;
@@ -79,7 +79,7 @@ Here is an example of using shape-outside on the ellipse:
 <p id="d5cd" class="graf graf--p graf-after--h3">The polygon function provides an unlimited range of shapes. The full notation for polygon() is <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">polygon(x1 y1, x2 y2, …)</em></strong><em class="markup--em markup--p-em"> </em>where each pair specifies the x y coordinates for a vertex of the polygon. To use the polygon() function you must specify a minimum of 3 pairs of vertex.</p>
 <p id="ecba" class="graf graf--p graf-after--p">Polygon is used with a clip-path. The clip-path CSS property creates a clipping region that defines what part of an element should be displayed. Anything inside the region is displayed, while those outside are hidden.</p>
 <p id="cf75" class="graf graf--p graf-after--p">Here is an example of using shape-outside to create two triangle shapes and the text flows between them:</p>
-<img class="alignnone size-medium wp-image-1182" src="http://www.jenniferbland.com/wp-content/uploads/5-300x300.png" alt="" width="300" height="300" />
+<img class="alignnone size-medium wp-image-1182" src="/5-300x300.png" alt="" width="300" height="300" />
 <pre class="prettyprint">.leftTriangle {
 width: 150px;
 height: 300px;
@@ -104,6 +104,6 @@ shape-outside: polygon(0% 0%, 100% 0%, 50% 100%);
 }</pre>
 <h2 id="50ad" class="graf graf--h3 graf-after--pre">Browser Support</h2>
 <p id="60f5" class="graf graf--p graf-after--h3">The CSS shape-outside is supported primarily by Chrome, Opera and Safari.</p>
-<img class="alignnone size-medium wp-image-1183" src="http://www.jenniferbland.com/wp-content/uploads/6-300x93.png" alt="" width="300" height="93" />
+<img class="alignnone size-medium wp-image-1183" src="/6-300x93.png" alt="" width="300" height="93" />
 <h2 id="f3cc" class="graf graf--h3 graf-after--figure">Get the Code</h2>
 <p id="49a1" class="graf graf--p graf-after--h3">The code for all of the examples can be found in <a class="markup--anchor markup--p-anchor" href="https://github.com/ratracegrad/mastering-css-series-shape-outside" target="_blank" rel="nofollow noopener" data-href="https://github.com/ratracegrad/mastering-css-series-shape-outside">my github repo here</a>.</p>

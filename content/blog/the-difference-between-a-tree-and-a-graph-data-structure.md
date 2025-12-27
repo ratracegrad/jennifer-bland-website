@@ -16,7 +16,7 @@ In JavaScript programming, data can be stored in data structures like graphs and
 Graphs evolved from the field of mathematics. They are primarily used to describe a model that shows the route from one location to another location.
 
 A graph consists of a set of nodes and a set of edges. An edge is a pair of nodes that are connected. A path is the term used to describe traveling between nodes that share an edge. The image below shows a graph with 3 nods and 3 edges.
-<h2><img class="aligncenter size-full wp-image-764" src="http://www.jenniferbland.com/wp-content/uploads/graph-data-structure-with-3-nodes-and-3-edges.png" alt="graph data structure with 3 nodes and 3 edges" width="125" height="113" /></h2>
+<h2><img class="aligncenter size-full wp-image-764" src="/graph-data-structure-with-3-nodes-and-3-edges.png" alt="graph data structure with 3 nodes and 3 edges" width="125" height="113" /></h2>
 &nbsp;
 
 <!--more-->
@@ -25,7 +25,7 @@ A tree data structure, like a graph, is a collection of nodes. There is a root n
 
 This repeats until all data is represented in the tree data structure. The image below shows a tree data structure.
 
-<img class="aligncenter size-full wp-image-765" src="http://www.jenniferbland.com/wp-content/uploads/tree-data-structure.png" alt="tree data structure" width="220" height="183" />
+<img class="aligncenter size-full wp-image-765" src="/tree-data-structure.png" alt="tree data structure" width="220" height="183" />
 
 &nbsp;
 

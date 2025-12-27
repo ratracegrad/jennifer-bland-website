@@ -15,7 +15,7 @@ In this article I will show a quick and easy way to create a Pinterest style lay
 
 <h2>What we will be creating</h2>
 This is the flowing Pinterest style layout we will be creating.
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-5.13.27-PM-1024x599.png" alt="" width="1024" height="599" class="alignnone size-large wp-image-1673" />
+<img src="/Screen-Shot-2019-10-31-at-5.13.27-PM-1024x599.png" alt="" width="1024" height="599" class="alignnone size-large wp-image-1673" />
 
 <!--more-->
 
@@ -31,14 +31,14 @@ To use the Unsplash API you need to create a developer account. Head over to:
 
 Click on the "Register as a Developer" button. Fill in the required fields to create your account. Once you have created your account you will have to verify your email. Just click on the email that they send you to verify your account.
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-4.39.56-PM-1024x459.png" alt="" width="1024" height="459" class="alignnone size-large wp-image-1672" />
+<img src="/Screen-Shot-2019-10-31-at-4.39.56-PM-1024x459.png" alt="" width="1024" height="459" class="alignnone size-large wp-image-1672" />
 
 Login to your account. You will need to create a new application.  Click on the "New Application" button. 
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-6.01.58-PM.png" alt="" width="895" height="822" class="alignnone size-full wp-image-1676" />
+<img src="/Screen-Shot-2019-10-31-at-6.01.58-PM.png" alt="" width="895" height="822" class="alignnone size-full wp-image-1676" />
 You will be presented with four items that you must click to acknowledge each of them. Once all are checked then click the "Accept Terms" button.When you application you will be assigned a unique access key. 
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-6.07.31-PM.png" alt="" width="813" height="294" class="alignnone size-full wp-image-1678" />
+<img src="/Screen-Shot-2019-10-31-at-6.07.31-PM.png" alt="" width="813" height="294" class="alignnone size-full wp-image-1678" />
 We will use this access key when calling the Unsplash API to retrieve images.
 
 <h2>Creating our application</h2>
@@ -50,12 +50,12 @@ We can now use the Vue cli to create our application. I am going to call my appl
 
 The CLI will ask you if you want to use the default settings or manually select features. 
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-6.15.19-PM.png" alt="" width="826" height="204" class="alignnone size-full wp-image-1680" />
+<img src="/Screen-Shot-2019-10-31-at-6.15.19-PM.png" alt="" width="826" height="204" class="alignnone size-full wp-image-1680" />
 
 For this demo I am using the default settings so you can just hit enter.
 Once this command has finished running, it will give you instructions on how to access the newly created application.
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-6.18.49-PM.png" alt="" width="978" height="256" class="alignnone size-full wp-image-1682" />
+<img src="/Screen-Shot-2019-10-31-at-6.18.49-PM.png" alt="" width="978" height="256" class="alignnone size-full wp-image-1682" />
 
 So let's follow these instructions and change into the vue-printerest directory with this command:
 <pre class="prettyprint"><xmp>cd vue-pinterest</xmp></pre>
@@ -65,7 +65,7 @@ To start our server you run the command:
 
 We can test that our server is running by opening our browser and going to this url:
 <pre class="prettyprint"><xmp>localhost:8080</xmp></pre>
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-6.50.50-PM.png" alt="" width="615" height="687" class="alignnone size-full wp-image-1683" />
+<img src="/Screen-Shot-2019-10-31-at-6.50.50-PM.png" alt="" width="615" height="687" class="alignnone size-full wp-image-1683" />
 
 <h2>Adding Packages to our Application</h2>
 If you still have your server running you will need to stop it. We are going to be using two packages to provide the functionality for our Pinterest style grid application. The first package we are going to use is <b>axios</b>. Axios will provide the http client that we use to call the Unsplash API to retrieve pictures. The second package is <b>vue-stack-grid</b>. This package is a Vue component that will create a Pinterest style layout for us. To install them run this command:
@@ -200,7 +200,7 @@ Go to your browser and open up this url:
 <pre class="prettyprint"><xmp>localhost:8080</xmp></pre>
 
 You should see this display:
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-10-31-at-5.13.27-PM-1024x599.png" alt="" width="1024" height="599" class="alignnone size-large wp-image-1673" />
+<img src="/Screen-Shot-2019-10-31-at-5.13.27-PM-1024x599.png" alt="" width="1024" height="599" class="alignnone size-large wp-image-1673" />
 
 <h2>Adding more search buttons</h2>
 To improve on our application, let's add two more buttons that users can click to search for images. We will add buttons to search for <b>cliff</b> and <b>ocean</b>. If you want to search on different terms you can.  You can copy the line that has our button and paste it in two times so we have three buttons. For each button make sure you update the term that is passed to the searchUnsplash function to be the term you want to search for. Also change the text of the button to reflect that term.

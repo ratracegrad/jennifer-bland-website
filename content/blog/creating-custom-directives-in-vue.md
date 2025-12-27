@@ -132,7 +132,7 @@ Vue.directive("orange", function(el, binding, vnode) {
 
 <p>We can apply this directive to the message that is shown in the HelloWorld component. Once it is applied, the welcome message is now orange.</p>
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/orangeText.png" alt="" width="667" height="88" class="alignnone size-full wp-image-1597" />
+<img src="/orangeText.png" alt="" width="667" height="88" class="alignnone size-full wp-image-1597" />
 
 <h2>Demo #3 v-color</h2>
 
@@ -147,7 +147,7 @@ Vue.directive("color", function(el, binding, vnode) {
 
 <p>Now our directive is much more flexible. You can pass in any of the well-known color strings like ‘red’ or ‘blue’ as well as pass in a valid hex color like #ffff00. Here is an image of our new v-color directive being applied three times. The first time the color is red, the second time the color is blue and the last time the color is yellow using the hex code of #ffff00.</p>
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/v-color.png" alt="" width="640" height="255" class="alignnone size-full wp-image-1598" />
+<img src="/v-color.png" alt="" width="640" height="255" class="alignnone size-full wp-image-1598" />
 
 <h2>Demo #4 v-sticky with an argument</h2>
 <p>You can provide an argument to a custom directive. We will modify our <code>v-sticky</code> code that we created earlier to accept an argument. Most websites have navigation at the top of the screen and a footer at the bottom of the screen.</p>
@@ -172,7 +172,7 @@ Vue.directive("sticky", function(el, binding, vnode) {
 
 <p>After applying our updated custom directive to the navigation and to the footer, it looks like this.</p>
 
-<img src="https://www.jenniferbland.com/wp-content/uploads/customNav.png" alt="" width="700" height="490" class="alignnone size-full wp-image-1599" />
+<img src="/customNav.png" alt="" width="700" height="490" class="alignnone size-full wp-image-1599" />
 
 <h2>Demo #5 v-format using modifiers</h2>
 <p>You can add as many modifiers as you want to a custom directive. We are going to create a new custom directive called format. This custom directive will accept one or more of these modifiers:</p>
@@ -210,7 +210,7 @@ Vue.directive("format", function(el, binding, vnode) {
 <p>To show that you can apply multiple modifiers to a custom directive I have applied all three modifiers to the text Installed CLI Plugins.</p>
 
 <p>Here is what it looks like.</p>
-<img src="https://www.jenniferbland.com/wp-content/uploads/plugins.png" alt="" width="700" height="491" class="alignnone size-full wp-image-1600" />
+<img src="/plugins.png" alt="" width="700" height="491" class="alignnone size-full wp-image-1600" />
 
 <h2>Demo #6 v-hook-demo showing lifecycle hooks</h2>
 

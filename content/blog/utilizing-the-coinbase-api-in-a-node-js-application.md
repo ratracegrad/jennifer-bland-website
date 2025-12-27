@@ -11,7 +11,7 @@ author:
     alt: Jennifer Bland
 ---
 
-In the [previous article](https://www.jenniferbland.com/access-coinbase-api-using-oauth2/), I showed you how to use the Coinbase API to authenticate your application so that anybody can use it. In this article, I will show you how to build on this by
+In the [previous article](/blog/access-coinbase-api-using-oauth2/), I showed you how to use the Coinbase API to authenticate your application so that anybody can use it. In this article, I will show you how to build on this by
 - getting user details
 - getting a list of all user accounts
 - get a list of all transactions (buy, sell, etc) that the user has completed for each crypto coins they own.

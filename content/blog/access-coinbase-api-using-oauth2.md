@@ -290,4 +290,4 @@ Now we have an access token that we can use when accessing the Coinbase API to g
 
 ## What's Next
 
-In the next article, we will expand on what we have created so far. We will explore the Coinbase API to display a list of all the crypto tokens that the user has in their Coinbase account. We will then show all the transactions for each crypto token. [Check out next article here](https://www.jenniferbland.com/utilizing-the-coinbase-api-in-a-node-js-application/).
+In the next article, we will expand on what we have created so far. We will explore the Coinbase API to display a list of all the crypto tokens that the user has in their Coinbase account. We will then show all the transactions for each crypto token. [Check out next article here](/blog/utilizing-the-coinbase-api-in-a-node-js-application/).

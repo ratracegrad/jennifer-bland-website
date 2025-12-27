@@ -18,9 +18,9 @@ author:
 <p class="graf graf--p">Learn how to create a meal delivery website using Vue.js, Vuex, Vue Router, and Firebase.</p>
 <p class="graf graf--p">This is part three of my four-part series on building a Vue application. Here is a list of all the parts:</p>
 <p><a href="https://wp.me/p3sG15-m3" target="_blank" rel="noreferrer noopener">Part 1: Installing Vue and Building an SPA using Vuetify and Vue Router</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a></p>
 
 <h2 class="graf graf--h2">Recap</h2>
 <p class="graf graf--p">In the first part of this series, we created our Vue application using the Vue CLI. Also, we added Vuetify to the app. We used Vuetify to style our home page.</p>
@@ -37,26 +37,26 @@ author:
 
 <figure class="graf graf--figure">
 
-[caption id="attachment_1422" align="alignnone" width="880"]<img class="size-full wp-image-1422" src="https://www.jenniferbland.com/wp-content/uploads/edamam.png" alt="" width="880" height="435" /> Edamam API Homepage[/caption]</figure>
+[caption id="attachment_1422" align="alignnone" width="880"]<img class="size-full wp-image-1422" src="/edamam.png" alt="" width="880" height="435" /> Edamam API Homepage[/caption]</figure>
 &nbsp;
 <p class="graf graf--p">Next, you will be presented with three different levels that you can sign up for. We are going to use the free Developer tier. Click the <code class="markup--code markup--p-code">start now</code> button in the developer option.</p>
 
 <figure class="graf graf--figure">
 
-[caption id="attachment_1423" align="alignnone" width="880"]<img class="size-full wp-image-1423" src="https://www.jenniferbland.com/wp-content/uploads/free.png" alt="" width="880" height="419" /> Sign up for the free Developer account[/caption]</figure>
+[caption id="attachment_1423" align="alignnone" width="880"]<img class="size-full wp-image-1423" src="/free.png" alt="" width="880" height="419" /> Sign up for the free Developer account[/caption]</figure>
 &nbsp;
 <p class="graf graf--p">You will be presented with a sign-up form. Complete the form.</p>
 
 <figure class="graf graf--figure">
 
-[caption id="attachment_1424" align="alignnone" width="662"]<img class="size-full wp-image-1424" src="https://www.jenniferbland.com/wp-content/uploads/signup.png" alt="" width="662" height="501" /> Sign-up form[/caption]</figure>
+[caption id="attachment_1424" align="alignnone" width="662"]<img class="size-full wp-image-1424" src="/signup.png" alt="" width="662" height="501" /> Sign-up form[/caption]</figure>
 &nbsp;
 <p class="graf graf--p">Ater completing the form you will be prompted to log in to your account. When you are logged in to your account, you will be asked to choose the API you need. Instead of clicking on any of the selection, instead, go to the menu and select <code class="markup--code markup--p-code">Get an API key now!</code></p>
 <p class="graf graf--p">You should see your Recipe Search API key. <em class="markup--em markup--p-em">(NOTE: if you do not have a key then click the </em><code class="markup--code markup--p-code"><em class="markup--em markup--p-em">create a new application</em></code><em class="markup--em markup--p-em"> button to create one.)</em> Click on the view button to see the details of your API key. You will have an Application ID and Application Keys. You will need these to access the API for your website.</p>
 
 <figure class="graf graf--figure">
 
-[caption id="attachment_1425" align="alignnone" width="880"]<img class="size-full wp-image-1425" src="https://www.jenniferbland.com/wp-content/uploads/api.png" alt="" width="880" height="354" /> API Keys needed to access Edamam[/caption]</figure>
+[caption id="attachment_1425" align="alignnone" width="880"]<img class="size-full wp-image-1425" src="/api.png" alt="" width="880" height="354" /> API Keys needed to access Edamam[/caption]</figure>
 &nbsp;
 <h2 class="graf graf--h2">Creating Menu Page</h2>
 <p class="graf graf--p">The menu page is where we will show recipes for each of the three diets we are supporting. These recipes will be retrieved from the Edamam API service. The first thing we want to do is for the user to select a diet. We can do this by re-using the HomePlans component. We will modify the component to add a button to each diet for users to select. When visitors to the website click on a button they will see the recipes for that diet. <strong class="markup--strong markup--p-strong">But </strong>we do not want these buttons to be shown when the component is shown on the home page. So we are going to take care of this.</p>
@@ -154,7 +154,7 @@ author:
 </template></xmp></pre>
 <br>
 <figure class="graf graf--figure"></figure>
-[caption id="attachment_1426" align="alignnone" width="880"]<img class="size-full wp-image-1426" src="https://www.jenniferbland.com/wp-content/uploads/select.png" alt="" width="880" height="554" /> Select This Plan button added to HomePlans component[/caption]
+[caption id="attachment_1426" align="alignnone" width="880"]<img class="size-full wp-image-1426" src="/select.png" alt="" width="880" height="554" /> Select This Plan button added to HomePlans component[/caption]
 <br>
 <p class="graf graf--p">Now that we have added the button we want to hide it on the home page and show it on the menu page. To do this we are going to combine the <code class="markup--code markup--p-code">v-if</code> directive and the name we assigned to each route.</p>
 <p class="graf graf--p">In the <code class="markup--code markup--p-code">router.js</code> file, we added our routes. Routes is an array of objects. Each object has a <code class="markup--code markup--p-code">path</code>, <code class="markup--code markup--p-code">name</code> and <code class="markup--code markup--p-code">component</code>. We can use the array <code class="markup--code markup--p-code">includes</code> method to check if the current route is home. Here is what we will add to each <code class="markup--code markup--p-code">v-card-actions</code> sections:</p>
@@ -590,7 +590,7 @@ export default {
 
 <figure class="graf graf--figure">
 
-[caption id="attachment_1440" align="alignnone" width="880"]<img class="size-full wp-image-1440" src="https://www.jenniferbland.com/wp-content/uploads/list.png" alt="" width="880" height="576" /> List of recipes[/caption]</figure>
+[caption id="attachment_1440" align="alignnone" width="880"]<img class="size-full wp-image-1440" src="/list.png" alt="" width="880" height="576" /> List of recipes[/caption]</figure>
 <br>
 <p class="graf graf--p">I want to make two quick changes to how the recipes are styled. First I want to add some more spacing between the recipe title and ingredients. Second I want to add a button to the bottom of every recipe for a person to order. So open up the <code class="markup--code markup--p-code">MealRecipes</code> component. For the title, I already have a class of <code class="markup--code markup--p-code">title</code>. I am going to add to that a value of <code class="markup--code markup--p-code">my-3</code>. This is equivalent to adding margin-top and margin-bottom to the title. This lets the title offset from the image and the ingredients.</p>
 <p class="graf graf--p">Last change I want to make is to add a button. Inside the <code class="markup--code markup--p-code">v-card</code> and below the <code class="markup--code markup--p-code">v-card-text</code> we will add a <code class="markup--code markup--p-code">v-card-actions</code>. Inside that, we will add a button. We will use the default button with a green color. By default, Vuetify makes the text in buttons black in color. We can change that to white by adding the <code class="markup--code markup--p-code">dark</code> directive. Here is our button:</p>

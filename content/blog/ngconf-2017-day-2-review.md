@@ -11,7 +11,7 @@ author:
     alt: Jennifer Bland
 ---
 
-<a href="http://www.jenniferbland.com/ngconf-2017-day-1-review/">Read review of Day 1 here</a>. <a href="http://www.jenniferbland.com/ngconf-2017-day-3-review/">Read review of day 3 here</a>.
+<a href="/blog/ngconf-2017-day-1-review/">Read review of Day 1 here</a>. <a href="/blog/ngconf-2017-day-3-review/">Read review of day 3 here</a>.
 
 Day 2 of ngConf is called Fair Day. Fair Day is when a single track conference goes multi-track. Not only do you get another day of great content but there are activities happening at all times of the day.
 <h2>Multi-track format</h2>
@@ -25,7 +25,7 @@ Several weeks after the close of CFP, I am working on a project at home one even
 
 <!--more-->
 
-<img class="alignnone size-full wp-image-1119" src="http://www.jenniferbland.com/wp-content/uploads/day22.jpeg" alt="" width="800" height="600" />
+<img class="alignnone size-full wp-image-1119" src="/day22.jpeg" alt="" width="800" height="600" />
 
 &nbsp;
 <h2>Using Components in Angular 1.5</h2>

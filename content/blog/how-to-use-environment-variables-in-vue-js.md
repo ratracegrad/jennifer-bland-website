@@ -57,7 +57,7 @@ In my application I have the following entry that accesses the environment varia
 <div>TITLE: {{ title }}</div></xmp></pre>
 
 If I run npm run serve to view my application in development it shows the following:
-<img src="http://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-09-02-at-10.36.20-AM.png" alt="" width="302" height="360" class="alignnone size-full wp-image-1666" />
+<img src="/Screen-Shot-2019-09-02-at-10.36.20-AM.png" alt="" width="302" height="360" class="alignnone size-full wp-image-1666" />
 
 If I run npm run build and then view my application in production it shows the following:
-<img src="http://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2019-09-02-at-10.36.27-AM.png" alt="" width="319" height="323" class="alignnone size-full wp-image-1667" />
+<img src="/Screen-Shot-2019-09-02-at-10.36.27-AM.png" alt="" width="319" height="323" class="alignnone size-full wp-image-1667" />

@@ -14,9 +14,9 @@ author:
 <p class="graf graf--p">Learn how to create a meal delivery website using Vue.js, Vuex, Vue Router, and Firebase.</p>
 <p class="graf graf--p">This is part two of my four-part series on building a Vue application. Here is a list of all the parts:</p>
 <p><a href="https://wp.me/p3sG15-m3" target="_blank" rel="noreferrer noopener">Part 1: Installing Vue and Building an SPA using Vuetify and Vue Router</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a></p>
 
 <h2 class="graf graf--h2">Recap</h2>
 <p class="graf graf--p">In the first part of this series, we created our Vue application using the Vue CLI. Also, we added Vuetify to the app. I am using Vuetify for styling the app. I will also take advantage of the many UI components that it offers.</p>

@@ -413,9 +413,9 @@ I have the <a href="https://github.com/ratracegrad/Vue-Auth0-Authentication-Tuto
 <h2>Using Other Authentication Methods</h2>
 I have written several follow up articles on adding Authentication to your Vue application using other authentication methods.
 
-Want to use Firebase for authentication, <a href="https://www.jenniferbland.com/how-to-add-authentication-to-a-vue-app-using-firebase/">read this article</a>.
+Want to use Firebase for authentication, <a href="/blog/how-to-add-authentication-to-a-vue-app-using-firebase/">read this article</a>.
 
-Want to use AWS Amplify for authentication, <a href="https://www.jenniferbland.com/how-to-add-authentication-to-a-vue-app-using-aws-amplify/">read this article</a>.
+Want to use AWS Amplify for authentication, <a href="/blog/how-to-add-authentication-to-a-vue-app-using-aws-amplify/">read this article</a>.
 
 <h2>Conclusion</h2>
 Auth0 is an Authentication-As-A-Service product that you can add to your application. It provides very easy to use Authentication.

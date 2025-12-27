@@ -17,9 +17,9 @@ author:
 <p class="graf graf--p">Learn how to create a meal delivery website using Vue.js, Vuex, Vue Router, and Firebase.</p>
 <p class="graf graf--p">This is part four of my four-part series on building a Vue application. Here is a list of all the parts:</p>
 <p><a href="https://wp.me/p3sG15-m3" target="_blank" rel="noreferrer noopener">Part 1: Installing Vue and Building an SPA using Vuetify and Vue Router</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a></p>
-<p><a href="https://www.jenniferbland.com/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-2/" target="_blank" rel="noreferrer noopener">Part 2: Using Vue Router</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-3/" target="_blank" rel="noreferrer noopener">Part 3: Using Vuex and accessing API</a></p>
+<p><a href="/blog/spa-application-using-vue-js-vuex-vuetify-and-firebase-part-4/" target="_blank" rel="noreferrer noopener">Part 4: Using Firebase for Authentication</a></p>
 
 <h2 class="graf graf--h2">Recap</h2>
 <p class="graf graf--p">In the first part of this series, we created our Vue application using the Vue CLI. Also, we added Vuetify to the app. We used Vuetify to style our home page.</p>
@@ -33,19 +33,19 @@ author:
 <p class="graf graf--p">Firebase is a real-time cloud infrastructure for client-side apps. Firebase can turn any <em class="markup--em markup--p-em">Frontend</em> application into a full-stack product capable of scaling infinitely in the cloud. It abstracts away most of your complex server-side features like user authentication, data persistence, file storage, and microservices, so you can focus on building an awesome experience for the end user.</p>
 <p class="graf graf--p">The first step is to go to <a class="markup--anchor markup--p-anchor" href="https://firebase.google.com" target="_blank" rel="noopener" data-href="https://firebase.google.com">firebase and create a new account</a>. Log in to the account that you created. You will see this dashboard:</p>
 
-[caption id="attachment_1448" align="alignnone" width="827"]<img src="https://www.jenniferbland.com/wp-content/uploads/demo.png" alt="" width="827" height="671" class="size-full wp-image-1448" /> Firebase Demo[/caption]
+[caption id="attachment_1448" align="alignnone" width="827"]<img src="/demo.png" alt="" width="827" height="671" class="size-full wp-image-1448" /> Firebase Demo[/caption]
 <br>
 <p class="graf graf--p">Click the <code class="markup--code markup--p-code">Add Project</code> button. Enter a name for your project. I entered “meal-prep” for the name of my project. Check all checkboxes. Then click the <code class="markup--code markup--p-code">create project</code> button.</p>
 
-[caption id="attachment_1449" align="alignnone" width="587"]<img src="https://www.jenniferbland.com/wp-content/uploads/add.png" alt="" width="587" height="706" class="size-full wp-image-1449" /> Add new project dialog on Firebase[/caption]
+[caption id="attachment_1449" align="alignnone" width="587"]<img src="/add.png" alt="" width="587" height="706" class="size-full wp-image-1449" /> Add new project dialog on Firebase[/caption]
 <br>
 <p class="graf graf--p">Once your project is created, Firebase will take you to your project’s home page.</p>
 
-[caption id="attachment_1450" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/project.png" alt="" width="880" height="381" class="size-full wp-image-1450" /> Project Home Page[/caption]
+[caption id="attachment_1450" align="alignnone" width="880"]<img src="/project.png" alt="" width="880" height="381" class="size-full wp-image-1450" /> Project Home Page[/caption]
 <br>
 <p class="graf graf--p">We need to integrate our project’s configuration into our meal-prep application. Click on the web button to add Firebase to your application. (NOTE: if you are not sure which button that it, it is the button with the <code class="markup--code markup--p-code">&lt;/&gt;</code>. In the image above, the button is right above the words “get started.” Click the copy button to copy the snippet to your clipboard.</p>
 
-[caption id="attachment_1451" align="alignnone" width="844"]<img src="https://www.jenniferbland.com/wp-content/uploads/config.png" alt="" width="844" height="577" class="size-full wp-image-1451" /> Firebase config snippet[/caption]
+[caption id="attachment_1451" align="alignnone" width="844"]<img src="/config.png" alt="" width="844" height="577" class="size-full wp-image-1451" /> Firebase config snippet[/caption]
 
 <br>
 <p class="graf graf--p">Next, we need to incorporate this snippet into our meal prep application. You can initialize your firebase application in the <code class="markup--code markup--p-code">main.js</code> file. You can do it in the <code class="markup--code markup--p-code">App.vue</code> file. Instead, we are going to create a new directory called firebase in the src folder. Inside this new directory create a file called <code class="markup--code markup--p-code">index.js</code>. Paste the contents of your clipboard into this file. Remove the two lines with the <code class="markup--code markup--p-code">script</code> tags. In the first line of the file import firebase. On the last line initialize firebase. Your file should look like this:</p>
@@ -67,15 +67,15 @@ firebase.initializeApp(config);</xmp></pre>
 <pre class="prettyprint"><xmp>npm install firebase --save</xmp></pre>
 <p class="graf graf--p">Go back to your firebase console in the browser. Click on <code class="markup--code markup--p-code">Authentication</code>. Click on the <code class="markup--code markup--p-code">set up sign-in method</code> button.</p>
 
-[caption id="attachment_1453" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/auth.png" alt="" width="880" height="405" class="size-full wp-image-1453" /> Setting up authentication in firebase[/caption]
+[caption id="attachment_1453" align="alignnone" width="880"]<img src="/auth.png" alt="" width="880" height="405" class="size-full wp-image-1453" /> Setting up authentication in firebase[/caption]
 <br>
 <p class="graf graf--p">In the list of sign-in providers, click on Email/Password:</p>
 
-[caption id="attachment_1454" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/listof.png" alt="" width="880" height="437" class="size-full wp-image-1454" /> List of sign-in providers[/caption]
+[caption id="attachment_1454" align="alignnone" width="880"]<img src="/listof.png" alt="" width="880" height="437" class="size-full wp-image-1454" /> List of sign-in providers[/caption]
 <br>
 <p class="graf graf--p">Enable the option to all users to sign up using their email address and password. Then click the <code class="markup--code markup--p-code">save</code> button.</p>
 
-[caption id="attachment_1455" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/emailsignup.png" alt="" width="880" height="285" class="size-full wp-image-1455" /> Enable sign up using email and password[/caption]
+[caption id="attachment_1455" align="alignnone" width="880"]<img src="/emailsignup.png" alt="" width="880" height="285" class="size-full wp-image-1455" /> Enable sign up using email and password[/caption]
 <br>
 <h2 class="graf graf--h2">Creating Sign Up Form</h2>
 <p class="graf graf--p">In a previous post, we stubbed out the Join.vue and Signin.vue files. These two files will have almost the same code. We will create the Join form first. When we are finished we will copy/paste it into the Signin form.</p>
@@ -177,7 +177,7 @@ setIsAuthenticated(state, payload) {
 <h2 class="graf graf--h2">Test Adding a New User</h2>
 <p class="graf graf--p">Start your server with the command <code class="markup--code markup--p-code">npm run serve</code>. Click on the <code class="markup--code markup--p-code">Join</code> button in the navigation. Enter your email and a password and click the join button. When you click the button nothing visible happens. To verify that the user was registered, go the firebase console in your browser. Click on <code class="markup--code markup--p-code">Authentication</code>. You should see a list of users that have been registered for your application. Here you can see that the user I just registered was created.</p>
 
-[caption id="attachment_1456" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/registered.png" alt="" width="880" height="178" class="size-full wp-image-1456" /> User has been registered[/caption]
+[caption id="attachment_1456" align="alignnone" width="880"]<img src="/registered.png" alt="" width="880" height="178" class="size-full wp-image-1456" /> User has been registered[/caption]
 <br>
 <p class="graf graf--p">We need to notify the user that they have been successfully created. We will do this but later. First, we are going to copy and paste the contents of the Join.vue component into the Signin.vue component. There are only two changes you will need to make in the template. Change the title to “Login Form.” For the button make the text say “Login.” In the submit method have it dispatch to <code class="markup--code markup--p-code">userLogin</code>. That’s it. You have now created both the Join and Login forms.</p>
 <p class="graf graf--p">We need to create the action for Login. Open up the <code class="markup--code markup--p-code">store.js</code> file. Create a new action called userLogin. We will use firebase to login the user. Firebase provides a method called <code class="markup--code markup--p-code">signInWithEmailAndPassword</code>. We will call this method and pass in the user’s email and password they entered into the form. If the user entered their email and password correctly then we will call the two mutations <code class="markup--code markup--p-code">setUser</code> and <code class="markup--code markup--p-code">setIsAuthenticated</code>. Here is what the <code class="markup--code markup--p-code">userLogin</code> action looks like:</p>
@@ -312,7 +312,7 @@ a {
 <h2 class="graf graf--h2">Adding Recipes to Database</h2>
 <p class="graf graf--p">Once a user is logged in they can click on any recipe to add it to their account. Their recipes will be shown in their profile which is the <code class="markup--code markup--p-code">/about</code> route. We need a database to store these recipes. Go to your firebase console in the browser. Click on <code class="markup--code markup--p-code">database</code> in the left side navigation panel. On the next screen you will see buttons to create a realtime database or a cloud firestore database. Make sure you create a new realtime database. In the dialog make sure you select to <code class="markup--code markup--p-code">start in test mode</code>. Then click the <code class="markup--code markup--p-code">enable</code> button.</p>
 
-[caption id="attachment_1457" align="alignnone" width="736"]<img src="https://www.jenniferbland.com/wp-content/uploads/startdb.png" alt="" width="736" height="461" class="size-full wp-image-1457" /> Start database in test mode[/caption]
+[caption id="attachment_1457" align="alignnone" width="736"]<img src="/startdb.png" alt="" width="736" height="461" class="size-full wp-image-1457" /> Start database in test mode[/caption]
 <br>
 
 <p class="graf graf--p">Now we want to store the user’s recipes in the database. Open up the MealPlans component. If a user tries to order a recipe and they are not logged in then we should redirect them to the login page. So let’s take care of that now. On the <code class="markup--code markup--p-code">Order</code> button add an @click that calls the method orderRecipe. Be sure to pass in <code class="markup--code markup--p-code">item</code> as an argument to the method. Your button should look like this:</p>
@@ -360,7 +360,7 @@ a {
 <br>
 <p class="graf graf--p">Now start your server and log in. Select a diet from the menu page. Then order a couple of recipes. The recipes you ordered should be shown in the database in firebase.</p>
 
-[caption id="attachment_1458" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/recipes.png" alt="" width="880" height="300" class="size-full wp-image-1458" /> Recipes added to the database[/caption]
+[caption id="attachment_1458" align="alignnone" width="880"]<img src="/recipes.png" alt="" width="880" height="300" class="size-full wp-image-1458" /> Recipes added to the database[/caption]
 <br>
 <p class="graf graf--p">Now that we have the recipes added to the database, we actually need to display them on the profile page for the user. Open up the <code class="markup--code markup--p-code">About.vue</code> file. Whenever this page is loaded it should fetch all the user’s recipes. To do this we add <code class="markup--code markup--p-code">mounted()</code> in our script. This will call a method called <code class="markup--code markup--p-code">getRecipes</code>.</p>
 <p class="graf graf--p">Let’s create that method now. In the method, we are going to call an action in our Vuex store that will get all the user’s recipes. We have not created this action in the store yet but in simple terms, this action will get the user’s recipes. Then it will store them in a variable in <code class="markup--code markup--p-code">state</code> called <code class="markup--code markup--p-code">userRecipes</code>. Before we leave About.vue, add a computed property for <code class="markup--code markup--p-code">userRecipes</code>. This will return the <code class="markup--code markup--p-code">userRecipes</code> from <code class="markup--code markup--p-code">state</code> in our store. This is what About.vue script should look like:</p>
@@ -425,7 +425,7 @@ a {
 
 <p class="graf graf--p">I have set the layout to be <code class="markup--code markup--p-code">column</code>. I did this because I want each recipe to be listed on the page. To make things look clearer I have added a title. I added my-3 to add margin-top and margin-bottom so that there is spacing between the title and the list of recipes. Next, I looped through each recipe and display it. This is what the user sees if they have recipes:</p>
 
-[caption id="attachment_1459" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/listRecipes.png" alt="" width="880" height="124" class="size-full wp-image-1459" /> List of my recipes[/caption]
+[caption id="attachment_1459" align="alignnone" width="880"]<img src="/listRecipes.png" alt="" width="880" height="124" class="size-full wp-image-1459" /> List of my recipes[/caption]
 <br>
 
 <p class="graf graf--p">This is great but when if a user logs in and they do not have any recipes? They see the title “My Recipes” and a blank page. This is not a user-friendly design. So let’s change it to display something more friendly. We will display a button that will take the user to the <code class="markup--code markup--p-code">menu</code> page. In our template, we will add this button. To make the button redirect to the menu page we can add <code class="markup--code markup--p-code">to=”/menu”</code> to the button. Here is my final template for the <code class="markup--code markup--p-code">About.vue</code> component.</p>

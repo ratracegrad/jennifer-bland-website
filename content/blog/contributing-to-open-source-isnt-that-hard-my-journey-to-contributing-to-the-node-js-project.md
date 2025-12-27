@@ -43,7 +43,7 @@ Myles mentioned that they were going to start a mentorship program. He gave me t
 
 Franziska responded to my email. She was willing to work with me to get my first contribution completed. Due to our schedules, we were not able to schedule a meeting until a few weeks later. On the scheduled date and time we got together via Google Hangouts. Franziska showed me how to look at the “Issues” and find ones labeled as “Good First Issue.”
 
-[caption id="attachment_1345" align="alignnone" width="880"]<img src="https://www.jenniferbland.com/wp-content/uploads/nodeIssue.png" alt="" width="880" height="388" class="size-full wp-image-1345" /> Click on “good first issue” to find issues you can contribute to[/caption]
+[caption id="attachment_1345" align="alignnone" width="880"]<img src="/nodeIssue.png" alt="" width="880" height="388" class="size-full wp-image-1345" /> Click on “good first issue” to find issues you can contribute to[/caption]
 <br>
 Franziska and I found an easy issue. She explained what was causing the problem. We needed more information from the person that opened the issue. From there I reached out to that person to get the information required. Once I got it, I was able to address the issue. Then I was able to submit a request to close out the issue. This was my first open source contribution to Node.js.
 

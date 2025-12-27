@@ -64,4 +64,4 @@ Github Markup language allows you to create links to sections in the README file
 Most users are weary of using open source code if the author(s) do not include tests. Without tests there is no verification that the code actually works. The testing section of the README file describes what tests you have created and how to run them.
 
 <h2>Example of a Great README File</h2>
-<img src="http://www.jenniferbland.com/wp-content/uploads/github-readme-example.jpg" alt="github readme example" width="1127" height="2234" class="alignleft size-full wp-image-1095" />
+<img src="/github-readme-example.jpg" alt="github readme example" width="1127" height="2234" class="alignleft size-full wp-image-1095" />

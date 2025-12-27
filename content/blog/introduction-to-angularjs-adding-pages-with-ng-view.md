@@ -12,8 +12,8 @@ author:
 ---
 
 <div class="byline">
-This is lesson 3 in my Introduction to AngularJS series. You may want to view the other lessons first since this lesson builds off the principals taught in the first two lessons.<div class="columns-two"><div class="col first"><a href="http://www.jenniferbland.com/introduction-to-angularjs-your-first-angular-application/" target="_blank">Lesson One</a></div>
-<div class="col"><a href="http://www.jenniferbland.com/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/" target="_blank">Lesson Two</a></div>
+This is lesson 3 in my Introduction to AngularJS series. You may want to view the other lessons first since this lesson builds off the principals taught in the first two lessons.<div class="columns-two"><div class="col first"><a href="/blog/introduction-to-angularjs-your-first-angular-application/" target="_blank">Lesson One</a></div>
+<div class="col"><a href="/blog/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/" target="_blank">Lesson Two</a></div>
 </div>
 </div>
 
@@ -137,10 +137,10 @@ Now that we have our home and order pages in their own files, we need a place in
 
 <h2>Results</h2>
 With our changes this is what the application looks like when we click on home in the navigation.
-<img src="http://www.jenniferbland.com/wp-content/uploads/home-page.png" alt="home page" width="700" height="225" class="alignnone size-full wp-image-934" />
+<img src="/home-page.png" alt="home page" width="700" height="225" class="alignnone size-full wp-image-934" />
 
 This is what our application looks like when we click on Order in the navigation.
-<img src="http://www.jenniferbland.com/wp-content/uploads/order-page.png" alt="order page" width="644" height="148" class="alignnone size-full wp-image-935" />
+<img src="/order-page.png" alt="order page" width="644" height="148" class="alignnone size-full wp-image-935" />
 
 <h2>Next Lessons</h2>
 In the next lesson we will be completing the order form. 

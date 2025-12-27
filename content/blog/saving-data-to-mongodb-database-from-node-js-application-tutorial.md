@@ -28,7 +28,7 @@ cd node-demo</xmp></pre>
 Once we are in the directory we will need to create an application and we can do this by running the command
 <code>npm init</code>
 This will ask you a series of questions. Here are the answers I gave to the prompts.
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2016-11-11-at-10.52.48-AM-963x1024.png" alt="npm init answers" width="963" height="1024" class="alignleft size-large wp-image-1001" />
+<img src="/Screen-Shot-2016-11-11-at-10.52.48-AM-963x1024.png" alt="npm init answers" width="963" height="1024" class="alignleft size-large wp-image-1001" />
 <div style="clear:both;"></div>
 The first step is to create a file that will contain our code for our Node.js server.
 <pre class='prettyprint'><xmp>touch app.js</xmp></pre>
@@ -57,7 +57,7 @@ Our app.js required the Express.js module. We need to install express in order f
 <pre class='prettyprint'><xmp>npm install express --save</xmp></pre>
 
 This command will install the express module into our package.json. The module is installed as a dependency in our package.json as shown below.
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2016-11-11-at-1.49.25-PM.png" alt="installing express in package.json" width="855" height="507" class="alignleft size-full wp-image-1027" />
+<img src="/uploads/Screen-Shot-2016-11-11-at-1.49.25-PM.png" alt="installing express in package.json" width="855" height="507" class="alignleft size-full wp-image-1027" />
 <div style="clear:both;"></div>
 
 To test our application you can go to the terminal and enter the command
@@ -66,7 +66,7 @@ Open up a browser and navigate to the url
 <code>http://localhost:3000</code>
 
 You will see the following in your browser
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2016-11-11-at-11.34.27-AM.png" alt="Simple Node Application" width="453" height="96" class="alignleft size-full wp-image-1004" />
+<img src="/Screen-Shot-2016-11-11-at-11.34.27-AM.png" alt="Simple Node Application" width="453" height="96" class="alignleft size-full wp-image-1004" />
 <div style="clear:both;"></div>
 
 <h2>Creating Website to Save Data to MongoDB Database</h2>
@@ -114,7 +114,7 @@ The <code>app.use</code> lines will need to be changed to
 Once you have saved your app.js file, we can test it by going to terminal and running <code>node app.js</code>
 
 Open your browser and navigate to "http://localhost:3000". You will see the following 
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2016-11-11-at-12.06.13-PM.png" alt="display html file" width="462" height="201" class="alignleft size-full wp-image-1005" />
+<img src="/Screen-Shot-2016-11-11-at-12.06.13-PM.png" alt="display html file" width="462" height="201" class="alignleft size-full wp-image-1005" />
 <div style="clear:both;"></div>
 
 <h2>Connecting to the Database</h2>
@@ -237,7 +237,7 @@ Save your code. Go to your terminal and enter the command <code>node app.js</cod
 Make sure you have mongo running.
 
 Enter your first name and last name in the input fields and then click the "Add Name" button. You should get back text that says the name has been saved to the database like below.
-<img src="https://www.jenniferbland.com/wp-content/uploads/Screen-Shot-2016-11-13-at-11.12.11-AM.png" alt="Name saved to database" width="341" height="139" class="alignleft size-full wp-image-1046" />
+<img src="/uploads/Screen-Shot-2016-11-13-at-11.12.11-AM.png" alt="Name saved to database" width="341" height="139" class="alignleft size-full wp-image-1046" />
 <div style="clear:both"></div>
 
 <h2>Access to Code</h2>

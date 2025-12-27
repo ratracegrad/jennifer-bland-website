@@ -19,7 +19,7 @@ A common misunderstanding is that SPA only have one page of content. That is not
 
 Here is the SPA application that we will be building as your first AngularJS application.
 
-<a href="http://www.jenniferbland.com/introduction-to-angularjs-your-first-angular-application/screenshot-first-angularjs-app-2/" rel="attachment wp-att-897"><img class="alignnone size-full wp-image-897" src="http://www.jenniferbland.com/wp-content/uploads/screenshot-first-angularjs-app1.png" alt="First AngularJS App" width="776" height="300" /></a>
+<img class="alignnone size-full wp-image-897" src="/screenshot-first-angularjs-app1.png" alt="First AngularJS App" width="776" height="300" />
 <!--more-->
 <h2>AngularJS Terminology</h2>
 Before starting our first Angular app I want to cover over some basic terminology you will need to know.
@@ -124,4 +124,4 @@ In the next lesson we will be improving on our very first AngularJS application.
 	<li>ng-model</li>
 	<li>2 way data binding</li>
 
-<a href="http://www.jenniferbland.com/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/" target="_blank">You can start lesson 2 here</a>.
+<a href="/blog/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/" target="_blank">You can start lesson 2 here</a>.

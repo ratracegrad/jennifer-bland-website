@@ -15,7 +15,7 @@ Just completed my first week of training at Hack Reactor. Hack Reactor is an int
 
 My first week I spent a grand total of 75 hours in classes. I also did an additional 9 hours of studying and programming outside of classes. All total in the first week I spent 84 hours in training.
 
-Before you start your first day of classes you have already completed an immense amount of pre-course material. If you want to know what is covered then you can check out my post about my <a href="http://www.jenniferbland.com/hack-reactor-precourse-work/" target="_blank">pre-course work at Hack Reactor</a>.
+Before you start your first day of classes you have already completed an immense amount of pre-course material. If you want to know what is covered then you can check out my post about my <a href="/blog/hack-reactor-precourse-work/" target="_blank">pre-course work at Hack Reactor</a>.
 
 <!--more-->
 

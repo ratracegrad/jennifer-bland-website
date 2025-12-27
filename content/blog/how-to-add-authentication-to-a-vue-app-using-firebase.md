@@ -350,9 +350,9 @@ I have the <a href="https://github.com/ratracegrad/Vue-Firebase-Auth-Tutorial">c
 <h2>Using Other Authentication Methods</h2>
 I have written several follow up articles on adding Authentication to your Vue application using other authentication methods.
 
-Want to use Auth0 for authentication, <a href="https://www.jenniferbland.com/how-to-add-authentication-to-a-vue-app-using-auth0/">read this article</a>.
+Want to use Auth0 for authentication, <a href="/blog/how-to-add-authentication-to-a-vue-app-using-auth0/">read this article</a>.
 
-Want to use AWS Amplify for authentication, <a href="https://www.jenniferbland.com/how-to-add-authentication-to-a-vue-app-using-aws-amplify/">read this article</a>.
+Want to use AWS Amplify for authentication, <a href="/blog/how-to-add-authentication-to-a-vue-app-using-aws-amplify/">read this article</a>.
 <h2>Conclusion</h2>
 Firebase is a very efficient method of adding authentication to your Vue applications. It allows you to add Authentication without having to write your own Backend service and implementing Authentication yourself.
 

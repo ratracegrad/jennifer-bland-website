@@ -11,9 +11,9 @@ author:
     alt: Jennifer Bland
 ---
 
-Previously, I showed you how to use <a href="https://www.jenniferbland.com/learn-the-css-border-radius-property-by-building-a-calculator/">CSS border-radius property to create the following calculator</a>. Now I will show you how to use jQuery to implement the functionality of the calculator.
+Previously, I showed you how to use <a href="/blog/learn-the-css-border-radius-property-by-building-a-calculator/">CSS border-radius property to create the following calculator</a>. Now I will show you how to use jQuery to implement the functionality of the calculator.
 
-[caption id="attachment_1319" align="alignnone" width="436"]<img src="https://www.jenniferbland.com/wp-content/uploads/calcFinished.png" alt="" width="436" height="685" class="size-full wp-image-1319" /> Calculator using the CSS border-radius feature[/caption]
+[caption id="attachment_1319" align="alignnone" width="436"]<img src="/calcFinished.png" alt="" width="436" height="685" class="size-full wp-image-1319" /> Calculator using the CSS border-radius feature[/caption]
 <br>
 <!--more-->
 
@@ -279,7 +279,7 @@ I now have these three files:
 </ul>
 The <b>index.html</b> file is used to display the calculator to the user on the web page.
 
-The <b>style.css</b> is used to style my calculator. Please review my previous article that talks about <a href="https://www.jenniferbland.com/learn-the-css-border-radius-property-by-building-a-calculator/">using the CSS border-radius property</a> to style the calculator.
+The <b>style.css</b> is used to style my calculator. Please review my previous article that talks about <a href="/blog/learn-the-css-border-radius-property-by-building-a-calculator/">using the CSS border-radius property</a> to style the calculator.
 
 The <b>app.js</b> file contains the logic behind the calculator.
 

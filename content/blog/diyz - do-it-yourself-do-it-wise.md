@@ -30,7 +30,7 @@ The DIYZ app has over 1 million downloads. The average user of the app spends 7.
 <p id="3a7c" class="graf graf--p graf-after--p">The DIYZ app provides access to over 150 projects. These projects cover topics including lawn &amp; garden, exterior, electrical, plumbing, smart home, heating &amp; cooling, kitchen, bathroom, paint and bedroom. This is not an exhaustive list as DIYZ provides projects in over 25 categories.</p>
 <p id="470b" class="graf graf--p graf-after--p">The online information in DIYZ is all free, but if you get stuck, help is at hand. DIYZ has assembled a case of professional licensed contractors to be on call to provide live video assistance, in case you are not sure exactly how to reattach all those wires you just disconnected, or your plumbing parts don’t seem to be going together according to plan.</p>
 <p id="7bde" class="graf graf--p graf-after--p">The ability to create live chat with pros as well as sharing of videos and photos is just one example of new functionality that was quickly implemented using Polymer and components.</p>
-<img class="alignnone size-full wp-image-1170" src="http://www.jenniferbland.com/wp-content/uploads/diyzapp.jpeg" alt="" width="698" height="400" />
+<img class="alignnone size-full wp-image-1170" src="/diyzapp.jpeg" alt="" width="698" height="400" />
 <h2 id="959a" class="graf graf--h3 graf-after--figure">Award Winning App</h2>
 <p id="bb0d" class="graf graf--p graf-after--h3">The DIYZ app earned the prestigious CES2017 Editor’s Choice Award from Popular Mechanics for its innovative design and functionality, helping DIYers repair or replace anything in their home.</p>
 <p id="dbd0" class="graf graf--p graf-after--p">Recognized by Apple as a “New App We Love,” DIYZ made it as high as the fifth most popular app in the iOS store in the lifestyle section.</p>
@@ -40,6 +40,6 @@ The DIYZ app has over 1 million downloads. The average user of the app spends 7.
 
 <h2 id="7c19" class="graf graf--h3 graf-after--p">Get The App</h2>
 <p id="223d" class="graf graf--p graf-after--h3">The DIYZ app is available on both iOS and Android platforms.</p>
-<a href="https://play.google.com/store/apps/details?id=diyz_do_it_wize.apk&amp;hl=en"><img class="aligncenter size-medium wp-image-1171" src="http://www.jenniferbland.com/wp-content/uploads/android-300x88.png" alt="" width="300" height="88" /></a>
+<a href="https://play.google.com/store/apps/details?id=diyz_do_it_wize.apk&amp;hl=en"><img class="aligncenter size-medium wp-image-1171" src="/android-300x88.png" alt="" width="300" height="88" /></a>
 
-<a href="https://itunes.apple.com/us/app/diyz/id1114326589?mt=8"><img class="aligncenter size-medium wp-image-1172" src="http://www.jenniferbland.com/wp-content/uploads/ios-300x89.png" alt="" width="300" height="89" /></a>
+<a href="https://itunes.apple.com/us/app/diyz/id1114326589?mt=8"><img class="aligncenter size-medium wp-image-1172" src="/ios-300x89.png" alt="" width="300" height="89" /></a>

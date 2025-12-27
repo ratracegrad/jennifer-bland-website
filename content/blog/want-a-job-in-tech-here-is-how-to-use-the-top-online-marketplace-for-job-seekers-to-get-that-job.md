@@ -45,7 +45,7 @@ LinkedIn Recruiter allows recruiters to hone in on the perfect hire using Linked
 <li>skills</li>
 </ul>
 <br>
-[caption id="attachment_1356" align="alignnone" width="698"]<img src="http://www.jenniferbland.com/wp-content/uploads/linkedIn.jpeg" alt="" width="698" height="400" class="size-full wp-image-1356" /> LinkedIn All-Star[/caption]
+[caption id="attachment_1356" align="alignnone" width="698"]<img src="/linkedIn.jpeg" alt="" width="698" height="400" class="size-full wp-image-1356" /> LinkedIn All-Star[/caption]
 <br>
 <h2>7 Requirements to Become a LinkedIn All-Star</h2>
 Now that you understand what resources are available to recruiters using LinkedIn Recruiter, you need to improve your profile so that you can easily be found by recruiters looking to fill open job positions.
@@ -65,7 +65,7 @@ LinkedIn provides different levels for your profile based on the information it 
 <h2>Profile Picture</h2>
 LinkedIn does not specify what you should or should not have in your profile picture. Regardless it should be something that is professional in nature. Here are some examples of very poor profile pictures:
 <br>
-[caption id="attachment_1357" align="alignnone" width="880"]<img src="http://www.jenniferbland.com/wp-content/uploads/badprofilepic.png" alt="" width="880" height="281" class="size-full wp-image-1357" /> Examples of bad profile pictures[/caption]
+[caption id="attachment_1357" align="alignnone" width="880"]<img src="/badprofilepic.png" alt="" width="880" height="281" class="size-full wp-image-1357" /> Examples of bad profile pictures[/caption]
 <br>
 <h2>Industry and Location</h2>
 When you edit the top section of your profile you will be able to enter your current location and the industry in which you work. Your location is defined by a zip code that you provide.
@@ -74,7 +74,7 @@ If you are looking to move to a new area for work, be sure to specify the zip co
 
 You will select your industry from a drop-down list.
 <br>
-[caption id="attachment_1358" align="alignnone" width="880"]<img src="http://www.jenniferbland.com/wp-content/uploads/intro-1.png" alt="" width="880" height="710" class="size-full wp-image-1358" /> Setting Industry and Location[/caption]
+[caption id="attachment_1358" align="alignnone" width="880"]<img src="/intro-1.png" alt="" width="880" height="710" class="size-full wp-image-1358" /> Setting Industry and Location[/caption]
 <br>
 <h2>Current Position</h2>
 The next step is to enter your current position where you work. When you enter this position, you are able to enter a description of the work that you do at that company.
