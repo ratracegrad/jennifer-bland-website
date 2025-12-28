@@ -101,7 +101,7 @@ defineProps<{
           delay: 0.5
         }"
       >
-        <div
+        <!-- <div
           v-if="page.hero.links"
           class="flex items-center gap-2"
         >
@@ -126,10 +126,10 @@ defineProps<{
               </span>
             </template>
           </UButton>
-        </div>
+        </div> -->
       </Motion>
 
-      <div class="gap-x-4 inline-flex mt-4">
+      <!-- <div class="gap-x-4 inline-flex mt-4">
         <Motion
           v-for="(link, index) of footer?.links"
           :key="index"
@@ -153,7 +153,7 @@ defineProps<{
             v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
           />
         </Motion>
-      </div>
+      </div> -->
     </template>
 
     <!-- <UMarquee

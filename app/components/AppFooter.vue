@@ -11,7 +11,7 @@ const { footer } = useAppConfig()
       {{ footer.credits }}
     </template>
 
-    <template #right>
+    <!-- <template #right>
       <template v-if="footer?.links">
         <UButton
           v-for="(link, index) of footer?.links"
@@ -19,6 +19,6 @@ const { footer } = useAppConfig()
           v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
         />
       </template>
-    </template>
+    </template> -->
   </UFooter>
 </template>
