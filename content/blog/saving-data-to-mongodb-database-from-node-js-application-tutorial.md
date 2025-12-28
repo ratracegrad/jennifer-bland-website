@@ -57,7 +57,7 @@ Our app.js required the Express.js module. We need to install express in order f
 <pre class='prettyprint'><xmp>npm install express --save</xmp></pre>
 
 This command will install the express module into our package.json. The module is installed as a dependency in our package.json as shown below.
-<img src="/uploads/Screen-Shot-2016-11-11-at-1.49.25-PM.png" alt="installing express in package.json" width="855" height="507" class="alignleft size-full wp-image-1027" />
+<img src="/Screen-Shot-2016-11-11-at-1.49.25-PM.png" alt="installing express in package.json" width="855" height="507" class="alignleft size-full wp-image-1027" />
 <div style="clear:both;"></div>
 
 To test our application you can go to the terminal and enter the command
@@ -237,7 +237,7 @@ Save your code. Go to your terminal and enter the command <code>node app.js</cod
 Make sure you have mongo running.
 
 Enter your first name and last name in the input fields and then click the "Add Name" button. You should get back text that says the name has been saved to the database like below.
-<img src="/uploads/Screen-Shot-2016-11-13-at-11.12.11-AM.png" alt="Name saved to database" width="341" height="139" class="alignleft size-full wp-image-1046" />
+<img src="/Screen-Shot-2016-11-13-at-11.12.11-AM.png" alt="Name saved to database" width="341" height="139" class="alignleft size-full wp-image-1046" />
 <div style="clear:both"></div>
 
 <h2>Access to Code</h2>

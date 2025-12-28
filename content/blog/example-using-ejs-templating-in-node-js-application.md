@@ -225,4 +225,4 @@ When our application starts it will display our homepage:
         <img class="alignleft size-large wp-image-968" src="/home-1024x515.png" alt="Homepage" width="600" />
 
         If you click on the about link in the navigation, you will see the about page:
-        <img class="alignleft size-large wp-image-967" src="/uploads/about-1024x516.png" alt="about page" width="600" />
+        <img class="alignleft size-large wp-image-967" src="/about-1024x516.png" alt="about page" width="600" />

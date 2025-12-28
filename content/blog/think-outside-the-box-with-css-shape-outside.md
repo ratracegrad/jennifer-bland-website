@@ -48,7 +48,7 @@ CSS is based off a box model. If you have an image that is a circle that you wan
 <h2 id="4fc2" class="graf graf--h3 graf-after--p">Circle</h2>
 <p id="af42" class="graf graf--p graf-after--h3">Circle() is one of the functional values provided with shape-outside. The full notation for circle() is <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">circle(r at cx cy)</em></strong> where r is the radius of the circle and cx and cy are the coordinates for the center of the circle. If you omit them, the center of the image will be used as the default values.</p>
 <p id="cf3b" class="graf graf--p graf-after--p">Here is an example of using shape-outside on a circle:</p>
-<img class="alignnone size-medium wp-image-1180" src="h/3-1-300x211.png" alt="" width="300" height="211" />
+<img class="alignnone size-medium wp-image-1180" src="/3-1-300x211.png" alt="" width="300" height="211" />
 <pre class="prettyprint">.circle {
     height: 200px;
     width: 200px;

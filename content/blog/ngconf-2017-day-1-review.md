@@ -14,7 +14,7 @@ author:
 <a href="/blog/ngconf-2017-day-2-review/">Read review of day 2 here</a>. <a href="/blog/ngconf-2017-day-3-review/">Read review of day 3 here</a>.
 Attending ngConf is a first for me on two different levels. It is my first time attending this annual conference. And secondly it is my first time speaking at this conference. After my first hour at the conference I came to the conclusion that it will not be my last time for either one. Here is my review of Day 1 of ngConf 2017.
 
-<img class="alignnone size-full wp-image-1117" src="h/ngconf1.jpeg" alt="" width="800" height="600" />
+<img class="alignnone size-full wp-image-1117" src="/ngconf1.jpeg" alt="" width="800" height="600" />
 <h2>Schedule &amp; Location</h2>
 ngConf is held in Salt Lake City in basically one massive ballroom in a hotel in Salt Lake City, Utah. The event runs officially from April 5th — 7th. But there are optional full day workshops that are held on a wide range of topics on April 3rd and 4th.
 <h2></h2>

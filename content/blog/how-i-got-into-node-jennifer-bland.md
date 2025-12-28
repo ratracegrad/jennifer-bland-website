@@ -23,7 +23,7 @@ We hope that this inspires or guides you in getting started with contributing to
 <!--more-->
 
 
-[caption id="attachment_1348" align="alignnone" width="768"]<img src="h/speaking-768x1024.jpeg" alt="" width="768" height="1024" class="size-large wp-image-1348" /> Jennifer Bland speaking at Connect.Tech Conference[/caption]
+[caption id="attachment_1348" align="alignnone" width="768"]<img src="/speaking-768x1024.jpeg" alt="" width="768" height="1024" class="size-large wp-image-1348" /> Jennifer Bland speaking at Connect.Tech Conference[/caption]
 <br>
 <b>Question 1: When did you start getting into programming in general?</b>
 

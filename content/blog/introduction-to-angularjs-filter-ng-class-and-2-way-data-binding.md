@@ -64,7 +64,7 @@ We will use JavaScript coding to alter what is displayed. Here is the JavaScript
 <pre class='prettyprint'><xmp><div class="col-md-1">{{ (!service.available) ? "Sold Out" : ""}}</div></xmp></pre>
 
 With that change our website now looks like this.
-<a href="/blog/introduction-to-angularjs-filter-ng-class-and-2-way-data-binding/sold-out/" rel="attachment wp-att-909"><img src="/Sold-out.png" alt="using javascript in angular expressions" width="768" height="300" class="alignnone size-full wp-image-909" /></a>
+<img src="/Sold-out.png" alt="using javascript in angular expressions" width="768" height="300" class="alignnone size-full wp-image-909" />
 
 <h2>ng-if, ng-show and ng-hide</h2>
 Angular provides three other directives that we could use to produce the same functionality of displaying only Sold Out in the availability column.

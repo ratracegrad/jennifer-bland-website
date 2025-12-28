@@ -38,7 +38,7 @@ To see if a linked list contains a value you will have a contains() function tha
 <h2>Set</h2>
 A set is an abstract data type that can store certain values, without any particular order, and no repeated values. Unlike most other collection types, rather than retrieving a specific element from a set, one typically tests a value for membership in a set.
 
-<img class="aligncenter size-medium wp-image-842" src="/uploads/Set-data-structure-300x123.png" alt="Set data structure" width="300" height="123" />
+<img class="aligncenter size-medium wp-image-842" src="/Set-data-structure-300x123.png" alt="Set data structure" width="300" height="123" />
 
 Sets can be implemented using various data structures, which provide different time and space trade-offs for various operations.
 
