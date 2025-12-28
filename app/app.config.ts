@@ -24,7 +24,7 @@ export default defineAppConfig({
   },
   footer: {
     credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
-    colorMode: false,
+    colorMode: false
     // links: [{
     //   'icon': 'i-simple-icons-discord',
     //   'to': 'https://go.nuxt.com/discord',
