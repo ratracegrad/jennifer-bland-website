@@ -1,13 +1,13 @@
 seo:
-  title: "Jennifer Bland - Sofware Engineer"
+  title: "Jennifer Bland - Software Engineer"
   description: "Welcome to my website! I'm Jennifer Bland, a software developer based in Athens, GA. I specialize in front-end development."
 title: "Hey, I'm Jennifer Bland Software Engineer"
 description: "I am a Senior Software Engineer. Google Developers Expert. Entrepreneur. Mountain Climber. Neil Diamond fanatic. MBA grad. World traveler."
 hero:
-  links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
-      color: "neutral"
+  # links:
+  #   - label: "Use this template"
+  #     to: https://github.com/nuxt-ui-templates/portfolio
+  #     color: "neutral"
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
