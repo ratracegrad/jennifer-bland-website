@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import appConfig from '~/app.config'
+
 const { data: page } = await useAsyncData('projects-page', () => {
   return queryCollection('pages').path('/projects').first()
 })
@@ -14,7 +16,7 @@ const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').all()
 })
 
-const { global } = useAppConfig()
+const global = useAppConfig().global as typeof appConfig.global
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,

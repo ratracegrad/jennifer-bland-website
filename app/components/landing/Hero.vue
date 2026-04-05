@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
+import appConfig from '~/app.config'
 
-const { global } = useAppConfig()
+const global = useAppConfig().global as typeof appConfig.global
 
 defineProps<{
   page: IndexCollectionItem
@@ -34,7 +35,7 @@ defineProps<{
         }"
       >
         <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
+          class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
