@@ -169,4 +169,3 @@ If you view your `index.html` file in a browser. you should see the completed Go
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/google-logo-pure-css).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

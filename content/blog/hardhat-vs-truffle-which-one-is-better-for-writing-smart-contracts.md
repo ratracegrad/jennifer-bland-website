@@ -13,7 +13,7 @@ author:
 
 With the rising interest and adoption of Web3, there has been an increased demand for developers that know how to write Smart Contracts. Most people who learn to write Smart Contracts will use Remix which is an online IDE. But an online IDE is not feasible for any size development team. You need a tool to be able to write Smart Contracts on your laptop. In this scenario, you have two choices: HardHat or Truffle. Let's explore how they compare.
 
-<!--more-->
+
 
 ![](/card-1024x533.png)
 

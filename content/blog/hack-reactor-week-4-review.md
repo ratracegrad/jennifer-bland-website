@@ -17,7 +17,7 @@ When the instructors tell you point blank that it is not uncommon for people to 
 
 Week 4 is our first foray into building complete full-stack applications. During this week we will learn about NodeJS and handling asynchronous event loops. Mid week we transitioned into learning about data storage structures and server side concepts. The end of the week we jumped head first into databases.
 
-<!--more-->
+
 <h2>Node.JS</h2>
 NodeJS is a platform for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 

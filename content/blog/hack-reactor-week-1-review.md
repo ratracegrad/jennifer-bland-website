@@ -17,7 +17,7 @@ My first week I spent a grand total of 75 hours in classes. I also did an additi
 
 Before you start your first day of classes you have already completed an immense amount of pre-course material. If you want to know what is covered then you can check out my post about my <a href="/blog/hack-reactor-precourse-work/" target="_blank">pre-course work at Hack Reactor</a>.
 
-<!--more-->
+
 
 <h2>First Day at Hack Reactor</h2>
 Classes started promptly at 9AM. Everyone was on an online video session. During the first hour we covered introductions of our instructors, our Hackers in Residence (HIR), our Shepherds and our Tech Mentors.

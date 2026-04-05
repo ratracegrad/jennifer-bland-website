@@ -15,7 +15,7 @@ Most applications will access data from an API. To access that API you will need
 
 The best way to start is to have a project that was created using the Vue-CLI. If you used this then it automatically setup your project to use webpack for the build process making it much easier for you to use environment variables.
 
-<!--more-->
+
 
 <h2>Adding .env Files</h2>
 Your environment variables will be stored in .env files. This file must exist in the root directory of your application. To create an .env file use this command:

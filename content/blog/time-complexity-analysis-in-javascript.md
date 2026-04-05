@@ -21,7 +21,7 @@ It is not unusual to find many different methods that you can use to solve a pro
 
 The best programming solutions in JavaScript utilize algorithms that provide the lowest time complexity possible.
 
-<!--more-->
+
 <h2>Big O Notation</h2>
 The time complexity of an algorithm is commonly expressed using Big O Notation. Big O Notation describes the execution time required or the spaced used by an algorithm. Big O Notation specifically describes the worst-case scenario.
 

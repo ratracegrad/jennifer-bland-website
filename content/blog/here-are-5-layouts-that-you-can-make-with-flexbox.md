@@ -26,7 +26,7 @@ In this article, I am going to show you how to make 7 different layouts using Fl
 
 <h2>Get The Code</h2>
 All of the examples that I am going to show can be <a href="https://github.com/ratracegrad/made-with-flexbox">downloaded from my GitHub account</a>. The code for every example is just HTML and CSS. I have created a master homepage that provides a link to every example that we are going to cover.
-<!--more-->
+
 
 
 <img class="size-medium wp-image-1193 alignnone" src="/image1-300x194.png" alt="" width="300" height="194" />

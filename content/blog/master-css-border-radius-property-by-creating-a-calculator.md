@@ -18,7 +18,7 @@ One of the best ways to learn CSS is by creating something useful while you lear
 ![finished calclator](https://res.cloudinary.com/ratracegrad/image/upload/v1673808918/Screenshot_2023-01-15_at_1.55.00_PM_d4ztoy.png)
 
 
-<!--more-->
+
 
 ## Create Our Starter Files
 
@@ -305,6 +305,3 @@ If you view your `index.html` file in a browser, you should see the completed ca
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/calculator-in-pure-css).
-
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.
-

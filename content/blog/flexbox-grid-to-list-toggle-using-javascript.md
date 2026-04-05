@@ -17,7 +17,7 @@ In this article, I will show you how to create a toggle to display items in a gr
 
 ![grid to list in plain JavaScript](https://res.cloudinary.com/ratracegrad/image/upload/v1672606619/gridList_tyuymu.gif)
 
-<!--more-->
+
 
 ## Create our starter files
 
@@ -248,5 +248,3 @@ Here is what it looks like:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/javascript-flexbox-grid-list-toggle).
-
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

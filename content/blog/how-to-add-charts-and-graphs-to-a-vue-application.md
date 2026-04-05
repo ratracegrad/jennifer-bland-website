@@ -24,7 +24,7 @@ author:
 
 <p>Next, we will use the Vue CLI to scaffold out a Vue application that we will use. We will create the application using this command:</p>
 
-<!--more-->
+
 
 
 <pre class="prettyprint"><xmp>vue create vue-echarts-demo

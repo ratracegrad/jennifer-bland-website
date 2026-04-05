@@ -24,7 +24,7 @@ The Prototypal instantiation pattern uses Object.create to generate an object wi
 
 This reduces redundancy because new instances will have access to properties stored in the prototype.
 
-<!--more-->
+
 
 <pre class="prettyprint">
 var Car = function(exterior, interior){

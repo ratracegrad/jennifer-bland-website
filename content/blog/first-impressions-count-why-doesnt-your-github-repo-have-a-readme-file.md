@@ -26,7 +26,7 @@ The description tells visitors exactly what your code does. It does not have to 
 
 I would recommend using short sentences in your description. You can use a bulleted list if you want. Lengthwise it should be between 3–7 sentences long coupled into 1–2 paragraphs.
 
-<!--more-->
+
 
 
 <h3>How to Install</h3>

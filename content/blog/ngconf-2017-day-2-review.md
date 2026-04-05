@@ -23,7 +23,7 @@ Several months ago the organizers at ngConf had their CFP (Call For Papers) proc
 
 Several weeks after the close of CFP, I am working on a project at home one evening and I got an alert that I had received a new email from ngConf. I read the email and it was the form letter basically saying that they get thousands of entries and they cannot accept everyone and thanks for applying but you were not accepted. I go back to work on my project and several minutes later I get a second email from ngConf. It was the same form letter but it said that my proposal to speak was accepted!
 
-<!--more-->
+
 
 <img class="alignnone size-full wp-image-1119" src="/day22.jpeg" alt="" width="800" height="600" />
 

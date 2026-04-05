@@ -17,7 +17,7 @@ I have created a series of four videos that cover the topics of HTML, CSS, JavaS
 
 <h2>HTML and CSS Interview Questions</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mEU_c7mxXFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!--more-->
+
 
 
 <h2>JavaScript Interview Questions - Part 1</h2>

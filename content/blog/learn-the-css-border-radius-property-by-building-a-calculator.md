@@ -21,7 +21,7 @@ The border-radius property is accepted in every major browser, but they have bro
 <img class="alignnone size-large wp-image-1309" src="/cssAttributes-1024x187.png" alt="css browser-specific attributes" width="1024" height="187" />
 
 Each of the individual corner CSS3 properties take either one or two length values (generally ‘px’ or ‘em’ values). If a single value is supplied, then that becomes the radius of a rounded corner. If two values are supplied, then they become the horizontal and vertical radii for an elliptical corner.
-<!--more-->
+
 
 
 The border-radius property by itself accepts one or two values and uses them to style all four corners making a nice symmetrical shape.

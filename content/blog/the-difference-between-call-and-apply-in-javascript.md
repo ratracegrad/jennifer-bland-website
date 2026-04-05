@@ -28,7 +28,7 @@ function.apply(thisArg, [argsArray]);
 function.call(thisArg[, arg1[, arg2[, ...]]]);
 </pre>
 
-<!--more-->
+
 
 <h2>.call</h2>
 The call method calls a function with a given this value and arguments provided individually. The arguments are listed in comma separated format.

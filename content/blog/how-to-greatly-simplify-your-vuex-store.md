@@ -22,7 +22,7 @@ We are using actions in the store to do API calls to the backend. Once the data 
 As you can imagine, our stores can have a very large number of actions to handle these API calls. Here is an example of all the actions in one of our Vuex stores.
 <img class="alignnone size-large" src="https://res.cloudinary.com/ratracegrad/image/upload/v1563714381/1_M7opn1qJ0HyA_Y4PJM0v5w_n4zxvu.png" width="1000" height="666" />
 
-<!--more-->
+
 
 
 <p>This store has 16 actions. Now imagine how many actions our Factory Core Framework has in total if we have 9 stores!</p>

@@ -28,7 +28,7 @@ With functional instantiation, we first create a function. Inside the function w
 
 Every time the function is called we will have access to the methods that were created. Here is an example of functional instantiation:
 
-<!--more-->
+
 <pre class="prettyprint">var Animal = function(species, name) {
   var obj = {};
 

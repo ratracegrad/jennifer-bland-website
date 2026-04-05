@@ -15,7 +15,7 @@ Previously, I showed you how to use <a href="/blog/learn-the-css-border-radius-p
 
 [caption id="attachment_1319" align="alignnone" width="436"]<img src="/calcFinished.png" alt="" width="436" height="685" class="size-full wp-image-1319" /> Calculator using the CSS border-radius feature[/caption]
 <br>
-<!--more-->
+
 
 
 <br>

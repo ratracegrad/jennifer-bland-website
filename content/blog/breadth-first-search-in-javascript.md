@@ -17,7 +17,7 @@ The two most common methods of searching a graph or a tree are depth first searc
 
 Whether to use a depth first search or a breadth first search should be determined by the type of data that is contained in your tree or graph data structure.
 
-<!--more-->
+
 <h2>Breadth First Search</h2>
 Here is an example of a tree that we want to search using a breadth first search.
 

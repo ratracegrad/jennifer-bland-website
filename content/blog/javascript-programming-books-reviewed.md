@@ -17,7 +17,7 @@ Front-end developers do the overwhelming majority of their work using the JavaSc
 
 Where do you start? If you go to Amazon and just search for Javascript books, there are over 7,000 search results. How do you pick the best book to start learning JavaScript?
 
-<!--more-->
+
 
 <h2>Learning Styles</h2>
 There are only 3 learning styles - visual, audio and kinesthetic. Almost 80% of the population are visual learners. That is why you see so many PowerPoint presentations in meetings because people resonate when they see the material. 

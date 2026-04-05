@@ -18,7 +18,7 @@ author:
 
 <p>We need to create a container that will contain all the images that we want to scroll. Here is the code:</p>
 
-<!--more-->
+
 
 
 <pre class="prettyprint"><xmp><div class="container"><img src="images/bhutan1.jpg" alt="Bhutan" />

@@ -26,7 +26,7 @@ author:
 <p class="graf graf--p">In the second part, we used Vue Router to add navigation between the different pages of our app. We added components for all the pages in our application.</p>
 <p class="graf graf--p">In the third part, we were introduced to Vuex. We signed up for an API to provide recipes and used axios to retrieve them. This data was stored in the Vuex store which made it accessible to every component in the application.</p>
 
-<!--more-->
+
 
 
 <h2 class="graf graf--h2">What is Firebase?</h2>

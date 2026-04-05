@@ -18,7 +18,7 @@ author:
 <h2>Name of Directive</h2>
 <p>The most basic custom directive only has a name. It does not accept any arguments nor does it have any modifiers. Without passing a value, this would not be very flexible, but you could still have some piece of functionality of the DOM element.</p>
 
-<!--more-->
+
 
 
 <p>An example that you might be familiar with that is the most basic version of a directive is v-else. Here is an example of a custom directive that we will be creating shortly:</p>

@@ -24,7 +24,7 @@ We will create the YouTube logo in pure CSS. It will look like this:
 ![YouTube Logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672241566/Screenshot_2022-12-28_at_10.32.17_AM_ssst9v.png)
 
 
-<!--more-->
+
 
 ## Create our starter files
 
@@ -144,4 +144,4 @@ If you view your `index.html` file in a browser you should see the completed You
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/youtube-logo-pure-css).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.
+

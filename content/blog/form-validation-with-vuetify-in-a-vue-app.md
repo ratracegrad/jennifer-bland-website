@@ -19,7 +19,7 @@ The biggest complaint people have with forms is that they do not provide enough 
 
 You can minimize customer frustration by having effective form validations. I will show you how to create client-side form validation using Vuetify.
 
-<!--more-->
+
 
 
 <h2>Creating a Vue Application</h2>

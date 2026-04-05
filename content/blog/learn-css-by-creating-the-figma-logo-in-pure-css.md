@@ -27,7 +27,7 @@ We will create the Figma logo in pure CSS. It will look like this:
 ![figma logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672179613/Screenshot_2022-12-27_at_5.19.27_PM_h2ncza.png)
 
 
-<!--more-->
+
 
 ## Create our starter files
 
@@ -185,4 +185,3 @@ If you view your `index.html` file in a browser you should see the completed Fig
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/figma-logo-pure-css).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

@@ -32,7 +32,7 @@ Here is the data in our items array:
 
 When this code runs it creates an unordered list showing all 3 items. It will look like this.
 
-<!--more-->
+
 
 
 <img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563735969/Screen_Shot_2019-07-21_at_3.05.40_PM_tlbywg.png" width="370" height="138" class="alignnone size-large" />

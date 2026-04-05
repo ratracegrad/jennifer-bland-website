@@ -23,7 +23,7 @@ Let's look at the Coinbase API documentation on about showing the current user d
 The documentation says we need to make a `GET` call to the `/v2/user` endpoint to get current user's public information. To get user's email or private information, use permissions `wallet:user:email` and `wallet:user:read`.
 
 
-<!--more-->
+
 
 In the previous article, we provided a list of permissions that we were requesting from Coinbase when the user authorized our application. In that list we included `wallet:user:email` and `wallet:user:read`.
 

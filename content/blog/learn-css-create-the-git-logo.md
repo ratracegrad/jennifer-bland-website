@@ -23,7 +23,7 @@ We will create the Git logo in pure CSS. It will look like this:
 
 ![git logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672502463/Screenshot_2022-12-31_at_11.00.41_AM_hf49uy.png)
 
-<!--more-->
+
 
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
@@ -219,4 +219,3 @@ If you view your `index.html` file in a browser. you should see the completed Gi
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/git-logo-pure-css).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

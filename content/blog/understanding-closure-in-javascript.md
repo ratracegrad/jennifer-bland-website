@@ -27,7 +27,7 @@ function getName()
 getName();
 </pre>
 
-<!--more-->
+
 
 
 In the above example, firstName is a local variable created by getName function. The getName function also creates a function called showName.

@@ -24,7 +24,7 @@ We will create the Netflix logo in pure CSS. It will look like this:
 
 ![netflix logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672497903/Screenshot_2022-12-31_at_9.44.46_AM_jyxkhd.png)
 
-<!--more-->
+
 
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
@@ -154,4 +154,3 @@ If you view your `index.html` file in a browser. you should see the completed Ne
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/netflix-logo-pure-css).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

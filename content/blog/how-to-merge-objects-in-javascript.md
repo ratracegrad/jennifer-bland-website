@@ -27,7 +27,7 @@ const customer = {
 Both `name` and `age` are the **`keys`** of the object. The key `name` has a `value` of `Jennifer` and the key `age` has a `value` of `60`.
 
 
-<!--more-->
+
 
 ## Merging Objects using Object.assign()
 
@@ -125,8 +125,4 @@ console.log(newObject); // { name: 'Jennifer', age: 60, city: 'Athens', state: '
 ```
 
 **NOTE: If you have duplicate key-value pairs with multiple objects, the object that is furthest right in the formula will have its `value` assigned to the `key` that is duplicated.**
-
-## Let's Connect
-
-Thanks for reading my article today. If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.
 

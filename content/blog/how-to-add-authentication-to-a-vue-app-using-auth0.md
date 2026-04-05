@@ -18,7 +18,7 @@ We are going to create a very simple Vue application using the Vue CLI. We will 
 
 User's will be able to register with the application using the email and password authentication system in Auth0.
 
-<!--more-->
+
 
 
 <h2>Creating our Project</h2>

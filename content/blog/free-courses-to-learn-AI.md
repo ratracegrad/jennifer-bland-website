@@ -25,7 +25,7 @@ Google provides a plethora of training courses and hands-on courses that cover a
 [You can access their free training here](https://ai.google/education/).
 
 
-<!--more-->
+
 
 ## Udacity
 
@@ -51,6 +51,3 @@ Often cited by AI experts as the single most important online resource for anyon
 
 [You can access their free training here](https://www.coursera.org/learn/machine-learning)
 
-## Let's Connect
-
-Thanks for reading my article today. If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

@@ -21,7 +21,7 @@ As you can imagine the public key is publicly available to everyone. It is equiv
 
 The private key is obviously available only to the owner. It is something that is not and should never be shared with others. You need to protect the private key for the security of your assets on the blockchain.
 
-<!--more-->
+
 
 A hash function or hashing transforms and maps an arbitrary length of input data to a unique fixed-length value. Input data can be a document, tree data, or block data.
 

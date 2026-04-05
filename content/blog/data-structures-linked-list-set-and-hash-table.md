@@ -16,7 +16,7 @@ A data structure is a particular way of organizing data in a computer so that it
 There are many different types of data structures simply because each one provides certain benefits over the others. One may be better at retrieving data, another might be better at inserting data and yet another might be better in its ability to expand as the size of the data increases.
 
 
-<!--more-->
+
 <h2>Linked List</h2>
 Linked lists are among the simplest and most common data structures.  In a linked list each node has a value and a pointer to the next node in the data structure.
 

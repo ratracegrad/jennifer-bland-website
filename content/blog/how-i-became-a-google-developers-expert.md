@@ -21,7 +21,7 @@ A <strong>Google Developers Expert</strong> (GDE) is a person recognized by Goog
 
 For me, a Google Developer Expert is a person who is a leader in their area of specialization. This person also contributes to the tech community. Contribution can consist of any combination of speaking, writing, open source contribution, training courses or maintaining a repo.
 <br>
-<!--more-->
+
 
 
 <h2>How Do You Become a Google Developers Expert?</h2>

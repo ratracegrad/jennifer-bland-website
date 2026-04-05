@@ -19,7 +19,7 @@ CRUD is an acronym that means Create, Read, Update and Delete. It is used to des
 <h2>Restful API</h2>
 A RESTful API is an application program interface that uses HTTP requests to GET, PUT, POST and DELETE data. We will be using an API to define when we add data to our database and when we read from the database.
 
-<!--more-->
+
 <h2>Creating a Node Application</h2>
 To get started I would recommend creating a new database that will contain our application. For this demo I am creating a directory called node-demo. After creating the directory you will need to change into that directory.
 <pre class='prettyprint'><xmp>mkdir node-demo

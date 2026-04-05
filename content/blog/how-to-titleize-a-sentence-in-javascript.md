@@ -19,7 +19,7 @@ At first glance, it might sound like we wanted the first letter of every word in
 
 Well, that is almost correct. We don't want certain words to be capitalized. Words like `a`, `an` or `and` we wanted to remain lowercase.
 
-<!--more-->
+
 
 Here is the quick function I created that handled this transition for us.
 

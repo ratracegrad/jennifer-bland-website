@@ -20,7 +20,7 @@ Yuga Labs utilized what is called a Smart Contract to allow users to mint their 
 Smart contracts are stored on a blockchain. To add anything to the blockchain you have to pay what is called a "gas fee". This fee is the reward paid to people called miners who are responsible for adding new blocks to the blockchain.
 
 
-<!--more-->
+
 
 ## Gas Optimization
 

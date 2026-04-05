@@ -18,7 +18,7 @@ Attending ngConf is a first for me on two different levels. It is my first time 
 <h2>Schedule &amp; Location</h2>
 ngConf is held in Salt Lake City in basically one massive ballroom in a hotel in Salt Lake City, Utah. The event runs officially from April 5th — 7th. But there are optional full day workshops that are held on a wide range of topics on April 3rd and 4th.
 <h2></h2>
-<!--more-->
+
 <h2>Code of Conduct</h2>
 This is one area that the conference clearly excels at serves as a standard that all conferences and companies in the tech industry should mirror. The first speaker on the first day in his first sentence brought attention to their Code of Conduct. Quite possibly there were incidents in previous year where people did not fell welcome because of the actions of others. They made it very clear this behavior would not be tolerated at all.
 

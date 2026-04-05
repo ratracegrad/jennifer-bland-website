@@ -15,7 +15,7 @@ EJS, embedded javascript, is a templating language. EJS combines data and a tem
 
 I will show you how to create a simple Node.js application that uses EJS as the templating engine. Then we will create 2 pages for the website. We will use partials to build out our head, navigation, footer and content.
 
-    <!--more-->
+    
 <h2>File Structure</h2>
 We will be creating a sample application that will have two pages - index and about.
 

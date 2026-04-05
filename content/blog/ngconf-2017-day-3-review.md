@@ -22,7 +22,7 @@ Luckily for the audience the speaker is also an active improv actor and comedian
 
 More than half of the time of the session was getting the 7 audience members on stage, outfitted and given directions. When they actually started to perform how authentication works, it was hilarious. Especially when Mike started to improve on his role as the spinner.
 
-<!--more-->
+
 <h2>Speakers and Their Topics</h2>
 Next was a short topic about upgrading from AngularJS to Angular. This topic was allotted only 20 minutes. Imagine going back to your job on Monday and telling your boss that you learned everything you need to know to upgrade all work applications from AngularJS to Angular after a twenty minute talk.
 

@@ -27,7 +27,7 @@ ES6 JavaScript gives us the `Intl` object which is the ECMAScript Internationali
 
 Here is the same example as above:
 
-<!--more-->
+
 
 ```
 new Intl.NumberFormat('en-US', { 

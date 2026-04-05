@@ -17,7 +17,7 @@ Take this challenge and see how well you can answer these questions on CSS. At t
 
 Good luck and let's sell how well you really know CSS.
 
-<!--more-->
+
 <h2>CSS Questions</h2>
 <ol>
 <ol>

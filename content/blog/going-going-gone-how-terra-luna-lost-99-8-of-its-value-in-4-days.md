@@ -15,7 +15,7 @@ Luna reached an an all time high of $116 last month. Today it is worth $0.005124
 
 The coin lost 98% of its value in a span of 24 hours. During this timeframe the crypto market saw a loss of $40 billion dollars. If you had invested $10,000 in Luna 7 days ago, at the time of publishing your holdings would be worth $0.62. How did this happen? What went wrong?
 
-<!--more-->
+
 
 
 ## What is LUNA and TERRA (UST)?

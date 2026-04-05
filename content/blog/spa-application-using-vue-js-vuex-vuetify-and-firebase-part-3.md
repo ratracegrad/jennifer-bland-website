@@ -26,7 +26,7 @@ author:
 <p class="graf graf--p">In the first part of this series, we created our Vue application using the Vue CLI. Also, we added Vuetify to the app. We used Vuetify to style our home page.</p>
 <p class="graf graf--p">In the second part, we used Vue Router to add navigation between the different pages of our app. We added components for all the pages in our application.</p>
 
-<!--more-->
+
 
 
 <h2 class="graf graf--h2">Accessing the API</h2>

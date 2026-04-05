@@ -24,7 +24,7 @@ The API Key is used to access your account on Coinbase. The OAuth2 API is used t
 For this demo, I want to make this available to everyone to use not just myself so we are going to use the OAuth2 API.
 
 
-<!--more-->
+
 
 
 ## Create Developer Account

@@ -22,7 +22,7 @@ Here is what it looks like:
 ![react app](https://res.cloudinary.com/ratracegrad/image/upload/v1673823052/Screenshot_2023-01-15_at_5.49.59_PM_bolj4a.png)
 
 
-<!--more-->
+
 
 ## Create Our Starter Files
 
@@ -274,5 +274,3 @@ If you view the app in a browser, you should see this:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/react-fetch-data-api).
-
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

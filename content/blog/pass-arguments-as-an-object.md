@@ -25,7 +25,7 @@ I have a function called `createBook`. The function takes 6 arguments:
 - descr
 
 
-<!--more-->
+
 
 Here is an example of my function and how you would call it:
 
@@ -63,7 +63,3 @@ Now when you come across this code, it is clear what parameters are being passed
 ## Buy My Book
 
 I did write a book titled 'Make 7 Real World Apps in Vue 2'. If you are interested in reading it, you can [get it on Gumroad](http://https://jenniferbland.gumroad.com/l/CMnHu?_gl=1*icqykf*_ga*OTY3ODk1ODQwLjE2NzI1Mzk2MDU.*_ga_6LJN6D94N6*MTY3MzEwNTg0Ny40LjEuMTY3MzEwNzEwMy4wLjAuMA.. "get it on Gumroad").
-
-## Let's Connect
-
-Thanks for reading my article today. If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

@@ -19,7 +19,7 @@ Most of the skills are above and beyond what you will find in a basic introducti
 
 You can measure you knowledge of JavaScript by measuring how well you know these six basic skills.
 
-<!--more-->
+
 <h2>Basic Skills</h2>
 Here are the 6 basic skills that I think every JavaScript programmer needs to know:
 <ol>

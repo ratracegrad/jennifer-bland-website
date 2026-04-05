@@ -19,7 +19,7 @@ A graph consists of a set of nodes and a set of edges. An edge is a pair of node
 <h2><img class="aligncenter size-full wp-image-764" src="/graph-data-structure-with-3-nodes-and-3-edges.png" alt="graph data structure with 3 nodes and 3 edges" width="125" height="113" /></h2>
 &nbsp;
 
-<!--more-->
+
 <h2>Tree Data Structure</h2>
 A tree data structure, like a graph, is a collection of nodes. There is a root node. The node can then have children nodes. The children nodes can have their own children nodes called grandchildren nodes.
 

@@ -24,7 +24,7 @@ Recruiters use a product called LinkedIn Recruiter to tap that pool to fill the 
 
 LinkedIn Recruiter is the tool that allows recruiters to seek candidates that meet the job requirements for positions they are trying to fill. Here are some of the benefits recruiters receive with this product:
 <br>
-<!--more-->
+
 
 
 <h2>Access to Everyone</h2>

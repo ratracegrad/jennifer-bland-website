@@ -22,7 +22,7 @@ author:
 <p class="graf graf--p">In the first part of this series, we created our Vue application using the Vue CLI. Also, we added Vuetify to the app. I am using Vuetify for styling the app. I will also take advantage of the many UI components that it offers.</p>
 <p class="graf graf--p">After getting everything installed, we styled the home page of our application.</p>
 
-<!--more-->
+
 
 
 <h2 class="graf graf--h2">Using Vue Router</h2>

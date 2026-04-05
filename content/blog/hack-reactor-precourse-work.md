@@ -19,7 +19,7 @@ Applying to Hack Reactor and getting accepted is a very challenging endeavor. Th
 
 The reason for the delay in starting is that you must complete successfully all of their pre-course work. Even if you are accepted into Hack Reactor, you will not be allowed to start with your cohort until all your pre-course work is completed.
 
-<!--more-->
+
 
 <h2>Hack Reactor Pre-course material</h2>
 The material you need to complete for your pre-course work is a very hefty 25 page document. When you read it the second paragraph clearly outlines that they estimate it will take you 50-70 hours to complete. From my personal experience that is a very low estimate of the actual time it will take.

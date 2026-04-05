@@ -23,7 +23,7 @@ npm install -g vite
 
 Now that you have Vite installed you will need to create your Vue3 application. You can create it with this command:
 
-<!--more-->
+
 
 ```
 npm init @vitejs/app vue3-vite-tailwind-app

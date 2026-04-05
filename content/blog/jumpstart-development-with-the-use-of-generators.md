@@ -19,7 +19,7 @@ Most of my projects run using the MEAN stack. The MEAN stack is an abbreviation 
 
 When writing projects I go through the same process of setting up the server, installing Angular and configuring authentication for my project. What if there is a way to start any MEAN stack project with all of this done for you?
 
-<!--more-->
+
 
 
 There is a great generator that will provide the entire MEAN stack for you. The best one that I have used is the Angular Fullstack generator. This code provides the following functionality:

@@ -27,7 +27,7 @@ It will also include one folder called `images`. Inside this folder will be five
 - image5.jpg
 
 
-<!--more-->
+
 
 ## Our basic website
 

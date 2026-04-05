@@ -21,7 +21,7 @@ The 5 exercises covered the major topics that were covered in our first week at 
 	<li>Write a stack function</li>
 	<li>Write a function to handle collision in a hash table</li>
 </ul>
-<!--more-->
+
 
 
 <h2>Self Assessments</h2>

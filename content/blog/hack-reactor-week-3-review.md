@@ -24,7 +24,7 @@ Our assessment this week was to:
 	<li>Utilized several D3 functions</li>
 	<li>Describe time complexity of several algorithms</li>
 </ul>
-<!--more-->
+
 
 
 <h2>REST and Parse API</h2>

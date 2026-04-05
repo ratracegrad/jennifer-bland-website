@@ -23,7 +23,7 @@ Today’s software engineers are smart creatives who prefer to work in an autono
 
 Here are examples of how management treated work hours at two different companies.
 
-<!--more-->
+
 
 <strong>First Company</strong>
 This company provided flexibility to employees in terms of their starting and ending hours. The only requirement was that every member of the team was available during the same 6-hour window during the day.

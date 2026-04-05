@@ -30,22 +30,11 @@ useSeoMeta({
 
 <template>
   <UPage v-if="page">
-    <UPageHero
+    <UPageSection
       :title="page.title"
       :description="page.description"
-      :links="page.links"
-      :ui="{
-        title: '!mx-0 text-left',
-        description: '!mx-0 text-left',
-        links: 'justify-start'
-      }"
     />
-    <UPageSection
-      :ui="{
-        container: '!pt-0'
-      }"
-    >
-      <UBlogPosts orientation="vertical">
+      <UBlogPosts orientation="horizontal">
         <Motion
           v-for="(post, index) in posts"
           :key="index"
@@ -56,11 +45,11 @@ useSeoMeta({
         >
           <UBlogPost
             variant="naked"
-            orientation="horizontal"
+            orientation="vertical"
             :to="post.path"
             v-bind="post"
             :ui="{
-              root: 'md:grid md:grid-cols-2 group overflow-visible transition-all duration-300',
+              root: ' transition-all duration-300',
               image:
                 'group-hover/blog-post:scale-105 rounded-lg shadow-lg border-4 border-muted ring-2 ring-default',
               header:
@@ -71,6 +60,5 @@ useSeoMeta({
           />
         </Motion>
       </UBlogPosts>
-    </UPageSection>
   </UPage>
 </template>

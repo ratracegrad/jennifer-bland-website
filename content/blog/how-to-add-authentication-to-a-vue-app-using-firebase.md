@@ -17,7 +17,7 @@ We are going to create a very simple Vue application using the Vue CLI. We will 
 
 User's will be able to register with the application using the email and password authentication system in Firebase. Once they have registered and login they will be presented with the dashboard page.
 
-<!--more-->
+
 <h2>Creating our Project</h2>
 I will be using the Vue CLI to scaffold out a project for us to start with. To do that you need to have the Vue CLI installed on your system. If you <b>DO NOT</b> have it installed, you can install it globally with this command:
 <pre class="prettyprint">npm install -g @vue/cli</pre>

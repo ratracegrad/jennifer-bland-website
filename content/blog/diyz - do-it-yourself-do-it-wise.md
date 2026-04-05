@@ -15,7 +15,7 @@ DIYZ is the DIY app for getting detailed step-by-step instructions and how-to vi
 
 The DIYZ app has over 1 million downloads. The average user of the app spends 7.5 minutes of engagement in DIYZ. The DIY videos have generated over 2 million views on YouTube. To create this app, the development team at decided to use Google’s Polymer.js framework.
 
-<!--more-->
+
 <h2 id="573f" class="graf graf--h3 graf-after--figure">What is Polymer.js?</h2>
 <p id="5edd" class="graf graf--p graf-after--h3">Polymer.js is a JavaScript library that helps you create custom reusable HTML elements, and use them to build performant, maintainable apps. Polymer takes full advantage of Web Components.</p>
 <p id="40c7" class="graf graf--p graf-after--p">The team decided to use Polymer because of its speed. Polymer takes advantage of the standard Web Component API built into web browsers which allow apps to run natively in the browser.</p>

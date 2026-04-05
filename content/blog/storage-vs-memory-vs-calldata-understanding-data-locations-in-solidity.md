@@ -13,7 +13,7 @@ author:
 
 Solidity provides value types and reference types. Reference types are arrays, mappings, and structs. Value types are all other data types like string, int, and boolean. When you define a reference type you have to define the "data location" to determine where the data is stored. The three data locations are `memory`, `storage` and `calldata`. In this article, I will be explaining the difference between them.
 
-<!--more-->
+
 
 
 ## Memory

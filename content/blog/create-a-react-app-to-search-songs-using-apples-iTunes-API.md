@@ -19,7 +19,7 @@ Users will be able to input a search term and we will display the results to the
 ![completed app](https://res.cloudinary.com/ratracegrad/image/upload/v1673900547/Screenshot_2023-01-16_at_3.21.50_PM_tyvecg.png)
 
 
-<!--more-->
+
 
 
 ## Create Our Starter Files
@@ -234,5 +234,3 @@ If you view the app in your browser, you should see the completed results:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/react-song-finder).
-
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

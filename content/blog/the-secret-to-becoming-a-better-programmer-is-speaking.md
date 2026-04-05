@@ -29,7 +29,7 @@ Programmers learn by:
 
 	<li>Programmers gain experience by applying what they learn.</li>
 </ul>
-<!--more-->
+
 
 
 

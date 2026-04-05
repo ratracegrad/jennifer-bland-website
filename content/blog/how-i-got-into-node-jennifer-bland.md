@@ -20,7 +20,7 @@ After searching the list of issues, they found an issue that Jennifer could tack
 
 We hope that this inspires or guides you in getting started with contributing to Node.js or another open source project.
 <br>
-<!--more-->
+
 
 
 [caption id="attachment_1348" align="alignnone" width="768"]<img src="/speaking-768x1024.jpeg" alt="" width="768" height="1024" class="size-large wp-image-1348" /> Jennifer Bland speaking at Connect.Tech Conference[/caption]

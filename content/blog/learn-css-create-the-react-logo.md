@@ -25,7 +25,7 @@ We will create the React logo in pure CSS. It will look like this:
 ![React Logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672413045/Screenshot_2022-12-30_at_10.10.19_AM_oisz7w.png)
 
 
-<!--more-->
+
 
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
@@ -200,4 +200,3 @@ If you view your `index.html` file in a browser. you should see the completed Re
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/react-logo-pure-css).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

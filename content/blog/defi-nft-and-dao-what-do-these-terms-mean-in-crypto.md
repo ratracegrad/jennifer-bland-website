@@ -20,7 +20,7 @@ DeFi is short for decentralized finance. DeFi is the term used for peer-to-peer 
 With DeFi, you can do almost everything you could do through a bank like earn interest, borrow, lend, and trade assets. The benefit of DeFi is the process of doing any of these actions is faster, generally cheaper, and does not require you to create an account with a government-issued ID.
 
 
-<!--more-->
+
 
 
 If I wanted to send money to my cousin in Europe from my home in the United States, the process would involve the following steps:

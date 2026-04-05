@@ -16,7 +16,7 @@ If you have been a programmer for more than a day, then you have used a `console
 The biggest challenge in using a console.log is when you want to display data that is an array or an object. By default, this data does not display very well in the console.
 
 
-<!--more-->
+
 
 For example, you have this array:
 
@@ -95,6 +95,3 @@ This is what we will see in the console:
 
 ![console.table](https://res.cloudinary.com/ratracegrad/image/upload/v1672692859/Screenshot_2023-01-02_at_3.54.09_PM_r315y1.png)
 
-## Let's Connect
-
-Thanks for reading my article today. If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

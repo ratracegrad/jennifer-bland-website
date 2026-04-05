@@ -17,7 +17,7 @@ To understand the differences between Layers, you must first understand **scalin
 Now that description is a mouthful so let's break it down. As more and more people and applications start to use the blockchain the amount of traffic on the blockchain increases. Scalability is the term used to describe how well a blockchain is able to handle this increase in transactions.
 
 
-<!--more-->
+
 
 When there are more transactions on a blockchain there is a spike in gas fees from network congestion. To make transactions more affordable a blockchain needs to be able to effectively scale up to handle these spikes.
 

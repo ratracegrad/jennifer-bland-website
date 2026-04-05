@@ -19,7 +19,7 @@ This is lesson 3 in my Introduction to AngularJS series. You may want to view th
 
 In this lesson we will continue to expand our website that we have created for our fictional Mandarin Spa company. We will be adding an order page to our website.
 
-<!--more-->
+
 
 
 <h2>ng-view</h2>

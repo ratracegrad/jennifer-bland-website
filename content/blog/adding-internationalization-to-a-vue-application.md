@@ -23,7 +23,7 @@ author:
 <pre class="prettyprint"><xmp>vue create vue-internationalization</xmp></pre>
 <p class="graf graf--p">The Vue CLI will prompt you to pick a preset. You have the option of selecting the default preset or manually selecting features. I chose <code class="markup--code markup--p-code">default</code>.</p>
 
-<!--more-->
+
 
 
 [caption id="attachment_1467" align="alignnone" width="880"]<img src="/cli.png" alt="" width="880" height="204" class="size-full wp-image-1467" /> Vue CLI options[/caption]

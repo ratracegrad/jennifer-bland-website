@@ -38,7 +38,3 @@ bar
 foo
 <anonymous>
 ```
-
-## Let's Connect
-
-Thanks for reading my article today. If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

@@ -20,7 +20,7 @@ author:
 <div>
 <p>Vue recommends that bundles not exceed a size of 244 KiB. We have 14 assets alone where each exceeds this size. In addition, we have four entry points that are also above the recommended size. Here is what I did to reduce the size of our build in half.</p>
 
-<!--more-->
+
 
 
 <h2>What is causing the large build bundles?</h2>

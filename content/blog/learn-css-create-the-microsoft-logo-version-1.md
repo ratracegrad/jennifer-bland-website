@@ -23,7 +23,7 @@ We will create the Microsoft logo in pure CSS. It will look like this:
 ![Microsoft Logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672329839/Screenshot_2022-12-29_at_11.03.48_AM_ehepan.png)
 
 
-<!--more-->
+
 
 ## Create our starter files
 
@@ -139,5 +139,5 @@ If you view your `index.html` file in a browser you should see the completed Mic
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/microsoft-logo-pure-css-version-1).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.
+
 

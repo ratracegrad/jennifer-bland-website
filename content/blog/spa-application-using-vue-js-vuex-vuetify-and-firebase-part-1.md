@@ -31,7 +31,7 @@ This tutorial is suitable for everyone regardless of your skill level. I only as
 
 Let’s get started.
 
-<!--more-->
+
 <h2>Installing Vue</h2>
 Creating a new application using Vue.js is done through their command line interface (CLI). You will need to install the CLI first with this command:
 <pre class="prettyprint">npm install -g @vue/cli</pre>

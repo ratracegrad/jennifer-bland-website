@@ -18,7 +18,7 @@ In this article, I will show you how to create a toggle to display items in a gr
 ![](https://res.cloudinary.com/ratracegrad/image/upload/v1672606619/gridList_tyuymu.gif)
 
 
-<!--more-->
+
 
 ## **How to Create Our Starter Files**
 
@@ -192,4 +192,3 @@ Here is what it looks like:
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/grid-to-list-toggle-using-css-grid).
 
-If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

@@ -21,7 +21,7 @@ Instantiation patterns are ways to create something in your code. JavaScript has
 
 In this post I will talk about how to create the instantiation patterns for Functional and Functional-Shared. In Part 2 of this post I talk about Prototypal and Pseudo-classical. In addition I will cover the pros and cons of each.
 
-<!--more-->
+
 
 
 <h2>Functional</h2>

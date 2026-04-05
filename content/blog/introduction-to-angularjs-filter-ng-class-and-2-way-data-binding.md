@@ -24,7 +24,7 @@ In this lesson we are going to improve on our existing website by providing thes
 	<li>Add two way data binding</li>
 </ul>
 
-<!--more-->
+
 
 <h2>Filters</h2>
 Filters can be added to expressions and directives using a pipe character. Filters are used to transform data. Here are some filters you can apply to data with AngularJS.

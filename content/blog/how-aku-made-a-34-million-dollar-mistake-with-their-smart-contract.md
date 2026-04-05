@@ -18,7 +18,7 @@ Akutars was a highly anticipated NTF project. The project was developed by AKU D
 The Akutars project features the character of a young astronaut and contained 15,000 NFTs. The project launched on April 22nd.
 
 
-<!--more-->
+
 
 The launch was in the form of a Dutch auction. In a Dutch auction the project stipulates the lowest bid would determine the price. The project opened at a price of 3.5 Ethereum (ETH) per NFT and gradually decreasing. Anyone who paid a higher amount would get a refund. If you minted more than one NFT you got a 0.5 ETH discount per NFT.
 

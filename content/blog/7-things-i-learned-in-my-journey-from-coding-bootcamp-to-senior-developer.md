@@ -23,7 +23,7 @@ My journey in the tech world is quite unique. I graduated from university before
  	<li>#6 — Networking</li>
  	<li>#7 — Never stop learning</li>
 </ul>
-<!--more-->
+
 <h2>#1 — Learn Github</h2>
 If you are a programmer then you will be using a version control system. Github is the leading VCS used by companies. Usage of a VCS is a daily activity you will experience as a programmer.
 

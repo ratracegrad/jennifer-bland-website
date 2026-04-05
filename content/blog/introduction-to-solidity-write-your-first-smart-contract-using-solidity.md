@@ -19,7 +19,7 @@ Solidity is an object-oriented high-level language for implementing smart contra
 
 The syntax of the solidity programming language is similar to JavaScript. If you're familiar with JavaScript, then you should find it easier to learn and understand solidity. But there are some differences between JavaScript and solidity. 
 
-<!--more-->
+
 
 ## JavaScript vs Solidity
 

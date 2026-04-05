@@ -26,7 +26,7 @@ JavaScript allows this code to function due to a concept known as <em>"hoisting.
 
 Within the current scope in a JavaScript application, all variables are "hoisted" to the top regardless of where they are declared. 
 
-<!--more-->
+
 
 
 The tricky part is that only the declaration of the variable will be hoisted. If the variable is also initialized, the variable will be set to undefined when it is hoisted to the top. The variable value is changed from undefined to its initialized value when the execution reaches the variable.

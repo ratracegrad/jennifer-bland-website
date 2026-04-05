@@ -15,7 +15,7 @@ Hack Reactor is  the premier advanced immersive coding school. It was recently v
 
 What does it take to get accepted into the "Harvard of coding schools?" Well first let me say that you have a 200% better chance of being accepted into Harvard than you do into Hack Reactor. Hack Reactor only accepts 3% of applicants. Here is a summary of my hack reactor interview process.
 
-<!--more-->
+
 
 <h2>Hack Reactor Application Process</h2>
 Almost every coding bootcamp out there promises to take you from nothing to a software engineer in 12 weeks. Based on this promise my mother could qualify to get accepted to any coding school.

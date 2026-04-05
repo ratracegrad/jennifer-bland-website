@@ -18,7 +18,7 @@ CSS is based off a box model. If you have an image that is a circle that you wan
 <p id="5b27" class="graf graf--p graf-after--h3">A new CSS property called shape-outside lets you wrap text that conforms to the shape of your image.</p>
 <img class="alignnone size-medium wp-image-1179" src="/2-300x211.png" alt="" width="300" height="211" />
 
-<!--more-->
+
 <h2 id="cb93" class="graf graf--h3 graf-after--figure">What is shape-outside</h2>
 <p id="9d2f" class="graf graf--p graf-after--h3">Shape-outside is a new CSS property that changes the shape of items that are wrapped. Instead of being limited to a rectangular bounding box around the image, shape-outside allows us to shape content to fit the image.</p>
 <p id="fc60" class="graf graf--p graf-after--p">Here is how MDN describes shape-outside:</p>

@@ -23,7 +23,7 @@ There are four visibility modifiers available in the Solidity programming langua
 - external
 
 
-<!--more-->
+
 
 ### Public
 

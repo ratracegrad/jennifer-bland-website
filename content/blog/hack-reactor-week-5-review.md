@@ -22,7 +22,7 @@ There are many things to consider when implementing authentication on your serve
 	<li>What strategies do I need to employ to secure existing site functionality</li>
 	<li>How often should the user need to enter their username and password</li>
 </ul>
-<!--more-->
+
 
 Our first sprint of the week involved writing a single page application using Backbone.JS on the client with a Node/Express based server. The server uses the Bookshelf.JS ORM and ESJ for templates.
 

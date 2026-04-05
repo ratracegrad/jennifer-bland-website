@@ -18,7 +18,7 @@ Coins and tokens both represent a store of value. This is similar to fiat curren
 Technically all coins are considered tokens but not all tokens are considered coins. Confused? Here are the differences:
 
 
-<!--more-->
+
 
 ## Coins
 A coin is native to a blockchain. For example, **ETH** is the coin for the Ethereum blockchain. 

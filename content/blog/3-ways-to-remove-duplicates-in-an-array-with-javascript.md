@@ -20,7 +20,7 @@ The Array `includes()` method determines whether an array includes a certain val
 With this method, we will create a new empty array. All unique values from our array will be put into this array. We will loop over our array of data and check if the current item is in our new array. If it isn't then we put it in our new array. If it is in our new array then we do nothing.
 
 
-<!--more-->
+
 
 ```javascript
 let myData = [1, 2, 2, 4, 5, 5, 5, 7, 'Hello','World', true, false];
@@ -65,7 +65,3 @@ let uniqueValues = [...new Set(myData)];
 
 console.log(uniqueValues) // [1, 2, 4, 5, 7, 'Hello', 'World', true, false]
 ```
-
-## Let's Connect
-
-Thanks for reading my article today. If you like my content, please consider [buying me a coffee](https://www.buymeacoffee.com/JenniferBland) ☕.

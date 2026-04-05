@@ -22,7 +22,7 @@ Once I graduated from my coding bootcamp, I was motivated to improve my coding s
 
 Over a six month period, I completed all four of freeCodeCamp’s original certifications in the freeCodeCamp curriculum. When I got to the section focused on building projects, I used JavaScript and Node.js on the back-end. After completing all the certifications, I worked on one of freeCodeCamp’s initial non-profit projects. The project was for Crimes Committed Against Women.
 <br>
-<!--more-->
+
 
 
 <h2>Contributing to Open Source</h2>

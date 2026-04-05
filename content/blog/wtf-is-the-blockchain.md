@@ -17,7 +17,7 @@ Blockchain is an extremely hot topic nowadays: you'll see articles describing th
 Cryptocurrencies like Bitcoin and Ethereum are powered by a technology called the blockchain. **At its most basic, a blockchain is a list of transactions that anyone can view and verify. The Bitcoin blockchain, for example, contains a record of every time someone sent or received bitcoin**.
 
 
-<!--more-->
+
 
 ## Database
 If you work for a company they most definitely have a multitude of databases. Your company would have a database of all their products or services. Or a database containing all their sales and purchases.

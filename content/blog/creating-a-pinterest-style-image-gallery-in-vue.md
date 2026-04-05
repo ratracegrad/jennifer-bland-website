@@ -17,7 +17,7 @@ In this article I will show a quick and easy way to create a Pinterest style lay
 This is the flowing Pinterest style layout we will be creating.
 <img src="/Screen-Shot-2019-10-31-at-5.13.27-PM-1024x599.png" alt="" width="1024" height="599" class="alignnone size-large wp-image-1673" />
 
-<!--more-->
+
 
 
 <h2>Getting images from Unsplash</h2>

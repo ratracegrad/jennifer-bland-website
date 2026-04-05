@@ -17,7 +17,7 @@ Web3 is the fastest growing number arena today in tech. Startup companies as wel
 
 You might think this is a dumb question to ask if you are interviewing for a web3 position but it really isn't. This question will quickly weed out people who apply for a position because it is in a fast-growing arena without fully knowing what it entails. If you can clearly articulate what is web3 then you have done your homework and know why you are applying for this position.
 
-<!--more-->
+
 
 ## 2) What is the difference between Web2 and Web3?
 
