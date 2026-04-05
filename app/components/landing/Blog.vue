@@ -34,7 +34,6 @@ if (!posts.value) {
         variant="naked"
         v-bind="post"
         :to="post.path"
-
       >
         <template #footer>
           <UButton

@@ -3,10 +3,9 @@
 
 <template>
   <div>
-    <UContainer >
+    <UContainer>
       <AppHeader :links="navLinks" />
       <slot />
-      <!-- <AppFooter /> -->
     </UContainer>
   </div>
 </template>
