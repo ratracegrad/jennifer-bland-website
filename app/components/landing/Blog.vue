@@ -24,21 +24,17 @@ if (!posts.value) {
     }"
   >
     <UBlogPosts
-      orientation="vertical"
+      orientation="horizontal"
       class="gap-4 lg:gap-y-4"
     >
       <UBlogPost
         v-for="(post, index) in posts"
         :key="index"
-        orientation="horizontal"
+        orientation="vertical"
         variant="naked"
         v-bind="post"
         :to="post.path"
-        :ui="{
-          root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
-          body: '!px-0',
-          header: 'hidden'
-        }"
+
       >
         <template #footer>
           <UButton
