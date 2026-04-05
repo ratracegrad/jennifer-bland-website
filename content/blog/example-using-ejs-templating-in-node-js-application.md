@@ -11,16 +11,14 @@ author:
     alt: Jennifer Bland
 ---
 
-EJS, embedded javascript, is a templating language. EJS combines data and a template to produce HTML. One of the most important feature in EJS is the use of partials. Partials allow you to define something once and then apply it to any page in your application.
+EJS, embedded javascript, is a templating language. EJS combines data and a template to produce HTML. One of the most important feature in EJS is the use of partials. Partials allow you to define something once and then apply it to any page in your application. I will show you how to create a simple Node.js application that uses EJS as the templating engine. Then we will create 2 pages for the website. We will use partials to build out our head, navigation, footer and content.
 
-I will show you how to create a simple Node.js application that uses EJS as the templating engine. Then we will create 2 pages for the website. We will use partials to build out our head, navigation, footer and content.
+## File Structure
 
-    
-<h2>File Structure</h2>
-We will be creating a sample application that will have two pages - index and about.
+We will be creating a sample application that will have two pages - index and about. Here is the file structure for the application we will be creating.
 
-Here is the file structure for the application we will be creating.
-<pre class='prettyprint'><xmp>
+```
+
 - public
 ---- style.css
 - routes
@@ -37,14 +35,17 @@ Here is the file structure for the application we will be creating.
 -------- scripts.ejs
 - package.json
 - server.js
-</xmp></pre>
-<h2>Getting Started</h2>
+```
+
+## Getting Started
+
 We will setup our package.json first. This file will contain all the modules we will be using in our application. We will be using:
-        <ul>
-<li>express</li>
-<li>ejs</li>
-</ul>
-<pre class='prettyprint'><xmp>
+
+-   express
+-   ejs
+
+```
+
 {
     "name": "node_ejs_boilerplate",
     "version": "1.0.0",
@@ -57,18 +58,28 @@ We will setup our package.json first. This file will contain all the modules we 
         "serve-favicon": "^2.3.0"
     }
 }
-</xmp></pre>
-        You can add the dependencies directly into your package.json or your can install the dependencies so that they are automatically added to the package.json. To manually install dependencies, enter this command:
-        <pre class='prettyprint'><xmp>
+```
+
+You can add the dependencies directly into your package.json or your can install the dependencies so that they are automatically added to the package.json. To manually install dependencies, enter this command:
+
+```
+
 npm install express ejs --save
-</xmp></pre>
+```
+
 If you added dependencies by adding them to your package.json, you will need to install them by using this commend:
-        <pre class='prettyprint'><xmp>
+
+```
+
 npm install
-</xmp></pre>
-<h2>Server.js</h2>
+```
+
+## Server.js
+
 Now that we have all our dependencies installed, we need to build out application in server.js
-<pre class='prettyprint'><xmp>
+
+```
+
 'use strict';
 
 // ================================================================
@@ -86,7 +97,6 @@ var app = express();
 app.use('/public', express.static(process.cwd() + '/public'));
 app.set('view engine', 'ejs');
 
-
 // ================================================================
 // setup routes
 // ================================================================
@@ -98,26 +108,21 @@ routes(app);
 app.listen(port, function() {
     console.log('Server listening on port ' + port + '...');
 });
-</xmp></pre>
-Our server will be listening on the port defined in process.env.PORT or 3000.
+```
 
-We define a /public directory because this is how we will reach our stylesheet style.css located in the /public folder.
+Our server will be listening on the port defined in process.env.PORT or 3000. We define a /public directory because this is how we will reach our stylesheet style.css located in the /public folder. We define our templating engine to be ejs.
 
-        We define our templating engine to be ejs.
-<h2>Routes</h2>
-To make our application follow the structure of a node.js application I have put the routes for our index and about pages into their own file. This file is index.js in the routes folder.
+## Routes
 
-        Since I have put the routes in their own folder I need to gain access to them by requiring them in the server.js file.
+To make our application follow the structure of a node.js application I have put the routes for our index and about pages into their own file. This file is index.js in the routes folder. Since I have put the routes in their own folder I need to gain access to them by requiring them in the server.js file. We have 2 routes in our application:
 
-        We have 2 routes in our application:
-        <ul>
-<li>/ - GET to display the home page</li>
-<li>/about - GET to display the about page</li>
-</ul>
-In the routes we use res.render to display the appropriate pages. The render command by default will look for files in a folder called views. We rely on this default and only add the path from within the views folder.
+-   / - GET to display the home page
+-   /about - GET to display the about page
 
-        Here is our index.js file in the routes folder:
-        <pre class='prettyprint'><xmp>
+In the routes we use res.render to display the appropriate pages. The render command by default will look for files in a folder called views. We rely on this default and only add the path from within the views folder. Here is our index.js file in the routes folder:
+
+```
+
 'use strict';
 
 module.exports = function(app) {
@@ -129,35 +134,51 @@ module.exports = function(app) {
         res.render('pages/about');
     });
 };
-</xmp></pre>
-<h2>Configuring our Partials</h2>
+```
+
+## Configuring our Partials
+
 For our sample application, I am going to implement four partials:
-        <ul>
-<li>head - contains items found in the head section of a webpage</li>
-<li>nav - the navigation that will be displayed on every page</li>
-<li>footer - static footer with link to my website</li>
-<li>scripts - loading scripts like jQuery and Bootstrap</li>
-<li>3columns - content that will be displayed on the homepage</li>
-</ul>
+
+-   head - contains items found in the head section of a webpage
+-   nav - the navigation that will be displayed on every page
+-   footer - static footer with link to my website
+-   scripts - loading scripts like jQuery and Bootstrap
+-   3columns - content that will be displayed on the homepage
+
 Here is the contents of all of our partials.
-<pre class='prettyprint'><xmp>
+
+```
+
 <!-- views/partials/head.ejs -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Demonstration of EJS templating in NodeJS Application</title>
 
-    <!-- STYLESHEETS -->
-    <!-- CSS (load bootstrap from a CDN) -->
+    
+
+<!-- STYLESHEETS -->
+
+    
+
+<!-- CSS (load bootstrap from a CDN) -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/style.css">
 </head>
-</xmp></pre>
-<pre class='prettyprint'><xmp>
+```
+
+```
+
 <!-- views/partials/nav.ejs -->
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
 
@@ -176,28 +197,36 @@ Here is the contents of all of our partials.
     </div>
 </nav>
 
-</xmp></pre>
+```
 
-<pre class='prettyprint'><xmp>
+```
+
 <!-- views/partials/footer.ejs -->
+
 <footer class="footer">
     <div class="container">
         <p class="text-center text-muted">© Copyright 2015 <a href="http://www.codeprep.io">CodePrep.io</a></p>
     </div>
 </footer>
-</xmp></pre>
-        
-<pre class='prettyprint'><xmp>
+```
+
+```
+
 <!-- views/partials/scripts.ejs -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Bootstrap javascript file -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</xmp></pre>
 
-<pre class='prettyprint'><xmp>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Bootstrap javascript file -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+```
+
+```
+
 <!-- views/partials/3columns.ejs -->
+
 <section name="content">
     <div class="container">
         <h2 class="text-center">Sample Data</h2>
@@ -212,17 +241,15 @@ Here is the contents of all of our partials.
         </div>
     </div>
 </section>
-</xmp></pre>
+```
 
+## Starting our Application
 
-
-<h2>Starting our Application</h2>
 To start the application enter the following command:
-<pre class='prettyprint'><xmp>
-node server.js
-</xmp></pre>
-When our application starts it will display our homepage:
-        <img class="alignleft size-large wp-image-968" src="/home-1024x515.png" alt="Homepage" width="600" />
 
-        If you click on the about link in the navigation, you will see the about page:
-        <img class="alignleft size-large wp-image-967" src="/about-1024x516.png" alt="about page" width="600" />
+```
+
+node server.js
+```
+
+When our application starts it will display our homepage: ![Homepage](/home-1024x515.png) If you click on the about link in the navigation, you will see the about page: ![about page](/about-1024x516.png)

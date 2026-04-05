@@ -11,34 +11,22 @@ author:
     alt: Jennifer Bland
 ---
 
-Have you ever seen a button on a web page that has rounded edges? Have you ever seen an image that fits within a circle? If so, you have seen the impact of using the CSS border-radius property.
+Have you ever seen a button on a web page that has rounded edges? Have you ever seen an image that fits within a circle? If so, you have seen the impact of using the CSS border-radius property. You can give any element “rounded corners” by applying a border-radius through CSS.
 
-You can give any element “rounded corners” by applying a border-radius through CSS.
-<h2>Border-radius syntax</h2>
-As with many CSS properties relating to margins, padding, and borders, there are four individual properties — one for each corner of a box element — and one shorthand property. Each of the corner attributes will accept one or two values.
+## Border-radius syntax
 
-The border-radius property is accepted in every major browser, but they have browser-specific attributes. Here are the CSS and browser-specific attributes:
-<img class="alignnone size-large wp-image-1309" src="/cssAttributes-1024x187.png" alt="css browser-specific attributes" width="1024" height="187" />
+As with many CSS properties relating to margins, padding, and borders, there are four individual properties — one for each corner of a box element — and one shorthand property. Each of the corner attributes will accept one or two values. The border-radius property is accepted in every major browser, but they have browser-specific attributes. Here are the CSS and browser-specific attributes: ![css browser-specific attributes](/cssAttributes-1024x187.png) Each of the individual corner CSS3 properties take either one or two length values (generally ‘px’ or ‘em’ values). If a single value is supplied, then that becomes the radius of a rounded corner. If two values are supplied, then they become the horizontal and vertical radii for an elliptical corner. The border-radius property by itself accepts one or two values and uses them to style all four corners making a nice symmetrical shape.
 
-Each of the individual corner CSS3 properties take either one or two length values (generally ‘px’ or ‘em’ values). If a single value is supplied, then that becomes the radius of a rounded corner. If two values are supplied, then they become the horizontal and vertical radii for an elliptical corner.
+## Do you need to use border-prefixes anymore?
 
+Now that I have shown you the browser-specific border prefixes, the question is do you really need to use them, or can you get away with just using the CSS3 properties? The simple answer to that question depends on what version of browsers your website supports. Firefox 3.6 requires the use of the -moz- prefix. From 4 up, using the CSS3 properties are fine. Safari 4 needs the -webkit- prefix. Safari 5 and above accepts the CSS3 properties. iOS3 needs the -webkit- prefix. This applies only to an iPhone 3GS or iPad 1 that have never been upgraded.
 
+## Basic Demonstration of the border-radius property
 
-The border-radius property by itself accepts one or two values and uses them to style all four corners making a nice symmetrical shape.
-<h2>Do you need to use border-prefixes anymore?</h2>
-Now that I have shown you the browser-specific border prefixes, the question is do you really need to use them, or can you get away with just using the CSS3 properties?
-
-The simple answer to that question depends on what version of browsers your website supports.
-
-Firefox 3.6 requires the use of the -moz- prefix. From 4 up, using the CSS3 properties are fine.
-
-Safari 4 needs the -webkit- prefix. Safari 5 and above accepts the CSS3 properties.
-
-iOS3 needs the -webkit- prefix. This applies only to an iPhone 3GS or iPad 1 that have never been upgraded.
-
-<h2>Basic Demonstration of the border-radius property</h2>
 Here are two demonstrations of the border radius. The value supplied for the property can be in px, rem, em or %.
-<pre class="prettyprint"><xmp>div {
+
+```
+div {
     width: 100px;
     height: 100px;
     background-color: #7db9e8;
@@ -48,44 +36,57 @@ Here are two demonstrations of the border radius. The value supplied for the pro
 }
 #demo-two {
     border-radius: 50%;
-}</xmp></pre>
+}
+```
 
-[caption id="attachment_1310" align="alignnone" width="281"]<img src="/demo1.png" alt="" width="281" height="124" class="size-full wp-image-1310" /> #demo-one image on left and #demo-two image on right[/caption]
-<br>
-For the first div, a rounded corner of 8px is applied to every corner of the div. In the second example, every corner has a rounded corner of 50% applied which creates a circle.
+![](/demo1.png)
 
-With just one value, the border-radius will be the same on all four corners of an element as shown above. You do have the option of specifying a different value for each corner.
+*#demo-one image on left and #demo-two image on right*  
+For the first div, a rounded corner of 8px is applied to every corner of the div. In the second example, every corner has a rounded corner of 50% applied which creates a circle. With just one value, the border-radius will be the same on all four corners of an element as shown above. You do have the option of specifying a different value for each corner. When you specify individual values, then they are applied in this order: top left, top right, bottom right, bottom left. Here is an example:
 
-When you specify individual values, then they are applied in this order: top left, top right, bottom right, bottom left. Here is an example:
-<pre class="prettyprint"><xmp>#demo-three {
+```css
+#demo-three {
     border-radius: 10em 20em 10em 20em;
 }
 #demo-four {
     border-radius: 40px 5px;
-}</xmp</pre>
+}
+```
 
-<br>
-[caption id="attachment_1311" align="alignnone" width="284"]<img src="/demo2.png" alt="" width="284" height="132" class="size-full wp-image-1311" /> #demo-three image on left and #demo-four image on right[/caption]
-<br>
-<h2>Elliptical Edges</h2>
+![](/demo2.png)
+
+*#demo-three image on left and #demo-four image on right*
+
+## Elliptical Edges
+
 The edges do not have to be circular, but can be elliptical, too. To create an elliptical edge, you put a slash (“/”) between two values. Here is an example:
-<pre class="prettyprint"><xmp>#demo-five {
+
+```css
+#demo-five {
     border-radius: 10% / 50%;
 }
 #demo-six {
     border-radius: 50% / 10%;
-}</xmp></pre>
-<br>
-[caption id="attachment_1312" align="alignnone" width="279"]<img src="/demo3.png" alt="" width="279" height="124" class="size-full wp-image-1312" /> #demo-five image on left and #demo-six image on right[/caption]
-<br>
-<h2>Creating our calculator</h2>
-We are going to apply what we have just learned about border-radius to create this calculator:
-<br>
-[caption id="attachment_1313" align="alignnone" width="447"]<img src="/calc.png" alt="" width="447" height="677" class="size-full wp-image-1313" /> Image of the calculator we will be making[/caption]
-<br>
-<h2>Calculator Frame</h2>
+}
+```
+
+![](/demo3.png)
+
+*#demo-five image on left and #demo-six image on right*  
+
+## Creating our calculator
+
+We are going to apply what we have just learned about border-radius to create this calculator:  
+![](/calc.png)
+
+*Image of the calculator we will be making*  
+
+## Calculator Frame
+
 First we need to create the frame for our calculator. The top of the calculator will have an arch and the bottom will have rounded edges. To create this design we will specify a value for each individual corner like this:
-<pre class="prettyprint"><xmp>.calc-frame {
+
+```
+.calc-frame {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,13 +100,20 @@ First we need to create the frame for our calculator. The top of the calculator 
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
     background: #b1b1b1;
-}</xmp></pre>
-<br>
-[caption id="attachment_1314" align="alignnone" width="512"]<img src="/calcframe.png" alt="" width="512" height="715" class="size-full wp-image-1314" /> Image of calculator frame created with above CSS[/caption]
-<br>
-<h2>Calculator result frame</h2>
+}
+```
+
+  
+![](/calcframe.png)
+
+*Image of calculator frame created with above CSS*  
+
+## Calculator result frame
+
 The top of the calculator contains the total that has been calculated (the result). It is comprised of two parts: the outer frame and the input area that contains the total. The outer frame uses the exact same border-radius of the frame to have the same arch. Here is the styling for these two items:
-<pre class="prettyprint"><xmp>.calc-result-frame {
+
+```
+.calc-result-frame {
     background: #fefefe;
     border: solid 5px #41403E;
     width: 100%;
@@ -125,13 +133,20 @@ The top of the calculator contains the total that has been calculated (the resul
     color: #41403E;
     overflow: hidden;
     font-size: 2rem;
-}</xmp></pre>
-<br>
-[caption id="attachment_1315" align="alignnone" width="455"]<img src="/calcTotal.png" alt="" width="455" height="689" class="size-full wp-image-1315" /> Image of calculator result frame created with CSS above[/caption]
-<br>
-<h2>Calculator Logo and Power Button</h2>
+}
+```
+
+  
+![](/calcTotal.png)
+
+*Image of calculator result frame created with CSS above*  
+
+## Calculator Logo and Power Button
+
 The next items to add to our calculator are the logo, “BLAND INSTRUMENTS,” and the power button. We will use the code in #demo-four for the logo and the code in #demo-two for the power button. It looks like this:
-<pre class="prettyprint"><xmp>.calc-logo {
+
+```
+.calc-logo {
     background: #41403e;
     color: #e8eff0;
     border: solid px #41403E;
@@ -149,13 +164,20 @@ The next items to add to our calculator are the logo, “BLAND INSTRUMENTS,” a
     color: #fefefe;
     width: 50px;
     height: 50px;
-}</xmp></pre>
-<br>
-[caption id="attachment_1316" align="alignnone" width="428"]<img src="/calclogo.png" alt="" width="428" height="675" class="size-full wp-image-1316" /> Image showing our calculator logo and power button from CSS above[/caption]
-<br>
-<h2>Calculator Buttons</h2>
+}
+```
+
+  
+![](/calclogo.png)
+
+*Image showing our calculator logo and power button from CSS above*  
+
+## Calculator Buttons
+
 Next, we are going to create styling for each calculator button. We are going to specify a style for each individual corner, and then provide two values for each corner. This produces a hand-drawn look and feel for the buttons. Here is the code:
-<pre class="prettyprint"><xmp>.calc-btn {
+
+```
+.calc-btn {
     background: transparent;
     color: #41403E;
     font-size: 2rem;
@@ -166,29 +188,38 @@ Next, we are going to create styling for each calculator button. We are going to
     border: solid 7px #41403E;
     flex: 1;
     transition: all .5s ease;
-}</xmp></pre>
-<br>
-[caption id="attachment_1317" align="alignnone" width="483"]<img src="/calcnumbers.png" alt="" width="483" height="687" class="size-full wp-image-1317" /> Image showing calculator buttons using CSS above[/caption]
-<br>
-<h2>Enter button</h2>
+}
+```
+
+  
+![](/calcnumbers.png)
+
+*Image showing calculator buttons using CSS above*  
+
+## Enter button
+
 The last thing we need to add to our calculator is the ENTER button. We will be using the code from #demo-one for this button. Here is the code:
-<pre class="prettyprint"><xmp>.calc-enter {
+
+```
+.calc-enter {
     background: #bb0f29;
     color: #fefefe;
     border-radius: 20px;
     border: none;
-}</xmp></pre>
-<br>
-[caption id="attachment_1318" align="alignnone" width="427"]<img src="/calcEnter.png" alt="" width="427" height="676" class="size-full wp-image-1318" /> Image showing calculator enter buttons from CSS above<br />[/caption]
-<br>
-<h2>Button Animation</h2>
-The last thing we are going to add to our calculator is animation for each button when a user hovers over the button. This simulates the action of the button actually being pressed.
+}
+```
 
-To accomplish this we are going to add a box-shadow to our buttons. This is the shadow that will be shown for all buttons, and gives the buttons the appearance of being slightly raised from the calculator frame.
+  
+![](/calcEnter.png)
 
-To provide the animation, we are going to add a transition to the button. Then we will supply a different box-shadow for the buttons when a user hovers over them. Here is the code:
+*Image showing calculator enter buttons from CSS above*  
 
-<pre class="prettyprint"><xmp>.calc-btn {
+## Button Animation
+
+The last thing we are going to add to our calculator is animation for each button when a user hovers over the button. This simulates the action of the button actually being pressed. To accomplish this we are going to add a box-shadow to our buttons. This is the shadow that will be shown for all buttons, and gives the buttons the appearance of being slightly raised from the calculator frame. To provide the animation, we are going to add a transition to the button. Then we will supply a different box-shadow for the buttons when a user hovers over them. Here is the code:
+
+```
+.calc-btn {
     background: transparent;
     color: #41403E;
     font-size: 2rem;
@@ -203,13 +234,15 @@ To provide the animation, we are going to add a transition to the button. Then w
 }
 .calc-btn:hover {
     box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-}</xmp></pre>
-<br>
-And here is our finished calculator:
-<br>
-[caption id="attachment_1319" align="alignnone" width="436"]<img src="/calcFinished.png" alt="" width="436" height="685" class="size-full wp-image-1319" /> Image showing calculator button animation from CSS above[/caption]
-<br>
-<h2>Get The Code</h2>
-If you would like to see the complete code for the calculator you can get it from my <a href="https://github.com/ratracegrad/border-radius">GitHub repo here</a>. Please star my repo when you get the code!
+}
+```
 
-The code uses Flexbox for the layout of the calculator. If you are not familiar with Flexbox or want to review it, you can check out my free training course on Flexbox on <a href="https://www.in5days.tech/">in5days.tech</a>.
+  
+And here is our finished calculator:  
+![](/calcFinished.png)
+
+*Image showing calculator button animation from CSS above*  
+
+## Get The Code
+
+If you would like to see the complete code for the calculator you can get it from my [GitHub repo here](https://github.com/ratracegrad/border-radius). Please star my repo when you get the code! The code uses Flexbox for the layout of the calculator. If you are not familiar with Flexbox or want to review it, you can check out my free training course on Flexbox on [in5days.tech](https://www.in5days.tech/).

@@ -107,27 +107,30 @@ Smart contracts will always have an extension of *.sol* to signify that this is 
 
 On the first line of a smart contract, you will have an entry for your SPDX License Identifier. Trust in smart contracts can be better established if their source code is available. Since making source code available always touches on legal problems with regard to copyright, the Solidity compiler encourages the use of machine-readable SPDX license identifiers. Every source file should start with a comment indicating its license. Add the following code 
 
+
+```// SPDX-License-Identifier: MIT
 ```
-// SPDX-License-Identifier: MIT
-```
+
 
 ### Pragmas
 
 The pragma keyword is used to enable certain compiler features or checks.  As the solidity programming language evolves, new versions are released. You need to specify which version of the compiler you want to use to compile your code. On the second line enter the following:
 
+
+```pragma solidity ^0.8.12;
 ```
-pragma solidity ^0.8.12;
-```
+
 
 ### Name of contract
 
 The rule of thumb is you leave a blank line after the pragma entry. After the blank line, you enter the name of your contract. Your contract name should match the filename you used when you created the file. The contents of your smart contract are enclosed in squirrelly brackets. Add this line:
 
-```
-contract HelloWorld {
+
+```contract HelloWorld {
 
 }
-``` 
+```
+
 
 ### State Variables
 
@@ -137,9 +140,10 @@ Variables can be public or private. Public variables are accessible from outside
 
 Here is the code you will need to add:
 
+
+``` string public myPhrase  = 'Hello World';
 ```
- string public myPhrase  = 'Hello World';
-``` 
+
 
 ## Compiling and Running our Smart Contract
 
@@ -176,34 +180,37 @@ Now you might be asking why do we need a function to return the value of the var
 Remove the private declaration on your state variable. It should look like this now:
 
 
+
+```string myPhrase  = 'Hello World';
 ```
-string myPhrase  = 'Hello World';
-``` 
+
 
 When you declare a function you give it a name, declare its visibility (public or private) and if the function returns a value then you have to define the type of data to be returned. Sounds like a mouthful but this is what our getter function looks like:
 
 
-```
-function getPhrase() public view returns (string memory) {
+
+```function getPhrase() public view returns (string memory) {
     return myPhrase;
 }
-``` 
+```
+
 
 The last function we will write will set the value of the *myPhrase* variable. This function will need a parameter which will contain the new value we will assign to *myPhrase*. We will call this function *setPhrase*. It will be a public function.  The parameter that will be passed in will be a string variable. We will also declare this parameter to be memory so that its value is not written out to the blockchain. As a rule of thumb, a memory variable is declared with a *_*. The variable will be called *_newPhrase*.
 
 Here is what our setter function looks like:
 
-```
-function setPhrase(string memory _newPhrase) public  {
+
+```function setPhrase(string memory _newPhrase) public  {
     myPhrase = _newPhrase;
 }
-``` 
+```
+
  
 Now before we compile and run our finished smart contact, here is the entire contents of our smart contract:
 
 
-```
-// SPDX-License-Identifier: MIT
+
+```// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.12;
 
 contract HelloWorld {
@@ -218,7 +225,8 @@ contract HelloWorld {
         myPhrase = _newPhrase;
     }
 }
-``` 
+```
+
 
 Follow the steps we did earlier and compile your smart contract. After it compiles successfully, deploy it. You can click on the *getPhrase* function to get the initial value of the *myPhrase* variable.
 
@@ -227,4 +235,5 @@ To change the value, enter a new string next to the *setPhrase* function and the
 You can validate that they *myPhrase* variable was updated by clicking on the *getPhrase* function.
 
 Congratulations you have written your very first Hello World smart contract in solidity!
+
 

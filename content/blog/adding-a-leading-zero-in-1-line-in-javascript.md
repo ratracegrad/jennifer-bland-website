@@ -15,17 +15,22 @@ At work, I recently ran into a scenario where we were capturing a user's date of
 
 ## Starting Data
 
+
 ```javascript
 let month = 1;
 let day = 7;
 ```
 
+
 My simple solution in one line is:
+
 
 ```javascript
 month = `0${month}`.slice(-2)
 ```
 
+
 Let's walk through this code. This combines `0` with the value the user inputs for their month. Then it takes the right two digits and assigns this to the month.
 
 But what if the user inputs the value `10` for their month? It still works. It will combine 0 with 10 to produce `010` and then it takes the right two digits which is `10`.
+

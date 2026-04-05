@@ -11,20 +11,12 @@ author:
     alt: Jennifer Bland
 ---
 
-Whiteboarding exercises. If you interview for a programming position, you will face a whiteboarding challenge. Whether you are interviewing for your first programming job or interviewing for your next programming job, you will have to ace the coding whiteboard exercise. I have created a series of videos that show you how to ace the whiteboard exercise.
+Whiteboarding exercises. If you interview for a programming position, you will face a whiteboarding challenge. Whether you are interviewing for your first programming job or interviewing for your next programming job, you will have to ace the coding whiteboard exercise. I have created a series of videos that show you how to ace the whiteboard exercise. I have created a series of four videos that cover the topics of HTML, CSS, JavaScript and jQuery. Please watch these videos so they can help you prepare for your coding whiteboard interview.
 
-I have created a series of four videos that cover the topics of HTML, CSS, JavaScript and jQuery. Please watch these videos so they can help you prepare for your coding whiteboard interview.
+## HTML and CSS Interview Questions
 
-<h2>HTML and CSS Interview Questions</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mEU_c7mxXFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## JavaScript Interview Questions - Part 1
 
+## JavaScript Interview Questions - Part 2
 
-
-<h2>JavaScript Interview Questions - Part 1</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g0PFa57iAlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2>JavaScript Interview Questions - Part 2</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jaYtmfLLJrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2>jQuery Interview Questions</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bjZBe2QtWvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## jQuery Interview Questions

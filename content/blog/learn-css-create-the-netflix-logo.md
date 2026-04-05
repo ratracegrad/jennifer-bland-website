@@ -29,6 +29,7 @@ We will create the Netflix logo in pure CSS. It will look like this:
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +47,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 ```
 
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -60,21 +63,9 @@ body{
 }
 ```
 
-## border-left and border-right
+\## border-left and border-right When you look at the Netflix logo it is basically 2 vertical lines that are joined by a third line. When you create an element in CSS you can define whether or not that element has a border. Each element in CSS has four sides. You can define a border for all four sides or any combination of individual sides. Looking at the Netflix logo, it appears like an element that has a border on the right and left sides. These borders are red and have the same width. We will use the border-left and border-right properties to create the first part of our Netflix logo. In your \`index.html\` file add the following line between the \`body\` tags: \`
 
-When you look at the Netflix logo it is basically 2 vertical lines that are joined by a third line.
-
-When you create an element in CSS you can define whether or not that element has a border. Each element in CSS has four sides. You can define a border for all four sides or any combination of individual sides.
-
-Looking at the Netflix logo, it appears like an element that has a border on the right and left sides. These borders are red and have the same width.
-
-We will use the border-left and border-right properties to create the first part of our Netflix logo.
-
-In your `index.html` file add the following line between the `body` tags:
-
-`<div class="netflix-logo"></div>`
-
-Now add this style to your `style.css` file:
+\` Now add this style to your \`style.css\` file:
 
 ```css
 .netflix-logo {
@@ -84,6 +75,7 @@ Now add this style to your `style.css` file:
   border-right: 3rem solid #e50914;
 }
 ```
+
 
 When you look at our logo in the browser you will see this:
 
@@ -101,6 +93,7 @@ We will set the height and width to 100% and the background to the red color we 
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .netflix-logo:before {
   display: block;
@@ -110,6 +103,7 @@ Add the following code to your `style.css` file:
   background: #e50914;
 }
 ```
+
 
 When you look at the logo now this is what you see:
 
@@ -153,4 +147,5 @@ If you view your `index.html` file in a browser. you should see the completed Ne
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/netflix-logo-pure-css).
+
 

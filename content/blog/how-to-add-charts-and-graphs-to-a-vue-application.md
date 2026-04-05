@@ -11,81 +11,81 @@ author:
     alt: Jennifer Bland
 ---
 
-<p>The heart of every application is displaying data to users. Sometimes it is very challenging to display that data using text. Charts and graphs are a great way to provide a visual representation of that data. In this article, I will show you how easy it is to create visually appealing charts in your Vue.js application.</p>
+The heart of every application is displaying data to users. Sometimes it is very challenging to display that data using text. Charts and graphs are a great way to provide a visual representation of that data. In this article, I will show you how easy it is to create visually appealing charts in your Vue.js application.
 
-<h2>Getting Started</h2>
+## Getting Started
 
-<p>I will be using the Vue CLI to scaffold out a starter application quickly. I will use both echarts and vue-echarts to add charts to our starter application. So let’s get started.</p>
+I will be using the Vue CLI to scaffold out a starter application quickly. I will use both echarts and vue-echarts to add charts to our starter application. So let’s get started.
 
-<p>Install the Vue CLI with this command:</p>
+Install the Vue CLI with this command:
 
-<pre class="prettyprint"><xmp>npm install @vue/cli
-</xmp></pre>
+```
+npm install @vue/cli
+```
 
-<p>Next, we will use the Vue CLI to scaffold out a Vue application that we will use. We will create the application using this command:</p>
+Next, we will use the Vue CLI to scaffold out a Vue application that we will use. We will create the application using this command:
 
+```
+vue create vue-echarts-demo
+```
 
+The Vue CLI will ask you if you want to use the default preset or manually select features. Select `default`.
 
+This will create our application in a folder called `vue-echarts-demo`. Change into this directory with this command:
 
-<pre class="prettyprint"><xmp>vue create vue-echarts-demo
-</xmp></pre>
+```
+cd vue-echarts-demo
+```
 
-<p>The Vue CLI will ask you if you want to use the default preset or manually select features. Select <code>default</code>.</p>
+## Installing the chart packages
 
-<p>This will create our application in a folder called <code>vue-echarts-demo</code>. Change into this directory with this command:</p>
+**eCharts** is one of the largest and most widely used chart programs. We will be using this in our vue application. To allow it to be used in Vue, we will also be using a product called **vue-echarts**. Vue-echarts is a wrapper for eCharts to allow it to work in the Vue environment.
 
-<pre class="prettyprint"><xmp>cd vue-echarts-demo
-</xmp></pre>
+You can install them both with this command:
 
-<h2 id="installingthechartpackages">Installing the chart packages</h2>
+```
+npm install echarts vue-echarts
+```
 
-<p><strong>eCharts</strong> is one of the largest and most widely used chart programs. We will be using this in our vue application. To allow it to be used in Vue, we will also be using a product called <strong>vue-echarts</strong>. Vue-echarts is a wrapper for eCharts to allow it to work in the Vue environment.</p>
+## Configuring the chart packages
 
-<p>You can install them both with this command:</p>
+Now that we have the chart packages installed we need to install them in our application. Open up the `src` directory and create a new directory called `plugins`. Inside the new plugins directory create a file called `echarts.js`.
 
-<pre class="prettyprint"><xmp>npm install echarts vue-echarts
-</xmp></pre>
+We will create a Vue component for eCharts in this file. The component will be globally available in our application. The steps we need to take is to import both vue and vue-echarts. Next, we will import the parts of eCharts that we will be using. Our first chart will be a bar chart so we will need to import that too. Finally, we create a global component called `chart`. Here is what your echarts.js file should look like:
 
-<h2 id="configuringthechartpackages">Configuring the chart packages</h2>
-
-<p>Now that we have the chart packages installed we need to install them in our application. Open up the <code>src</code> directory and create a new directory called <code>plugins</code>. Inside the new plugins directory create a file called <code>echarts.js</code>.</p>
-
-<p>We will create a Vue component for eCharts in this file. The component will be globally available in our application. The steps we need to take is to import both vue and vue-echarts. Next, we will import the parts of eCharts that we will be using. Our first chart will be a bar chart so we will need to import that too. Finally, we create a global component called <code>chart</code>. Here is what your echarts.js file should look like:</p>
-
-<pre class="prettyprint"><xmp>import Vue from 'vue';
+```
+import Vue from 'vue';
 import Echarts from 'vue-echarts';
 
 import 'echarts/lib/chart/bar';
 
 Vue.component('chart', Echarts);
-</xmp></pre>
+```
 
-<h2 id="importingourpluginfile">Importing our plugin file</h2>
+## Importing our plugin file
 
-<p>We have to make Vue aware of the file we just created. We do that by importing it in the <code>main.js</code> file. Open up the main.js file and add the following line after the last import statement:</p>
+We have to make Vue aware of the file we just created. We do that by importing it in the `main.js` file. Open up the main.js file and add the following line after the last import statement:
 
-<pre class="prettyprint"><xmp>import "@/plugins/echarts";
-</xmp></pre>
+```
+import "@/plugins/echarts";
+```
 
-<p>Now we are ready to create our first chart.</p>
+Now we are ready to create our first chart.
 
-<h2 id="creatingabarchart">Creating a Bar Chart</h2>
+## Creating a Bar Chart
 
-<p>We will be creating all our charts in the HelloWorld component. This component was created automatically when we used the Vue CLI to create our application.</p>
+We will be creating all our charts in the HelloWorld component. This component was created automatically when we used the Vue CLI to create our application.
 
-<p>Open up the file <code>HelloWorld.vue</code> and do the following:</p>
+Open up the file `HelloWorld.vue` and do the following:
 
-<ul>
-<li>delete all the html inside the template tags</li>
+-   delete all the html inside the template tags
+-   delete the props in the script tags
+-   delete all the CSS in the style tags
 
-<li>delete the props in the script tags</li>
+Your file should look like this:
 
-<li>delete all the CSS in the style tags</li>
-</ul>
-
-<p>Your file should look like this:</p>
-
-<pre class="prettyprint"><xmp><template>
+```
+<template>
 </template>
 
 <script>
@@ -96,18 +96,20 @@ export default {
 
 <style scoped>
 </style>
-</xmp></pre>
+```
 
-<p>In our plugin, we called our component <code>chart</code>. Vue-echarts builds charts by using the data you pass into it using a prop called <code>options</code>. Let’s use that to create the html for our first chart. Add the following code inside the template tags:</p>
+In our plugin, we called our component `chart`. Vue-echarts builds charts by using the data you pass into it using a prop called `options`. Let’s use that to create the html for our first chart. Add the following code inside the template tags:
 
-<pre class="prettyprint"><xmp><chart :options="chartOptionsBar"></chart>
-</xmp></pre>
+```
+<chart :options="chartOptionsBar"></chart>
+```
 
-<h2 id="definingourchart">Defining our chart</h2>
+## Defining our chart
 
-<p>Next, we need to define the data that will be used to create our chart. Inside the script tags create a new data object with an entry for chartOptionsBar. Your script tag should look like this:</p>
+Next, we need to define the data that will be used to create our chart. Inside the script tags create a new data object with an entry for chartOptionsBar. Your script tag should look like this:
 
-<pre class="prettyprint"><xmp><script>
+```
+<script>
 export default {
   name: 'HelloWorld',
   data: () => ({
@@ -115,24 +117,26 @@ export default {
   })
 }
 </script>
-</xmp></pre>
+```
 
-<h2 id="creatingchartdata">Creating chart data</h2>
+## Creating chart data
 
-<p>Our first bar chart will contain quarterly sales data for a fictional company. Each quarter will be displayed on the x-axis of the chart. The sales amount will be displayed on the y-axis of the chart.</p>
+Our first bar chart will contain quarterly sales data for a fictional company. Each quarter will be displayed on the x-axis of the chart. The sales amount will be displayed on the y-axis of the chart.
 
-<p>Let’s define our xAxis first. We will provide a data array which will contain entries for each quarter of the year. Add the following to our <code>chartOptionsBar</code> object:</p>
+Let’s define our xAxis first. We will provide a data array which will contain entries for each quarter of the year. Add the following to our `chartOptionsBar` object:
 
-<pre class="prettyprint"><xmp>chartOptionsBar: {
+```
+chartOptionsBar: {
   xAxis: {
     data: ['Q1', 'Q2', 'Q3', 'Q4']
   }
 }
-</xmp></pre>
+```
 
-<p>Our yAxis will only display the value of sales for each quarter. For that reason, we do not need to create a data array for it. Instead, we tell it that it will display the <code>value</code>. Add the following to our chartOptionsBar object:</p>
+Our yAxis will only display the value of sales for each quarter. For that reason, we do not need to create a data array for it. Instead, we tell it that it will display the `value`. Add the following to our chartOptionsBar object:
 
-<pre class="prettyprint"><xmp>chartOptionsBar: {
+```
+chartOptionsBar: {
   xAxis: {
     data: ['Q1', 'Q2', 'Q3', 'Q4']
   },
@@ -140,11 +144,12 @@ export default {
     type: 'value'
   }
 }
-</xmp></pre>
+```
 
-<p>The last step is to provide the data that will be displayed in our bar chart. You do this by adding a series array. Series is an array of objects. Each object defines the type of chart to be created and will have a data array of values to be plotted on the graph. You can add it with this:</p>
+The last step is to provide the data that will be displayed in our bar chart. You do this by adding a series array. Series is an array of objects. Each object defines the type of chart to be created and will have a data array of values to be plotted on the graph. You can add it with this:
 
-<pre class="prettyprint"><xmp>chartOptionsBar: {
+```
+chartOptionsBar: {
   xAxis: {
     data: ['Q1', 'Q2', 'Q3', 'Q4']
   },
@@ -158,66 +163,72 @@ export default {
     }
   ]
 }
-</xmp></pre>
+```
 
-<p>You can start your server with the command:</p>
+You can start your server with the command:
 
-<pre class="prettyprint"><xmp>npm run serve
-</xmp></pre>
+```
+npm run serve
+```
 
-<p>Then open your browser to localhost:8080 and you will see your first chart that looks like this:</p>
+Then open your browser to localhost:8080 and you will see your first chart that looks like this:
 
-<p><img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563664443/v1chxcrgasbkodauov51_xx53zn.png" alt="" /></p>
+![](https://res.cloudinary.com/ratracegrad/image/upload/v1563664443/v1chxcrgasbkodauov51_xx53zn.png)
 
-<h2 id="addingstylingtoourcharts">Adding Styling To Our Charts</h2>
+## Adding Styling To Our Charts
 
-<p>By default, vue-echarts sets a width of 600px for a chart. I would much rather have our charts to be full-width of its container. To do this I am going to place the chart inside a div. I will give this div a class of <code>chart-wrapper</code>. My template now looks like this:</p>
+By default, vue-echarts sets a width of 600px for a chart. I would much rather have our charts to be full-width of its container. To do this I am going to place the chart inside a div. I will give this div a class of `chart-wrapper`. My template now looks like this:
 
-<pre class="prettyprint"><xmp><template>
+```
+<template>
   <div class="chart-wrapper">
     <chart :options="chartOptionsBar"></chart>
   </div>
 </template>
-</xmp></pre>
+```
 
-<p>Next, I want to add some styling to the new <code>chart-wrapper</code> class. I will make this class have a width equal to the screen size and have a height of 700px. Here is the style I have added:</p>
+Next, I want to add some styling to the new `chart-wrapper` class. I will make this class have a width equal to the screen size and have a height of 700px. Here is the style I have added:
 
-<pre class="prettyprint"><xmp>.chart-wrapper {
+```
+.chart-wrapper {
   width: 100%;
   height: 700px;
 }
-</xmp></pre>
+```
 
-<p>Vue-echarts adds a class called <code>echarts</code> to all its charts. We will also style that in our CSS. We will tell this class to take up 100% of the height and width of its container which is <code>chart-wrapper</code>. Here is the CSS I have added:</p>
+Vue-echarts adds a class called `echarts` to all its charts. We will also style that in our CSS. We will tell this class to take up 100% of the height and width of its container which is `chart-wrapper`. Here is the CSS I have added:
 
-<pre class="prettyprint"><xmp>.echarts {
+```
+.echarts {
   width: 100%;
   height: 100%;
 }
-</xmp></pre>
+```
 
-<p>While we are adding styles I want to replace the Vue logo with a title. Open up the App.vue file. Delete the <img> tag and replace it with:</p>
+While we are adding styles I want to replace the Vue logo with a title. Open up the App.vue file. Delete the `<img>` tag and replace it with:
 
-<pre class="prettyprint"><xmp>Vue eCharts Demo</h1>
-</xmp></pre>
+```html
+<h1>Vue eCharts Demo</h1>
+```
 
-<p>Now our chart looks like this:</p>
+Now our chart looks like this:
 
-<p><img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563664468/akeddipym70a87wrwohl_o4l75y.png" alt="" />
-Updated bar chart with our styling</p>
+![](https://res.cloudinary.com/ratracegrad/image/upload/v1563664468/akeddipym70a87wrwohl_o4l75y.png) Updated bar chart with our styling
 
-<h2 id="addingatitleandcolor">Adding a Title and Color</h2>
+## Adding a Title and Color
 
-<p>This is a great start for our first chart. When people view the chart they are not sure what they are viewing. We can resolve that dilemma by adding a title to our chart.</p>
+This is a great start for our first chart. When people view the chart they are not sure what they are viewing. We can resolve that dilemma by adding a title to our chart.
 
-<p>Each component of eCharts that you want to use has to be imported. A title is a component so we need to import it. Open up the echarts.js file and add the following line:</p>
+Each component of eCharts that you want to use has to be imported. A title is a component so we need to import it. Open up the echarts.js file and add the following line:
 
-<pre class="prettyprint"><xmp>import 'echarts/lib/component/title';
-</xmp></pre>
+```
+import 'echarts/lib/component/title';
+```
 
-<p>Next, we can add a title to our bar chart. Back in HelloWorld.vue component let’s add a title to our <code>chartOptionsBar</code> object.</p>
+Next, we can add a title to our bar chart. Back in HelloWorld.vue component let’s add a title to our `chartOptionsBar` object.
 
-<pre class="prettyprint"><xmp>chartOptionsBar: {
+```
+chartOptionsBar: {
   xAxis: {
     data: ['Q1', 'Q2', 'Q3', 'Q4']
   },
@@ -234,15 +245,16 @@ Updated bar chart with our styling</p>
     text: 'Quarterly Sales Results'
   }
 }
-</xmp></pre>
+```
 
-<p>eCharts by default places the title on the left side of the bar chart. Here is what our chart looks like now:</p>
+eCharts by default places the title on the left side of the bar chart. Here is what our chart looks like now:
 
-<p><img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563664490/1zh246tgt85trqcmtqcs_jypmjb.png" alt="" /></p>
+![](https://res.cloudinary.com/ratracegrad/image/upload/v1563664490/1zh246tgt85trqcmtqcs_jypmjb.png)
 
-<p>I don’t like how this title looks so let’s change it. I want the title to have a bigger font size and to be centered. The chart has an option called <code>x</code> which represents the horizontal plane. I want the title centered on this. To make the title have a bigger font size we need to add a <code>textStyle</code>. The last change that I want to make is to set the bar to be a different color. Here is what my options look like now:</p>
+I don’t like how this title looks so let’s change it. I want the title to have a bigger font size and to be centered. The chart has an option called `x` which represents the horizontal plane. I want the title centered on this. To make the title have a bigger font size we need to add a `textStyle`. The last change that I want to make is to set the bar to be a different color. Here is what my options look like now:
 
-<pre class="prettyprint"><xmp>chartOptionsBar: {
+```
+chartOptionsBar: {
   xAxis: {
     data: ['Q1', 'Q2', 'Q3', 'Q4']
   },
@@ -264,19 +276,20 @@ Updated bar chart with our styling</p>
   },
   color: ['#127ac2']
 }
-</xmp></pre>
+```
 
-<p>Here is the final version of my bar chart:</p>
+Here is the final version of my bar chart:
 
-<p><img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563664519/cccaq1ohsx398yjc17ph_vytp1o.png" alt="" /></p>
+![](https://res.cloudinary.com/ratracegrad/image/upload/v1563664519/cccaq1ohsx398yjc17ph_vytp1o.png)
 
-<h2 id="creatingalinechart">Creating a Line Chart</h2>
+## Creating a Line Chart
 
-<p>Next, I will show you how to create a line chart. We will create a line chart showing monthly stock prices for a fictional company. So let’s get started.</p>
+Next, I will show you how to create a line chart. We will create a line chart showing monthly stock prices for a fictional company. So let’s get started.
 
-<p>First, we need to create a new chart-wrapper div and a new chart element. The new chart element will get its options from the <code>chartOptionsLine</code> object. Here is what my html code looks like now:</p>
+First, we need to create a new chart-wrapper div and a new chart element. The new chart element will get its options from the `chartOptionsLine` object. Here is what my html code looks like now:
 
-<pre class="prettyprint"><xmp><div>
+```
+<div>
   <div class="chart-wrapper">
     <chart :options="chartOptionsBar"></chart>
   </div>
@@ -285,11 +298,12 @@ Updated bar chart with our styling</p>
     <chart :options="chartOptionsLine"></chart>
   </div>
 </div>
-</xmp></pre>
+```
 
-<p>Next, in our data object create a new chartOptionsLine object. Instead of creating a new object copy the existing chartOptionsBar object. Rename the copy to <code>chartOptionsLine</code>. For right now we only need to change the type in series from bar to line. Here is what our <code>chartOptionsLine</code> object looks like:</p>
+Next, in our data object create a new chartOptionsLine object. Instead of creating a new object copy the existing chartOptionsBar object. Rename the copy to `chartOptionsLine`. For right now we only need to change the type in series from bar to line. Here is what our `chartOptionsLine` object looks like:
 
-<pre class="prettyprint"><xmp>chartOptionsLine: {
+```
+chartOptionsLine: {
   xAxis: {
     data: ["Q1", "Q2", "Q3", "Q4"]
   },
@@ -311,26 +325,28 @@ Updated bar chart with our styling</p>
   },
   color: ["#127ac2"]
 }
-</xmp></pre>
+```
 
-<p>If you go to your browser you will notice that the line chart does not display. This is because we need to import it into our plugin as we did with the bar chart.</p>
+If you go to your browser you will notice that the line chart does not display. This is because we need to import it into our plugin as we did with the bar chart.
 
-<p>Open up echarts.js and add the following line:</p>
+Open up echarts.js and add the following line:
 
-<pre class="prettyprint"><xmp>import 'echarts/lib/chart/line';
-</xmp></pre>
+```
+import 'echarts/lib/chart/line';
+```
 
-<p>We now have this line graph:</p>
+We now have this line graph:
 
-<p><img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563664544/xbiogjpyq77hjtkgeyev_mj3zdb.png" alt="" /></p>
+![](https://res.cloudinary.com/ratracegrad/image/upload/v1563664544/xbiogjpyq77hjtkgeyev_mj3zdb.png)
 
-<h2 id="changetitleanddata">Change title and data</h2>
+## Change title and data
 
-<p>We want the line chart to display monthly stock pricing for a fictional company. We will need more than four data points. We will have 12 data points four our line graph. We also want the title displayed on the x-axis to be the months of the year instead of quarters. We also need to change the title of our graph.</p>
+We want the line chart to display monthly stock pricing for a fictional company. We will need more than four data points. We will have 12 data points four our line graph. We also want the title displayed on the x-axis to be the months of the year instead of quarters. We also need to change the title of our graph.
 
-<p>We can update our chartOptionsLine with these values:</p>
+We can update our chartOptionsLine with these values:
 
-<pre class="prettyprint"><xmp>chartOptionsLine: {
+```
+chartOptionsLine: {
   xAxis: {
     data: [
       "Jan",
@@ -365,24 +381,24 @@ Updated bar chart with our styling</p>
   },
   color: ["#127ac2"]
 }
-</xmp></pre>
+```
 
-<p>Now our line chart looks like this:</p>
+Now our line chart looks like this:
 
-<p><img src="https://res.cloudinary.com/ratracegrad/image/upload/v1563664582/m1k4cgnfr3rns3t056mj_vpgkaq.png" alt="" /></p>
+![](https://res.cloudinary.com/ratracegrad/image/upload/v1563664582/m1k4cgnfr3rns3t056mj_vpgkaq.png)
 
-<h2 id="accessingchartdocumentation">Accessing Chart Documentation</h2>
+## Accessing Chart Documentation
 
-<p>eCharts provides many more types of charts besides bar and line. eCharts provides a plethora of options that you can add to your chart. You can add legends or tooltips for example.</p>
+eCharts provides many more types of charts besides bar and line. eCharts provides a plethora of options that you can add to your chart. You can add legends or tooltips for example.
 
-<p>If you want to find out about the other chart types and options that are available you can read their documentation. Here is a <a href="https://echarts.apache.org/option.html#title">link to the documentation</a>.</p>
+If you want to find out about the other chart types and options that are available you can read their documentation. Here is a [link to the documentation](https://echarts.apache.org/option.html#title).
 
-<h2 id="getthecode">Get the Code</h2>
+## Get the Code
 
-<p>All the code for this article can be <a href="https://github.com/ratracegrad/vue-eCharts-demo">found in my GitHub account</a>.</p>
+All the code for this article can be [found in my GitHub account](https://github.com/ratracegrad/vue-eCharts-demo).
 
-<h2 id="conclusion">Conclusion</h2>
+## Conclusion
 
-<p>It is very easy to add custom charts and graphs to your Vue.js application using eCharts and vue-echarts. Charts provide a way to visualize data for users to view.</p>
+It is very easy to add custom charts and graphs to your Vue.js application using eCharts and vue-echarts. Charts provide a way to visualize data for users to view.
 
-<p>If you have any feedback please leave a comment below. Please clap for this article. Thanks for reading.</p>
+If you have any feedback please leave a comment below. Please clap for this article. Thanks for reading.

@@ -57,29 +57,37 @@ After Coinbase creates your application, you will be shown your `Client ID` and 
 
 I am using the express-generator to scaffold out the Node.js application. In your terminal use this command to create your Node application:
 
+
 ```bash
 npx express-generator -e --view=ejs coinbase-demo
 ```
+
 
 I will be using EJS as my view and template engine so I have included options for it. My application is coinbase-demo.
 
 Change into the directory that contains your applicaiton with this command:
 
+
 ```bash
 cd coinbase-demo
 ```
 
+
 Install all the dependencies next:
+
 
 ```bash
 npm install
 ```
 
+
 Before we start editing I want to install 3 additional packages that we will be using. You can install them with this command:
+
 
 ```bash
 npm install axios nodemon qs
 ```
+
 
 Open the application in your editor.
 
@@ -89,34 +97,42 @@ The express generator app goes through a process to verify the port value you gi
 
 Open the `package.json` file. Update the start script so that it looks like this:
 
+
 ```bash
 "start": "nodemon app.js"
 ```
 
+
 Next open up the `app.js` file. After the line for logger add the following 2 lines:
+
 
 ```bash
 const axios = require('axios');
 const port = process.env.PORT || 3000;
 ```
+
 NOTE: the port must match the value you used for your redirect URI in your Coinbase application.
 
 Since we will be putting all our routes in a single file you can delete the line for `usersRouter` and the line where it is set in app.use section. You can also delete the `users.js` file in the routes directory.
 
 We will no longer be exporting the app.js file so delete the last line that was exporting it. Replace it with the following:
 
+
 ```bash
 app.listen(port, '0.0.0.0', function () {
   console.log("Server starting on localhost:" + port);
 });
 ```
+
 You can now delete the `bin` directory and the file `www` contained in it.
 
 Start your server by entering the following command in the terminal:
 
+
 ```bash
 npm start
 ```
+
 
 Open your browser and enter the URI `localhost:3000`. You should see the following:
 
@@ -132,11 +148,13 @@ On the homepage of our application we need to add a button that calls the Coinba
 
 Open up the index.ejs file in the views folder. Add the following button below the paragraph with the Welcome line:
 
+
 ```javascript
 <a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=2240e80398486d147c6a3e2e48e63b3d9a562497ad85bcd3300b7dda67eae42d&redirect_uri=http://localhost:3000/callback&state=MY_SECRET_KEY&scope=wallet:user:read,wallet:user:email,wallet:accounts:read,wallet:transactions:read&account=all" class="btn">
  Connect with Coinbase
 </a>
 ```
+
 
 You might notice that that is one very, very long `a` tag. 
 
@@ -144,13 +162,16 @@ Right above it is the welcome message that displays a `title` that is passed int
 
 Open up the `index.js` file in the routes folder. After the router variable add the following lines. Make sure to put in your client_id and callback URI from your Coinbase OAuth2 application:
 
+
 ```bash
 const SECRET = "MY_SECRET_KEY";
 const REDIRECT_URI = "http://localhost:3000/callback";
 const CLIENT_ID = "2240e80398486d147c6a3e2e48e63b3d9a562497ad85bcd3300b7dda67eae42d";
 const SCOPE = "wallet:user:read,wallet:user:email,wallet:accounts:read,wallet:transactions:read";
 ```
+
 In the `router.get` it passes in an object that currently has a value for the `title`. Add the following so that they are passed in:
+
 
 ```bash
 router.get('/', function(req, res, next) {
@@ -164,18 +185,22 @@ router.get('/', function(req, res, next) {
 });
 ```
 
+
 Now we can update our button to use the values in our button. Go back an open up the index.ejs file in the views folder. Update your button to be this:
+
 
 ```bash
 <a href="https://www.coinbase.com/oauth/authorize?response_type=code&client_id=<%= CLIENT_ID %>&redirect_uri=<%= REDIRECT_URI %>&state=<%= SECRET %>&scope=<%= SCOPE %>&account=all" >
   Connect with Coinbase
 </a>
 ```
+
 Now when you view your application in your browser you should see this:
 
 ![](https://res.cloudinary.com/ratracegrad/image/upload/v1642959132/Screen_Shot_2022-01-23_at_12.31.33_PM_jdxyti.png)
 
 I am not so keen on how this button looks. Add a `class="btn"` to the button. Open up the file `style.css` in the public/stylesheets directory. Add the following css:
+
 
 ```html
 .btn {
@@ -192,6 +217,7 @@ I am not so keen on how this button looks. Add a `class="btn"` to the button. Op
   text-decoration: none;
 }
 ```
+
 
 Now our buttons looks like this:
 
@@ -216,6 +242,7 @@ Let's go back to the Coinbase API documentation. After authorizing your applicat
 We will make the call to the token endpoint when Coinbase calls our redirect URI.
 
 Open up the `index.js` file in the routes directory. Add the following code to handle the callback route:
+
 
 ```bash
 // User gets redirected to this endpoint on successful login
@@ -248,6 +275,7 @@ router.get("/callback", async (req, res) => {
 });
 ```
 
+
 Let's walk through this code.
 
 After our application is authorized, Coinbase call our redirect URI and passes it two query params - code and secret. We are destructuring them into variables. 
@@ -256,9 +284,11 @@ When we called Coinbase initially we passed in a secret phrase which is returned
 
 Next we are going to stringify the data we will be sending to Coinbase to get the token for the user. We will use the `qs` package we installed when we created our application. Add the following line at the top of the file to import it:
 
+
 ```bash
 const qs = require('qs');
 ```
+
 
 The object that we will stringify has the following values:
 
@@ -270,15 +300,19 @@ The object that we will stringify has the following values:
 
 Next we create a `config` object that will passed into axios. We will use axios to make the `POST` call to Coinbase to get the token. We don't have axios defined yet so add its import at top of the file:
 
+
 ```bash
 let axios = require('axios');
 ```
 
+
 For right now we are going to display the contents of what is returned from Coinbase in our brower with this line:
+
 
 ```bash
 res.send({ response: response?.data });
 ```
+
 
 Let's test everything. Go to your browser and navigate to the URI `http://localhost:3000`.
 

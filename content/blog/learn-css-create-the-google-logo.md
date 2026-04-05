@@ -29,6 +29,7 @@ We will create the Google logo in pure CSS. It will look like this:
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +46,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -59,21 +62,25 @@ body{
 }
 ```
 
+
 ## Dissecting the Google Logo
 
 The Google logo is a multi-colored letter G. If we look at it closely it is basically a multi-colored circle with part of it removed and replaced with a line. Knowing that then we will use that in creating the Google logo.
 
 Add the following line inside the `body` tag of your `index.html` file:
 
+
 ```html
 	<div class="google-logo"></div>
 ```
+
 
 ## Creating our multi-colored circle
 
 The first step in creating the Google logo is to create a multi-colored logo. This first step is to create a circle with a different color for each corner. For this demo, I am going to set the circle to have a height and width of 300px.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .google-logo {
@@ -89,6 +96,7 @@ Add the following code to your `style.css` file:
 	background-color: azure;
 }
 ```
+
 
 This is what our logo looks like now:
 
@@ -113,6 +121,7 @@ We set the top to be 50%. That makes the top of the line to be at 50% of the cir
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .google-logo::before {
 	content: "";
@@ -126,6 +135,7 @@ Add the following code to your `style.css` file:
 	background-color: #4285f4;
 }
 ```
+
 
 This is what our logo looks like now:
 
@@ -146,6 +156,7 @@ In a previous [article about creating the YouTube logo](/blog/learn-css-create-t
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .google-logo::after {
 	content: "";
@@ -159,6 +170,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 ## Final Logo
 
 If you view your `index.html` file in a browser. you should see the completed Google Logo:
@@ -168,4 +180,5 @@ If you view your `index.html` file in a browser. you should see the completed Go
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/google-logo-pure-css).
+
 

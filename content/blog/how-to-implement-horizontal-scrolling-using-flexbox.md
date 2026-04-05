@@ -11,73 +11,75 @@ author:
     alt: Jennifer Bland
 ---
 
-<img class="alignnone size-full wp-image-1582" src="/horizontalScrollingWithFlexbox.png" alt="" width="1000" height="603" />
-<p>If you create websites, chances are you have been asked to create a horizontal scrolling component. It is extremely easy to implement this using just a few lines of Flexbox. Let me show you how.</p>
+![](/horizontalScrollingWithFlexbox.png)
 
-<h2>Project Layout</h2>
+If you create websites, chances are you have been asked to create a horizontal scrolling component. It is extremely easy to implement this using just a few lines of Flexbox. Let me show you how.
 
-<p>We need to create a container that will contain all the images that we want to scroll. Here is the code:</p>
+## Project Layout
 
+We need to create a container that will contain all the images that we want to scroll. Here is the code:
 
-
-
-<pre class="prettyprint"><xmp><div class="container"><img src="images/bhutan1.jpg" alt="Bhutan" />
+```html
+<div class="container"><img src="images/bhutan1.jpg" alt="Bhutan" />
 <img src="images/bhutan2.jpg" alt="Bhutan" />
 <img src="images/bhutan3.jpg" alt="Bhutan" />
 <img src="images/bhutan4.jpg" alt="Bhutan" />
 <img src="images/bhutan5.jpg" alt="Bhutan" />
 <img src="images/bhutan6.jpg" alt="Bhutan" />
-<img src="images/bhutan7.jpg" alt="Bhutan" /></div></xmp></pre>
+<img src="images/bhutan7.jpg" alt="Bhutan" /></div>
+```
 
-<h2>Styling the Project</h2>
+## Styling the Project
 
-<p>Next step is to add styling so that the container scrolls horizontally. To do this I make the container display as flexbox. In addition, I am setting the overflow-x value to auto. Here is the style:</p>
+Next step is to add styling so that the container scrolls horizontally. To do this I make the container display as flexbox. In addition, I am setting the overflow-x value to auto. Here is the style:
 
-```CSS
+```css
 .container {
     display: flex;
     overflow-x: auto;
 }
 ```
 
-<p>This is what the horizontal scroll looks like:</p>
+This is what the horizontal scroll looks like:
 
-<img src="/scrolling1.gif" alt="" width="406" height="820" class="alignnone size-full wp-image-1583" />
+![](/scrolling1.gif)
 
-<p>That does provide our requirement of a horizontal scroll area. I am not satisfied with how it looks. There are three things I want to change:</p>
-<ul>
-	<li>Add white space between the images</li>
-	<li>Get rid of the horizontal scrollbar</li>
-	<li>Place the scroller in the middle of the screen</li>
-</ul>
+That does provide our requirement of a horizontal scroll area. I am not satisfied with how it looks. There are three things I want to change:
 
+-   Add white space between the images
+-   Get rid of the horizontal scrollbar
+-   Place the scroller in the middle of the screen
 
-<p>The images are touching. Let’s add some white space between them. Here is the CSS for this:</p>
+The images are touching. Let’s add some white space between them. Here is the CSS for this:
 
-```CSS
+```css
 .container img {
     margin-right: 15px;
 }
 ```
 
-<p>Next, I want to get rid of the horizontal scrollbar which I can do with this code:</p>
+Next, I want to get rid of the horizontal scrollbar which I can do with this code:
 
-```CSS
+```css
+.container::-webkit-scrollbar {
     display: none;
 }
 ```
 
-<p>The last change that I want to do is to center the scrolling area in the center of the screen. By default, the height of the html is the height of the elements. I need to make the height to be 100% of the viewport. Flexbox provides a way to center items with the align-items setting. To use this functionality, I am going to convert the body to display as flexbox. Here is the code that I am going to add for the body:</p>
+The last change that I want to do is to center the scrolling area in the center of the screen. By default, the height of the html is the height of the elements. I need to make the height to be 100% of the viewport. Flexbox provides a way to center items with the align-items setting. To use this functionality, I am going to convert the body to display as flexbox. Here is the code that I am going to add for the body:
 
-<pre class="prettyprint"><xmp>body {
+```css
+body {
     display: flex;
     align-items: center;
     height: 100vh;
-}</xmp></pre>
+}
+```
 
-<p>With these changes, here is what our final horizontal scroll area looks like.</p>
+With these changes, here is what our final horizontal scroll area looks like.
 
-<img src="/finalScrolling.gif" alt="" width="410" height="824" class="alignnone size-full wp-image-1584" />
+![](/finalScrolling.gif)
 
-<h2>Conclusion</h2>
-<p>It is very easy to create a horizontal scroll area using flexbox. Thanks for reading.</p>
+## Conclusion
+
+It is very easy to create a horizontal scroll area using flexbox. Thanks for reading.

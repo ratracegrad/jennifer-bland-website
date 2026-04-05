@@ -20,6 +20,7 @@ The biggest challenge in using a console.log is when you want to display data th
 
 For example, you have this array:
 
+
 ```javascript
 [
 	{
@@ -43,6 +44,7 @@ For example, you have this array:
 ]
 ```
 
+
 If you `console.log` this array, this is what you see in the console:
 
 ![output of console.log](https://res.cloudinary.com/ratracegrad/image/upload/v1672692262/Screenshot_2023-01-02_at_3.43.55_PM_opnob6.png)
@@ -65,11 +67,13 @@ The `JSON.stringify()` static method converts a JavaScript value to a JSON strin
 
 Here is the syntax:
 
+
 ```javascript
 JSON.stringify(value)
 JSON.stringify(value, replacer)
 JSON.stringify(value, replacer, space)
 ```
+
 
 We want to use the last syntax option. The 3rd parameter you can pass to `JSON.stringify` is a value for space.  That value is used to insert white space (including indentation, line break characters, etc.) into the output JSON string for readability purposes.
 
@@ -94,4 +98,5 @@ If I enter this command:
 This is what we will see in the console:
 
 ![console.table](https://res.cloudinary.com/ratracegrad/image/upload/v1672692859/Screenshot_2023-01-02_at_3.54.09_PM_r315y1.png)
+
 

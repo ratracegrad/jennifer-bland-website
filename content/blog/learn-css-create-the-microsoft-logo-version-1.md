@@ -29,6 +29,7 @@ We will create the Microsoft logo in pure CSS. It will look like this:
 
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -45,9 +46,11 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In my previous articles on creating a logo using pure CSS, I used Flexbox to center the logo on the screen. Since I will be using CSS Grid in this article, I am giving you the equivalent code.
 
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -59,6 +62,7 @@ body{
   background: azure;
 }
 ```
+
 
 ## CSS Grid
 
@@ -77,6 +81,7 @@ First, we will need a container that will wrap around each of the four squares i
 Each square will have multiple CSS classes assigned to it. The first class will be our `square` class that will define its height and width. The second class will be a color assigned to that square.
 
 Update your `index.html` file so it looks like this:
+
 
 ```html
 <!DOCTYPE html>
@@ -99,9 +104,11 @@ Update your `index.html` file so it looks like this:
 </html>
 ```
 
+
 ## Updating our styles
 
 Previously I talked about CSS grid and creating a layout that has 2 rows and 2 columns. In the `style.css` file add the following code to create our grid layout:
+
 
 ```css
 .microsoft-logo{
@@ -113,9 +120,11 @@ Previously I talked about CSS grid and creating a layout that has 2 rows and 2 c
 }
 ```
 
+
 The last thing we need to do with our styles is to define our `square` class and set colors for each square. For this demo, I am going to set the square to be 200px in width and height.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .square {
@@ -129,6 +138,7 @@ Add the following code to your `style.css` file:
 .yellow{ background-color:#FFBA08; }
 ```
 
+
 ## Final Logo
 
 If you view your `index.html` file in a browser you should see the completed Microsoft Logo:
@@ -138,6 +148,7 @@ If you view your `index.html` file in a browser you should see the completed Mic
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/microsoft-logo-pure-css-version-1).
+
 
 
 

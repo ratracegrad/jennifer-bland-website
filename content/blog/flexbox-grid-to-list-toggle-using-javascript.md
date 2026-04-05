@@ -23,6 +23,7 @@ In this article, I will show you how to create a toggle to display items in a gr
 
 Let's start by creating three files called `index.html` and `style.css` and `app.js`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +41,9 @@ Let's start by creating three files called `index.html` and `style.css` and `app
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -50,6 +53,7 @@ body{
   background-color: azure;
 }
 ```
+
 
 For now, we will leave the `app.js` file blank. We will put in the code later.
 
@@ -61,6 +65,7 @@ The entire content of the page will be placed inside a div with a class of `cont
 
 Add the following code inside the `body` tag in your `index.html` file:
 
+
 ```html
 	<div class="container">
 		<div class="buttons">
@@ -70,11 +75,13 @@ Add the following code inside the `body` tag in your `index.html` file:
 	</div>
 ```
 
+
 ## Styling our Container and Buttons
 
 Everything we display is wrapped inside a div with a class of `container`. We want this container to have a specified width that is centered on the screen.
 
 Add this code to your `style.css` file:
+
 
 ```css
 .container {
@@ -84,11 +91,13 @@ Add this code to your `style.css` file:
 }
 ```
 
+
 Next, we want our two buttons to be centered on the screen. The buttons are wrapped by a div with a class of `buttons`. This class will use Flexbox to center the buttons.
 
 We want these two buttons to have a blue background with white text. To make them look like they are lifted off the page we will add a box shadow.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .btn {
@@ -106,6 +115,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 This is what our buttons look like:
 
 ![buttons](https://res.cloudinary.com/ratracegrad/image/upload/v1672609734/Screenshot_2023-01-01_at_4.48.43_PM_ozo4hs.png)
@@ -120,6 +130,7 @@ Each card is wrapped by a div with a class of `card`. It will have a title and a
 
 Add this code to your `index.html` file:
 
+
 ```html
 		<div id="card-wrapper" class="list">
 			<div class="card">
@@ -129,11 +140,13 @@ Add this code to your `index.html` file:
 		</div>
 ```
 
+
 ## Styling our cards
 
 We will not add much styling to the card. We will give each card a border and some padding so that the text is not next to the border. We will also add a margin below each card.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .card {
@@ -143,6 +156,7 @@ Add the following code to your `style.css` file:
 	margin-bottom: 20px;
 }
 ```
+
 
 This is what our card looks like:
 
@@ -156,13 +170,16 @@ The style for the list will be easy to create because we are using the default s
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .list {
 	display: block;
 }
 ```
 
+
 To create our grid we will use Flexbox. Add the following code to your `style.css` file:
+
 
 ```css
 .grid {
@@ -171,6 +188,7 @@ To create our grid we will use Flexbox. Add the following code to your `style.cs
 	flex-wrap: wrap;
 }
 ```
+
 
 Now if you change the class in the `card-wrapper` div to be `grid`, you might expect our cards to be a grid. In fact, that does not happen. The reason is that each card is a div and by default, a div will take up all the space on a row. We need to be able to tell each card to take up a specified percentage of the screen.
 
@@ -194,19 +212,23 @@ When either button is clicked it will call a function. This function will progra
 
 Add the following code to your `app.js` file:
 
+
 ```javascript
 const gridBtn = document.getElementById('gridBtn');
 const listBtn = document.getElementById('listBtn');
 ```
 
+
 Now that we have our variable for each button we need to add an event listener to handle when the button is clicked. For now, I am going to call the two functions `clickGrid` and `clickList`.
 
 Add the following code to your `app.js` file:
+
 
 ```javascript
 gridBtn.addEventListener('click', clickButton);
 listBtn.addEventListener('click', clickButton);
 ```
+
 
 Next, we need to create our `clickButton` function. The function will remove the current class assigned to the `card-wrapper` div. Then it will add a class that corresponds to which button was clicked.
 
@@ -216,6 +238,7 @@ The id of the grid button is `gridBtn` and the id of the list button is `listBtn
 
 Add the following code to your `app.js` file:
 
+
 ```css
 function clickButton(event) {
 	e.preventDefault();
@@ -224,11 +247,13 @@ function clickButton(event) {
 }
 ```
 
+
 This gives us part of the functionality we need. The next step is to assign the class to the `card-wrapper` div.
 
 For simplicity, I do not know what class is currently assigned to this div. For that reason, I am going to remove both classes. If the class is present it will be removed. For the other class that is not present it will do nothing. Then I will add a class that corresponds to which button was clicked using the `newStyle` variable we have already created.
 
 Add the following code to your `clickButton` function in the  `app.js` file.
+
 
 ```javascript
 	const element = document.getElementById("card-wrapper");
@@ -236,6 +261,7 @@ Add the following code to your `clickButton` function in the  `app.js` file.
 	element.classList.remove("list");
 	element.classList.add(newStyle);
 ```
+
 
 ## Final Result
 
@@ -248,3 +274,4 @@ Here is what it looks like:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/javascript-flexbox-grid-list-toggle).
+

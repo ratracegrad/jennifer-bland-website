@@ -30,6 +30,7 @@ We will create the React logo in pure CSS. It will look like this:
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +47,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -60,6 +63,7 @@ body{
 }
 ```
 
+
 ## position: absolute
 
 The `position` CSS property sets how an element is positioned in a document. If the value is `absolute` then the element is removed from the normal document flow, and no space is created for the element in the page layout.
@@ -72,12 +76,14 @@ If we did not use position absolute then all elements of the logo - the ball and
 
 Add the following code inside the `body` tag in the `index.html` file:
 
+
 ```html
 	<div class="ball"></div>
 	<div class="ellipse ellipse1"></div>
 	<div class="ellipse ellipse2"></div>
 	<div class="ellipse ellipse3"></div>
 ```
+
 
 ## View Width
 
@@ -89,6 +95,7 @@ For this demo, I am going to make the center ball of the logo to have a width an
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .ball{
   position: absolute;
@@ -99,11 +106,13 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 ## Defining the ellipse
 
 An ellipse is similar to our ball but with one difference: the height and width of the ellipse are not the same as it is with the ball.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .ellipse {
@@ -114,6 +123,7 @@ Add the following code to your `style.css` file:
   border: 0.6vw solid #5ed3f3;
 }
 ```
+
 
 ## transform: rotate
 
@@ -131,6 +141,7 @@ The other 2 ellipses are rotated 30 degrees to the right and -30 degrees to the 
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .ellipse1{
   transform: rotate(30deg)
@@ -145,6 +156,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 Now when we look at our logo in the browser it looks like this:
 
 ![React logo without animation](https://res.cloudinary.com/ratracegrad/image/upload/v1672413045/Screenshot_2022-12-30_at_10.10.19_AM_oisz7w.png)
@@ -157,6 +169,7 @@ In simple terms we want our React logo to roll 360 degrees. We can accomplish th
 
 Add the following code to your `style.css` file:
 
+
 ```css
 @keyframes roll{
   from{
@@ -167,6 +180,7 @@ Add the following code to your `style.css` file:
   }
 }
 ```
+
 
 Now that we have our `@keyframes` definition we need to add animation that uses it. The `animation` CSS property applies an animation between styles. The property contains values for:
 
@@ -199,4 +213,5 @@ If you view your `index.html` file in a browser. you should see the completed Re
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/react-logo-pure-css).
+
 

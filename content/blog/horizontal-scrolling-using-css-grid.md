@@ -35,6 +35,7 @@ The `index.html` file contains the code for our basic website. It will display o
 
 Here are the contents of my `index.html` file:
 
+
 ```html
 <!doctype html>
 <html lang="en">
@@ -59,6 +60,7 @@ Here are the contents of my `index.html` file:
 </html>
 ```
 
+
 Let's walk through this code. In the `head` I have a link to my `style.css` file. I will cover this file later.
 
 The body of the website contains a `div` with a.class of `container`.
@@ -71,6 +73,7 @@ That is it for our `index.html` file.
 The secret sauce of making the images scroll horizontally is our CSS code.
 
 Here is the code in the `style.css` file:
+
 
 ```css
 .container {
@@ -86,6 +89,7 @@ Here is the code in the `style.css` file:
     height: auto;
 }
 ```
+
 
 Let's walk through this code. 
 

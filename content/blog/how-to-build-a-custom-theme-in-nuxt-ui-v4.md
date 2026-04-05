@@ -41,9 +41,11 @@ Before diving in, make sure you have:
 
 If you're starting from scratch, scaffold a new project to include Nuxt UI. When you run the following command, you will be prompted to choose a template. Select the "ui - App using Nuxt UI" template.
 
+
 ```bash
 npx nuxi init nuxt-theme-demo
 ```
+
 
 ![select Nuxt UI template](https://res.cloudinary.com/ratracegrad/image/upload/v1774363627/NuxtUITemplate_znvarz.png)
 ---
@@ -73,13 +75,16 @@ Open (or create) your `assets/css/main.css` file. This is Nuxt UI's main entry p
 
 Start with the required imports:
 
+
 ```css
 /* assets/css/main.css */
 @import "tailwindcss";
 @import "@nuxt/ui";
 ```
 
+
 Make sure this file is referenced in your `nuxt.config.ts`:
+
 
 ```typescript
 // nuxt.config.ts
@@ -91,6 +96,7 @@ export default defineNuxtConfig({
 
 
 
+
 ---
 
 ## Step 2: Customize Your Fonts
@@ -98,6 +104,7 @@ export default defineNuxtConfig({
 The first thing visitors notice about a brand is often its typography. Nuxt UI v4 integrates with `@nuxt/fonts`, which means any font you declare in your CSS is automatically loaded and optimized — no manual `<link>` tags, no Google Fonts boilerplate.
 
 Add your fonts inside a `@theme` block:
+
 
 ```css
 /* assets/css/main.css */
@@ -109,6 +116,7 @@ Add your fonts inside a `@theme` block:
   --font-mono: 'JetBrains Mono', monospace;
 }
 ```
+
 
 The `--font-sans` variable controls body text across your entire app. The `--font-mono` variable handles code blocks and any element using the `font-mono` utility. Tailwind will instantly expose utilities like `font-sans` and `font-mono` for you to use in your templates.
 
@@ -127,6 +135,7 @@ Inside a `@theme static` block, define your brand color as a full scale from `50
 If you created your project using the "ui" template, this block will already exist as it customizes the color **green** to match Nuxt's brand color. If you are adding Nuxt UI to an existing project, you will need to create this block.
 
 Here is what the block looks like in the template:
+
 ```css
 /* assets/css/main.css */
 @import "tailwindcss";
@@ -149,10 +158,12 @@ Here is what the block looks like in the template:
 }
 ```
 
+
 If you use set your primary color to green then it uses the Nuxt green color palette.
 
 
 To customize your brand colors, you can add your own custom color palette. Here's an example using a custom blue-ish "brand" color:
+
 
 ```css
 /* assets/css/main.css */
@@ -178,6 +189,7 @@ To customize your brand colors, you can add your own custom color palette. Here'
 }
 ```
 
+
 > **Why `@theme static`?** The `static` modifier tells Tailwind to resolve these variables at build time, which gives better performance than dynamic resolution. Use `@theme static` for color palettes that won't change at runtime.
 
 Once defined, Tailwind immediately exposes utilities like `bg-brand-500`, `text-brand-700`, and `border-brand-200` across your entire project.
@@ -188,6 +200,7 @@ Once defined, Tailwind immediately exposes utilities like `bg-brand-500`, `text-
 ### 3b. Map Colors to Semantic Roles
 
 Now open your `app.config.ts` and tell Nuxt UI what each semantic role maps to:
+
 
 ```typescript
 // app.config.ts
@@ -206,7 +219,9 @@ export default defineAppConfig({
 })
 ```
 
+
 That's it. Every Nuxt UI component that accepts a `color` prop will now use your brand color when `color="primary"` is set:
+
 
 ```vue
 <template>
@@ -217,7 +232,9 @@ That's it. Every Nuxt UI component that accepts a `color` prop will now use your
 </template>
 ```
 
+
 You can also use semantic color utilities directly in your templates:
+
 
 ```vue
 <template>
@@ -226,6 +243,7 @@ You can also use semantic color utilities directly in your templates:
   <p class="text-error">Something went wrong.</p>
 </template>
 ```
+
 
 
 ## Step 3c: Add Your Brand Colors to Semantic Roles
@@ -242,6 +260,7 @@ Most Nuxt UI components accept a `color` prop. This prop can be set to a semanti
 You can add your own custom semantic color roles by adding them to the `ui.colors` object in your `app.config.ts` file and your `nuxt.config.ts` file.
 
 I will add a custom semantic color role called `brandPrimary` and set it to `brand`.
+
 
 ```typescript
 // app.config.ts
@@ -273,7 +292,9 @@ Now I can use the `brandPrimary` color in my components by setting the `color` p
 </template>
 ```
 
+
 You can also use semantic color utilities directly in your templates:
+
 
 ```vue
 <template>
@@ -281,6 +302,7 @@ You can also use semantic color utilities directly in your templates:
   <span class="text-brandPrimary">All good!</span>
 </template>
 ```
+
 ---
 
 ## Step 4: Adjust Border Radius
@@ -289,11 +311,13 @@ Nuxt UI's rounded corners are controlled by a single CSS variable — `--ui-radi
 
 Add it to your `main.css` inside a `:root` block:
 
+
 ```css
 :root {
   --ui-radius: 0.5rem; /* default is 0.375rem (rounded-md) */
 }
 ```
+
 
 Want a sharper, more corporate feel? Use `0.25rem`. Want a soft, friendly feel? Try `0.75rem` or `1rem`. Want pill-shaped buttons and fully rounded inputs? Push it to `9999px`.
 
@@ -307,6 +331,7 @@ Since Nuxt UI integrates with `@nuxtjs/color-mode`, dark mode works out of the b
 
 If you want to verify dark mode is wired up, check your `nuxt.config.ts`:
 
+
 ```typescript
 // nuxt.config.ts
 export default defineNuxtConfig({
@@ -317,7 +342,9 @@ export default defineNuxtConfig({
 })
 ```
 
+
 To let users toggle dark mode, add the built-in `UColorModeButton` component anywhere in your layout:
+
 
 ```vue
 <template>
@@ -327,6 +354,7 @@ To let users toggle dark mode, add the built-in `UColorModeButton` component any
 </template>
 ```
 
+
 ---
 
 ## Step 6: Override Component Defaults Globally
@@ -334,6 +362,7 @@ To let users toggle dark mode, add the built-in `UColorModeButton` component any
 This is where your theme becomes truly opinionated. Using the `ui` key in `app.config.ts`, you can change the default styles of any Nuxt UI component — globally, for every instance in your app.
 
 ### Change the Default Button Style
+
 
 ```typescript
 // app.config.ts
@@ -357,9 +386,11 @@ export default defineAppConfig({
 })
 ```
 
+
 Now every `<UButton />` in your app is semibold with slightly wider letter-spacing — unless you explicitly override it at the component level.
 
 ### Style Cards Consistently
+
 
 ```typescript
 card: {
@@ -371,7 +402,9 @@ card: {
 }
 ```
 
+
 ### Set Default Input Sizes
+
 
 ```typescript
 input: {
@@ -382,6 +415,7 @@ input: {
 }
 ```
 
+
 > **Tip:** To find out what slots are available for any component, check the "Theme" section in the [Nuxt UI component docs](https://ui.nuxt.com). Every component lists its available slots, variants, and `compoundVariants`.
 
 ---
@@ -389,6 +423,7 @@ input: {
 ## Putting It All Together
 
 Here's what a complete, minimal theme looks like across your two files:
+
 
 ```css
 /* assets/css/main.css */
@@ -417,6 +452,8 @@ Here's what a complete, minimal theme looks like across your two files:
   --ui-radius: 0.5rem;
 }
 ```
+
+
 
 ```typescript
 // app.config.ts
@@ -449,6 +486,7 @@ export default defineAppConfig({
 })
 ```
 
+
 Run `npm run dev` and open your app. Every Nuxt UI component is now styled with your brand — no CSS overrides, no `!important` battles.
 
 ---
@@ -472,3 +510,4 @@ Theming in Nuxt UI v4 follows a clean, three-layer approach:
 3. **`app.config.ts` → component keys** — Override default slots, variants, and defaultVariants globally
 
 This architecture keeps your theme portable, maintainable, and easy to reason about — whether you're building your first Nuxt app or maintaining a design system across multiple products.
+

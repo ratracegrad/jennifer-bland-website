@@ -30,6 +30,7 @@ We will create the Microsoft logo in pure CSS. It will look like this:
 
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +47,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -60,6 +63,7 @@ body{
 }
 ```
 
+
 ## box-shadow
 
 The `box-shadow` CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
@@ -68,11 +72,14 @@ We will take advantage of that by creating one square of the logo and then addin
 
 Add the following one line inside the `body` tag in your `index.html` file:
 
+
 ```html
 <div class="microsoft-logo"></div>
 ```
 
+
 Add this code to your `style.css` file:
+
 
 ```css
 .microsoft-logo {
@@ -85,6 +92,7 @@ Add this code to your `style.css` file:
 	width: 200px;
 }
 ```
+
 
 The first line in the `box-shadow` property creates a shadow 220px on the right side with a green color. Since our square is 200px wide and high, this starts the shadow 20px to the right of the initial box.
 
@@ -101,4 +109,5 @@ If you view your `index.html` file in a browser you should see the completed Mic
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/microsoft-logo-pure-css-version-2).
+
 

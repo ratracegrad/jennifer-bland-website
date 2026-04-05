@@ -28,15 +28,19 @@ Here is what it looks like:
 
 I will assume you already have Node installed on your computer. At your terminal enter this command:
 
+
 ```javascript
 npx create-react-app chuck-norris-jokes
 ```
 
+
 When it is finished change into the directory that it created with the command:
+
 
 ```javascript
 cd chuck-norris-jokes
 ```
+
 
 If you run `npm start` in the terminal, you will see this:
 
@@ -50,24 +54,31 @@ The Chuck Norris API is located at: `https://api.chucknorris.io/`. Here is the u
 
 You can get a random joke by calling:
 
+
 ```javascript
 https://api.chucknorris.io/jokes/random
 ```
+
 
 You can get a random joke from a specific category by calling:
 
+
 ```javascript
 https://api.chucknorris.io/jokes/random
 ```
 
+
 You can get a list of available categories by calling: 
+
 ```javascript
 https://api.chucknorris.io/jokes/categories
 ```
 
+
 ## Getting All Available Categories
 
 Open up your `App.js` file. You can delete everything inside the App-header as well as the import for the logo. Your file should look like this:
+
 
 ```javascript
 import './App.css';
@@ -86,15 +97,19 @@ export default App;
 
 ```
 
+
 We want to get a list of available categories and then loop through that list and create a button with the name of the category. We will only need to do this one so we will use `useEffect`.
 
 At top of the file add the line to import it:
+
 
 ```javascript
 import React, { useEffect } from 'react';
 ```
 
+
 Inside your App function and the `return` line, we will add our `useEffect`. Add this code:
+
 
 ```javascript
   useEffect(() => {
@@ -115,6 +130,7 @@ Inside your App function and the `return` line, we will add our `useEffect`. Add
   }, []);
 ```
 
+
 If you go to your browser and look at the console, you will see that it prints out a list of categories.
 
 ![list of categories](https://res.cloudinary.com/ratracegrad/image/upload/v1673824301/Screenshot_2023-01-15_at_6.11.33_PM_qid5gg.png)
@@ -125,23 +141,30 @@ We want to create a variable called `buttons`. When the `useEffect` gets the lis
 
 We will use `useState` to set the value of the variable so we need to import it. Update the import at top of the file to include `useState`. It should look like this:
 
+
 ```javascript
 import React, { useEffect, useState } from 'react';
 ```
 
+
 Next, we need to define our variable. Add the following line above the `useEffect`:
+
 
 ```javascript
 const [buttons, setButtons] = useState([]);
 ```
 
+
 Now we can set the variable to contain the list of categories. In the `useEffect` replace the `console.log(json)` with:
+
 
 ```javascript
 setButtons(json);
 ```
 
+
 Now that we have the list of categories, we need to display a button for each one.  Add the following code inside the `App-header`:
+
 
 ```javascript
         <p>Chuck Norris Jokes</p>
@@ -157,7 +180,9 @@ Now that we have the list of categories, we need to display a button for each on
         </div>
 ```
 
+
 Now we have our buttons but we need to add some styling to them so they look better. Open up the `App.css` file. Delete everything that is in this file. Add the following code:
+
 
 ```css
 .App {
@@ -198,6 +223,7 @@ Now we have our buttons but we need to add some styling to them so they look bet
 }
 ```
 
+
 This is what our App looks like now:
 
 ![app with buttons](https://res.cloudinary.com/ratracegrad/image/upload/v1673824938/Screenshot_2023-01-15_at_6.22.07_PM_benyfg.png)
@@ -208,6 +234,7 @@ When a user clicks on a button, we want to call the Chuck Norris API and pass in
 
 Let's start by adding a `onclick` to the button. Update the button so that it looks like this now:
 
+
 ```css
 <button
    key={item}
@@ -216,7 +243,9 @@ Let's start by adding a `onclick` to the button. Update the button so that it lo
 >{item}</button>
 ```
 
+
 Next, we need to create our `jetJoke` function. This function will use most of the same code in `useEffect` we created earlier. Add this code above the `useEffect`:
+
 
 ```css
   const getJoke = async (category) => {
@@ -231,6 +260,7 @@ Next, we need to create our `jetJoke` function. This function will use most of t
   }
 ```
 
+
 If you click on a button, you will see the following in the console:
 
 ![returned joke from api](https://res.cloudinary.com/ratracegrad/image/upload/v1673825400/Screenshot_2023-01-15_at_6.29.52_PM_xzfrmg.png)
@@ -239,17 +269,22 @@ This call to the API returns an object. The actual joke is on the key called `va
 
 We want to do the same thing when we get the joke back from the API. We want to save the joke in a variable called `joke`. Add the following line right before the `useState` line:
 
+
 ```css
 const [joke, setJoke] = useState({});
 ```
 
+
 Update the `getJoke` function and replace the `console.log` with:
+
 
 ```css
 setJoke(json);
 ```
 
+
 Next, we need to display the joke. Add the following code below the `btn-wrapper`:
+
 
 ```css
 <div className="joke-wrapper">
@@ -257,13 +292,16 @@ Next, we need to display the joke. Add the following code below the `btn-wrapper
 </div>
 ```
 
+
 Just to make things look better, I added a class called `joke-wrapper`. Let's ad some styling to it so that there is some space between the joke and the buttons. Add the following code to the `App.css` file:
+
 
 ```css
 .joke-wrapper {
   margin-top: 3rem;
 }
 ```
+
 
 ## Final App
 
@@ -274,3 +312,4 @@ If you view the app in a browser, you should see this:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/react-fetch-data-api).
+

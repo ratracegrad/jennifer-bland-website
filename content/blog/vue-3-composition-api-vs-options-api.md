@@ -32,6 +32,7 @@ One potential downside of the Composition API is that it requires you to learn a
 
 Here is an example of how you can use the Composition API to define the logic of a Vue component:
 
+
 ```javascript
 import { ref, computed } from 'vue'
 
@@ -56,9 +57,11 @@ export default {
 }
 ```
 
+
 In this example, the `setup` function is used to define the logic of the component. It creates a reactive `count` variable, an `increment` function that increments the `count` variable, and a computed `double` variable that is the double of the `count` variable. The `setup` function returns an object that contains these values, which can be used in the template of the component.
 
 Here is an example of how you can use the Options API to define the logic of a Vue component:
+
 
 ```javascript
 export default {
@@ -79,6 +82,7 @@ export default {
   }
 }
 ```
+
 
 In this example, the `data`, `methods`, and `computed` options are used to define the logic of the component. The `data` option defines a `count` variable, the `methods` option defines an `increment` function that increments the `count` variable, and the `computed` option defines a `double` variable that is the double of the `count` variable. These values can be used in the template of the component.
 

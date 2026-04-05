@@ -24,6 +24,7 @@ In this article, I will show you how to create a toggle to display items in a gr
 
 Let's start by creating three files called `index.html` and `style.css` and `app.js`. In your `index.html` file add the following starter code:
 
+
 ```http
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +42,9 @@ Let's start by creating three files called `index.html` and `style.css` and `app
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -51,6 +54,7 @@ body{
   background-color: azure;
 }
 ```
+
 
 For now, we will leave the `app.js` file blank. We will put in the code later.
 
@@ -62,6 +66,7 @@ The entire content of the page will be placed inside a div with a class of `cont
 
 Add the following code inside the `body` tag in your `index.html` file:
 
+
 ```css
 	<div class="container">
 		<div class="buttons">
@@ -71,11 +76,13 @@ Add the following code inside the `body` tag in your `index.html` file:
 	</div>
 ```
 
+
 ## How To Style Our Container and Buttons
 
 Everything we display is wrapped inside a div with a class of `container`. We want this container to have a specified width that is centered on the screen.
 
 Add this code to your `style.css` file:
+
 
 ```css
 .container {
@@ -85,11 +92,13 @@ Add this code to your `style.css` file:
 }
 ```
 
+
 Next, we want our two buttons to be centered on the screen. The buttons are wrapped by a div with a class of `buttons`. This class will use CSS Grid to center the buttons.
 
 We want these two buttons to have a blue background with white text. To make them look like they are lifted off the page we will add a box shadow.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .btn {
@@ -107,6 +116,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 This is what our buttons look like:
 
 ![](https://res.cloudinary.com/ratracegrad/image/upload/v1672609734/Screenshot_2023-01-01_at_4.48.43_PM_ozo4hs.png)
@@ -121,6 +131,7 @@ Each card is wrapped by a div with a class of `card`. It will have a title and a
 
 Add this code to your `index.html` file:
 
+
 ```http
 		<div id="card-wrapper" class="list">
 			<div class="card">
@@ -130,11 +141,13 @@ Add this code to your `index.html` file:
 		</div>
 ```
 
+
 ## How to Add Styling To Our Cards
 
 We will not add much styling to the card. We will give each card a border and some padding so that the text is not next to the border. We will also add a margin below each card.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .card {
@@ -144,6 +157,7 @@ Add the following code to your `style.css` file:
 	margin-bottom: 20px;
 }
 ```
+
 
 This is what our card looks like:
 
@@ -157,6 +171,7 @@ We will add styling for `card-wrapper` to make it display using CSS Grid and to 
 
 Add the following code to your `style.css` file:
 
+
 ```css
 #card-wrapper {
 	display: grid;
@@ -166,9 +181,11 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 With CSS Grid you can define the number of columns. For our grid layout, we want to have 3 columns. For our list layout, we want to have just 1 column.
 
 Add the following code:
+
 
 ```css
 .grid {
@@ -179,6 +196,7 @@ Add the following code:
 	grid-template-columns: 1fr;
 }
 ```
+
 
 ## Final Result
 
@@ -191,4 +209,5 @@ Here is what it looks like:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/grid-to-list-toggle-using-css-grid).
+
 

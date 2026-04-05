@@ -34,12 +34,15 @@ In order to call the `/v2/user` endpoint we have to include the token we previou
 
 Open the `index.js` file in the routes directory. In the `/callback` endpoint, the token is in the response variable. At top of file below all the variables we created add the following two:
 
+
 ```bash
 let accessToken = "";
 let refreshToken = "";
 ```
 
+
 Then below the response variable in the try block set the values for both of the new variables like this:
+
 
 ```bash
 try {
@@ -55,9 +58,11 @@ try {
 }
 ```
 
+
 ## Create /user endpoint
 
 We will create a new endpoint for `/user`. Here is the code:
+
 
 ```bash
 // Gets the user details
@@ -79,6 +84,7 @@ router.get("/user", async (req, res) => {
   }
 });
 ```
+
 
 Let's walk through this code. It has a similar format to the code we put in for the `/callback` endpoint.
 
@@ -106,6 +112,7 @@ How do you know what accounts you have access to? Well in the code for the butto
 
 Let's add a new endpoint for `/accounts`. Add the following code in the index.js file.
 
+
 ```bash
 // Gets all account details
 router.get("/accounts", async (req, res) => {
@@ -127,6 +134,7 @@ router.get("/accounts", async (req, res) => {
 });
 ```
 
+
 We are using the same format as the other calls. We use a config object that includes our user's token. We pass that config object to axios which calls the Coinbase API. We display everything returned from Coinbase in the browser.
 
 To test this out, start your server. In browser navigate to `http://localhost:3000`. Connect to Coinbase and authorize the application.
@@ -140,6 +148,7 @@ Next enter `http://localhost:3000/accounts` as the URL in your browser. You shou
 As you look at the response from Coinbase,  you will notice that it provides details on all possible wallets that they support. A user may not have any crypto in these wallets.
 
 We can filter the data to only return accounts that have an actual balance. Update the try-catch block to have this code:
+
 
 ```bash
 try {
@@ -166,7 +175,7 @@ If you look at the `/` endpoint, we display a html file with the use of `res.ren
 
 Create a new file in the views folder called `accounts.ejs`. Copy/paste the contents of the index.ejs file into the `accounts.ejs` file.
 
-Delete the <p> and button in the `body` tag leaving just the title. Add the following code below the title:
+Delete the `<p>` and button in the `body` tag leaving just the title. Add the following code below the title:
 
 ```bash
 <table>
@@ -191,9 +200,11 @@ Delete the <p> and button in the `body` tag leaving just the title. Add the foll
 </table>
 ```
 
+
 What this code does is loop through all the accounts and display them in a row in the table.  We just need to pass in the accounts when we display this file.
 
 Go back to the index.js file. Replace the `res.send` line with this:
+
 
 ```bash
 res.render('accounts', {
@@ -202,11 +213,13 @@ res.render('accounts', {
 });
 ```
 
+
 ## Styling our Table
 
 Before testing the results, let's put in some styles so that our table looks good.
 
 Open the `style.css` file in the public/stylesheets folder.  Add the following CSS code:
+
 
 ```bash
 table {
@@ -232,6 +245,7 @@ table td {
 }
 ```
 
+
 ## Testing our Accounts Page
 We will follow the same steps we have done before to test the accounts page.
 
@@ -247,9 +261,11 @@ I am not so keen on displaying raw data from Coinbase when you click on the Conn
 
 Open the `index.js` file in the routes directory. In the `/callback` route we have a `res.send` entry that displays all the data returned from Coinbase. Let's change that to instead redirect to the `/accounts` route. Replace the `res.send` with this line:
 
+
 ```bash
 res.redirect('/accounts');
 ```
+
 
 Now when you test the application, after authorizing with Coinbase you will see the table with all your account details. This is a much better UI for our users.
 
@@ -264,6 +280,7 @@ To get transactions you call the `/v2/accounts/:account_id/transactions` endpoin
 If you go back to the SCOPE variable you will see that we have the `wallet:transactions:read` permission.
 
 Open the `index.js` file in the routes directory. Add this code:
+
 
 ```bash
 router.get('/transactions/:id', async(req, res) => {
@@ -286,6 +303,7 @@ router.get('/transactions/:id', async(req, res) => {
 })
 ```
 
+
 Let's walk through this code. In order to get transactions you need to have the id of the specific crypto coin. This value is passed in from the accounts table. We desctructure the params to get the value of the id.
 
 Next we create a config object passing in our user's token. The URL uses the id that was passed in. We then pass the config object to axios to call Coinbase. We display the results that are returned from Coinbase in the browser.
@@ -301,6 +319,7 @@ We created a table previously to display the user's accounts. We will copy that 
 Create a new file in the views folder called `transactions.ejs`. Copy/paste contents of the `accounts.ejs` into this file.
 
 Update the `table` to be this:
+
 
 ```bash
 <table>
@@ -324,9 +343,11 @@ Update the `table` to be this:
   </tbody>
 </table>
 ```
+
 Now that we have our table created, we need to update the endpoint to display this file instead of display the results returned from the Coinbase API.
 
 Open up the index.js file and replace the `res.send` line with this:
+
 
 ```bash
 res.render('transactions', {
@@ -334,6 +355,7 @@ res.render('transactions', {
   transactions: response?.data.data 
 });
 ```
+
 Now when you click on the transactions button you should see something like this:
 
 ![](https://res.cloudinary.com/ratracegrad/image/upload/v1642980653/Screen_Shot_2022-01-23_at_6.30.41_PM_fp2ml0.png)
@@ -349,3 +371,4 @@ Every time we add a new feature we have to always go back to connecting with Coi
 You could eventually expand this to display your profit/loss for each cryptocurrency you own by comparing your purchase price with the current price of that crypto.
 
 If you enjoyed this article, please share a link so that others will be able to read the content. Thanks.
+

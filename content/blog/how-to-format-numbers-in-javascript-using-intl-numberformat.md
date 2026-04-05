@@ -15,13 +15,14 @@ If you ever wanted to format a number in JavaScript you were forced to use `.toL
 
 Here is an example of how we use to format numbers using `.toLocaleString()`:
 
-```
-const money = 1000;
+
+```const money = 1000;
 
 money.toLocaleString('en-US', { 
     style: 'currency', currency: 'USD' 
 }); // $1,000.00
 ```
+
 
 ES6 JavaScript gives us the `Intl` object which is the ECMAScript Internationalization API. This API provides language-sensitive number formatting.
 
@@ -29,18 +30,19 @@ Here is the same example as above:
 
 
 
-```
-new Intl.NumberFormat('en-US', { 
+
+```new Intl.NumberFormat('en-US', { 
     style: 'currency', currency: 'USD' 
 }).format(money); // $1,000/00
 ```
+
 
 ## Formatting Currency in Different Locales
 
 Here are several examples of formatting money using the Euro and the Japanese Yen:
 
-```
-new Intl.NumberFormat('de-DE', {
+
+```new Intl.NumberFormat('de-DE', {
   style: 'currency',
   currency: 'EUR',
 }).format(money); // '€ 10,000.00'
@@ -51,17 +53,20 @@ new Intl.NumberFormat('jp-JP', {
 }).format(money); // 'JP¥ 10,000'
 ```
 
+
 ## The Syntax for Intl.NumberFormat
 
 Here are the syntax options available:
 
-```
-new Intl.NumberFormat()
+
+```new Intl.NumberFormat()
 new Intl.NumberFormat(locales)
 new Intl.NumberFormat(locales, options)
 ```
+
 
 ## Parameters
 
 - `locales` - (optional) A string with a BCP 47 language tag, or an array of such strings. Can provide multiple locales where the best-supported locale will be favored in the order provided by the array. Locales are the language and region setting. It is made up of language code and country code.
 - `options` - (optional) Provides settings indicating how a number should be formatted to a string. There are tons of options and you can [review them on the documentation page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat).
+

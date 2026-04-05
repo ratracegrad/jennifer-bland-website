@@ -28,6 +28,7 @@ We will create the Git logo in pure CSS. It will look like this:
 ## Create our starter files
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +45,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -58,6 +61,7 @@ body{
 }
 ```
 
+
 ## Dissecting our Logo
 
 The Git logo is an orange square that is rotated 45 degrees. Inside the square are two lines. 
@@ -70,12 +74,14 @@ The second line runs vertically down the middle of the square. The line has a ci
 
 Now we need to add our code for our logo and the two lines. Add the following code inside the `body` tags in your `index.html` file:
 
+
 ```html
     <div class="git-logo">
         <div class="line1"></div>
         <div class="line2"></div>
     </div>
 ```
+
 
 ## transform: rotate()
 
@@ -84,6 +90,7 @@ The `transform` CSS property lets you rotate, scale, skew, or translate an eleme
 The Git logo is a square that is rotated 45 degrees. We will use the CSS `transform` property to rotate our logo.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .git-logo{
@@ -95,6 +102,7 @@ Add the following code to your `style.css` file:
     transform: rotate(45deg);
 }
 ```
+
 
 This is what our logo likes like now:
 
@@ -108,6 +116,7 @@ This line will be positioned absolutely to make sure it is in the right spot on 
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .line1{
     width: 110px;
@@ -117,6 +126,7 @@ Add the following code to your `style.css` file:
     position: absolute;
 }
 ```
+
 
 Our logo looks like this now:
 
@@ -129,6 +139,7 @@ In CSS, `::before` creates a pseudo-element that is the first child of the selec
 We will use this property to create the circle in the middle of the line. We will position this circle as absolute. As it is a circle it will have the same height and width and a broder-radius of 50%.
 
 Add this code to your `style.css` file:
+
 
 ```css
 .line1::before{
@@ -143,6 +154,7 @@ Add this code to your `style.css` file:
 }
 ```
 
+
 This is what our logo looks like now:
 
 ![incomplete logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672506379/Screenshot_2022-12-31_at_12.06.05_PM_jxe3dq.png)
@@ -155,6 +167,7 @@ In CSS, `::after` creates a pseudo-element that is the last child of the selecte
 We will do the same thing to add a ball at the end of our first line.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .line1::after{
@@ -169,11 +182,13 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 ## Adding the second line
 
 Just like the first line, we will add a second line. This line will also be positioned absolutely. We will use the top and left values to set the location. The last thing we need to do is to rotate the line 45 degrees like the square.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .line2{
@@ -187,6 +202,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 Our logo looks like this now:
 
 ![incomplete logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672506682/Screenshot_2022-12-31_at_12.11.13_PM_xegs6k.png)
@@ -194,6 +210,7 @@ Our logo looks like this now:
 The last thing we need to do is to use the pseudo class ::before to add a circle to the end of this line.
 
 Add this code to your `style.css` file:
+
 
 ```css
 .line2::before{
@@ -208,6 +225,7 @@ Add this code to your `style.css` file:
 }
 ```
 
+
 ## Final Logo
 
 If you view your `index.html` file in a browser. you should see the completed Git Logo:
@@ -218,4 +236,5 @@ If you view your `index.html` file in a browser. you should see the completed Gi
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/git-logo-pure-css).
+
 

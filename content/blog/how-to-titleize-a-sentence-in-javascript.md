@@ -25,9 +25,10 @@ Here is the quick function I created that handled this transition for us.
 
 First I created an array of words that we wanted to remain lowercase in the subject of the email.
 
+
+```const small_words = ['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'if', 'in', 'into', 'nor', 'of', 'on', 'or', 'out', 'so', 'the', 'to', 'up', 'yet', 'and', 'as', 'at', 'but', 'by', 'for', 'if', 'in', 'into', 'nor', 'of', 'on', 'or', 'out', 'so', 'the', 'to', 'up', 'yet'];
 ```
-const small_words = ['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'if', 'in', 'into', 'nor', 'of', 'on', 'or', 'out', 'so', 'the', 'to', 'up', 'yet', 'and', 'as', 'at', 'but', 'by', 'for', 'if', 'in', 'into', 'nor', 'of', 'on', 'or', 'out', 'so', 'the', 'to', 'up', 'yet'];
-```
+
 
 Next, I created a function that would have the text of the subject line passed into it. I would break this string into an array with each word in the subject an entry in the array. Now that I have an array I can loop over every word. If the word matches an entry in the `small_words` array then I convert it to lowercase. Otherwise, I capitalize the first letter of the word and lowercase the remainder of the word.
 
@@ -35,8 +36,8 @@ There is one exception that I have to account for and that is the first letter i
 
 With those requirements, here is my function:
 
-```
-const titleize = (title) => {
+
+```const titleize = (title) => {
   return title.split(' ').map((word, index) => {
     if (index !== 0 && small_words.includes(word)) {
       return word.toLowerCase();
@@ -47,13 +48,15 @@ const titleize = (title) => {
 }
 ```
 
+
 To test out the function I added 3 titles and console.log the new title.
 
-```
-console.log(titleize('notes on a scandal'));  // Notes on a Scandal
+
+```console.log(titleize('notes on a scandal'));  // Notes on a Scandal
 console.log(titleize('a good man is hard to find')); // A Good Man Is Hard to Find
 console.log(titleize('midnight in the garden of good and evil')); // Midnight in the Garden of Good and Evil
 ```
+
 
 You will see the output for each test of a subject line.
 

@@ -24,6 +24,7 @@ One of the best ways to learn CSS is by creating something useful while you lear
 
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +41,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body{
@@ -53,6 +56,7 @@ body{
   background-color: wheat;
 }
 ```
+
 
 ## Dissecting the Calculator
 
@@ -73,6 +77,7 @@ Starting from the top of the calculator and going to the bottom we have:
 We will be using Flexbox. For the calculator frame, we will be displaying the contents using a column layout. For the button, we will be using a row layout.
 
 Inside the `body` tag in your `index.html` file add the following code:
+
 
 ```html
 <div class="calc-frame">
@@ -110,7 +115,9 @@ Inside the `body` tag in your `index.html` file add the following code:
 </div>
 ```
 
+
 We will go through and style all of the above elements using the CSS `border-radius` property. But before we get started we need to add some styling for the frame of our calculator. Add the following code to your `style.css` file:
+
 
 ```css
 .calc-frame {
@@ -125,11 +132,13 @@ We will go through and style all of the above elements using the CSS `border-rad
 }
 ```
 
+
 ## Styling our Rows
 
 The buttons on the calculator are grouped together in a row. We need to use Flexbox to style this row.
 
 Add this code to your `style.css` file:
+
 
 ```css
 /*****************************
@@ -148,6 +157,7 @@ Add this code to your `style.css` file:
 }
 ```
 
+
 ## What is the border-radius property
 
 The `border-radius` CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
@@ -160,6 +170,7 @@ We want all four corners of the button to be curved. We will use the `border-rad
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .calc-enter {
 	background: #41403E;
@@ -168,6 +179,7 @@ Add the following code to your `style.css` file:
 	width: 100%;
 }
 ```
+
 
 This is what our calculator looks like now:
 
@@ -179,6 +191,7 @@ Every element in CSS is a box. It has a top, right, bottom, and left side of tha
 
 Add the following code to your `style.css` file:
 
+
 ```css
 .calc-on {
 	border-radius: 50%;
@@ -189,16 +202,19 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 If you look at your calculator, you will notice the text `ON` is not in the center of the circle.
 
 Let me share a great trick to center text both horizontally and vertically inside an element. It starts with centering the text horizontally by using the `text-align` property and setting it to `center`. Now to center the text vertically set the `line-height` to be the same height as the element.
 
 Add these 2 lines to your `calc-on` style:
 
+
 ```css
 	text-align: center;
 	line-height: 50px;
 ```
+
 
 ## Styling the Calculator and Result Frame
 
@@ -217,10 +233,12 @@ To make it an ellipse you provide 2 values for the individual border-radius prop
 
 We already have an entry in the `style.css` file for `.calc-frame`. Add the following code to that class:
 
+
 ```css
 	border-top-left-radius: 270px 100px;
 	border-top-right-radius: 270px 100px;
 ```
+
 
 Our calculator frame has the arch look at the top.
 
@@ -228,12 +246,15 @@ Next, we need to style the bottom corners. To do that we provide a single value 
 
 Add the following code to the `.calc-frame`:
 
+
 ```css
 	border-bottom-right-radius: 35px;
 	border-bottom-left-radius: 35px;
 ```
 
+
 Now our calculator frame looks perfect. We want to use the exact same styling for the `.calc-result-frame`. Add the following code to your `style.css` file:
+
 
 ```css
 .calc-result-frame {
@@ -248,6 +269,7 @@ Now our calculator frame looks perfect. We want to use the exact same styling fo
 }
 ```
 
+
 This is what our calculator looks like now:
 
 ![calculator frame](https://res.cloudinary.com/ratracegrad/image/upload/v1673814248/Screenshot_2023-01-15_at_3.23.57_PM_cbbyjb.png)
@@ -257,6 +279,7 @@ This is what our calculator looks like now:
 In styling our calculator frame we learned that you can specify two values for the `border-radius` to make a rounding that is an ellipse. We will do this for each of the four corners.
 
 Add the following code to your `style.css` file:
+
 ```css
 .calc-logo {
 	background: #41403E;
@@ -267,14 +290,17 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 This gives us a unique border for our logo but notice that the title is not centered inside the logo. Let's use the trick I shared earlier on how to center text vertically and horizontally.
 
 Add the following code to `.calc-logo`:
+
 
 ```css
 	text-align: center;
 	line-height: 50px;
 ```
+
 
 ## Styling our Buttons
 
@@ -283,6 +309,7 @@ The last thing we need to include is the styling for each of the buttons on our 
 To do this we need to specify each corner to be styled as an ellipse which means we need to provide two values for each corner. There is a short-hand way of doing this by using `border-radius` to specify the first value for each of the four corners and then have a `/` value followed by the second value for each of the four corners.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .calc-btn {  
@@ -296,6 +323,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 ## Final Calculator
 
 If you view your `index.html` file in a browser, you should see the completed calculator:
@@ -305,3 +333,4 @@ If you view your `index.html` file in a browser, you should see the completed ca
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/calculator-in-pure-css).
+

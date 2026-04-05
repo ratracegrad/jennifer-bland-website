@@ -30,6 +30,7 @@ We will create the YouTube logo in pure CSS. It will look like this:
 
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +47,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body {
@@ -59,6 +62,7 @@ body {
 	background: azure;
 }
 ```
+
 
 ## Flexbox
 
@@ -74,17 +78,20 @@ If you look at the starter code we put in our `style.css` file you will see that
 
 We need to add code to our `index.html` file for the red background and the play button. Add the following code inside the `body` tag:
 
+
 ```html
 	<div class="youtube-logo">
 		<div class="playBtn"></div>
 	 </div>
 ```
 
+
 ## border-radius
 
 In previous articles, I have shown how to use `border-radius` to style all four edges of an element. For my red background, I want all four corners to have the same edge. To make all edges the same I will set the `border-radius` property to 50px.
 
 Add the following code to your `style.css` file:
+
 
 ```css
 .youtube-logo { 
@@ -98,6 +105,7 @@ Add the following code to your `style.css` file:
 }
 ```
 
+
 This is what our code looks like now in the browser:
 
 ![current logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672242497/Screenshot_2022-12-28_at_10.48.06_AM_wxagem.png)
@@ -110,6 +118,7 @@ In that article, they provide the following CSS code for a triangle pointing to 
 
 Add this code to your `style.css` file:
 
+
 ```css
 .playBtn { 
 	width: 0; 
@@ -119,6 +128,7 @@ Add this code to your `style.css` file:
 	border-left: 60px solid white;
 }
 ```
+
 
 ## Updating our triangle
 
@@ -130,9 +140,11 @@ This is not really what I want. I want it to be longer and not have equal sides.
 
 Luckily this can be easily fixed by changing one line. Update the `border-left` property to be this:
 
+
 ```css
 border-left: 120px solid white;
 ```
+
 
 ## Final Logo
 
@@ -143,5 +155,6 @@ If you view your `index.html` file in a browser you should see the completed You
 ## Let's Connect!
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/youtube-logo-pure-css).
+
 
 

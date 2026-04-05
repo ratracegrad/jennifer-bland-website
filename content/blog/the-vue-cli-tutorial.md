@@ -30,16 +30,17 @@ Vue CLI aims to be the standard tooling baseline for the Vue ecosystem. It ensur
 
 To install the new package, use one of the following commands. You need administrator privileges to execute these unless npm was installed on your system through a Node.js version manager (e.g. n or nvm).
 
-```
-npm install -g @vue/cli
+
+```npm install -g @vue/cli
 # OR
 yarn global add @vue/cli
 ```
 
+
 After installation, you will have access to the `vue` binary in your command line. You can verify that it is properly installed by simply running `vue`, which should present you with a help message listing all available commands.
 
-```
- ~ $ vue
+
+``` ~ $ vue
 Usage: vue <command> [options]
 
 Options:
@@ -66,19 +67,22 @@ Commands:
 
 ```
 
+
 You can check you have the right version with this command:
 
+
+```vue --version
 ```
-vue --version
-```
+
 
 ## Creating a Project
 
 To create a new project, run:
 
+
+```vue create hello-world
 ```
-vue create hello-world
-```
+
 
 You will be prompted to pick a preset. You can either choose the default preset which comes with a basic Babel + ESLint setup, or select "Manually select features" to pick the features you need.
 
@@ -94,9 +98,10 @@ If you chose to manually select features, at the end of the prompts you also hav
 
 You can also create and manage projects using a graphical interface with the `vue ui` command:
 
+
+```vue ui
 ```
-vue ui
-```
+
 
 The above command will open a browser window with a GUI that guides you through the project creation process.
 
@@ -110,11 +115,12 @@ Vue CLI uses a plugin-based architecture. If you inspect a newly created project
 
 Each CLI plugin ships with a generator (which creates files) and a runtime plugin (which tweaks the core webpack config and injects commands). When you use `vue create` to create a new project, some plugins will be pre-installed for you based on your feature selection. In case you want to install a plugin into an already created project, you can do so with the `vue add` command:
 
-```
-vue add eslint
+
+```vue add eslint
 # OR
 vue add apollo
 ```
+
 
 ## CLI Service
 
@@ -122,27 +128,30 @@ Inside a Vue CLI project, `@vue/cli-service` installs a binary named `vue-cli-se
 
 This is what you will see in the `package.json` of a project using the default preset:
 
-```
-{
+
+```{
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   }
 }
 ```
+
 You can invoke these scripts using either npm or Yarn:
 
-```
-npm run serve
+
+```npm run serve
 # OR
 yarn serve
 ```
 
+
 If you have **npx** available (should be bundled with an up-to-date version of npm), you can also invoke the binary directly with:
 
+
+```npx vue-cli-service serve
 ```
-npx vue-cli-service serve
-```
+
 
 ## Browser Compatability
 
@@ -160,8 +169,8 @@ All compiled CSS is processed by **css-loader**, which parses `url()` and resolv
 
 You can select pre-processors (Sass/Less/Stylus) when creating the project. If you did not do so, the internal webpack config is still pre-configured to handle all of them. You just need to manually install the corresponding webpack loaders:
 
-```
-# Sass
+
+```# Sass
 npm install -D sass-loader sass
 
 # Less
@@ -170,3 +179,5 @@ npm install -D less-loader less
 # Stylus
 npm install -D stylus-loader stylus
 ```
+
+

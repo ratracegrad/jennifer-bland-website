@@ -20,6 +20,7 @@ The console.trace() method outputs a stack trace to the Web console.
 
 Here is an example of how to use this:
 
+
 ```javascript
 function foo() {
   function bar() {
@@ -31,10 +32,14 @@ function foo() {
 foo();
 ```
 
+
 In the console, the following trace will be displayed:
+
 
 ```javascript
 bar
 foo
 <anonymous>
 ```
+
+

@@ -12,22 +12,18 @@ author:
 ---
 
 Instantiation patterns are ways to create something in your code. JavaScript has multiple instantiation methods that you can use. JavaScript's four instantiation patterns are:
-<ul>
-	<li>Functional</li>
-	<li>Functional-shared</li>
-	<li>Prototypal</li>
-	<li>Pseudo-classical</li>
-</ul>
+
+-   Functional
+-   Functional-shared
+-   Prototypal
+-   Pseudo-classical
 
 In this post I will talk about how to create the instantiation patterns for Functional and Functional-Shared. In Part 2 of this post I talk about Prototypal and Pseudo-classical. In addition I will cover the pros and cons of each.
 
+## Functional
 
-
-
-<h2>Functional</h2>
 Functional instantiation is the method that every beginning JavaScript programmer learns. You create your
 
-<pre class="prettyprint">
 var car = function(exterior, interior){
   var obj = {};
   obj.exterior = exterior;
@@ -39,30 +35,17 @@ var car = function(exterior, interior){
 
   return obj;
 }
-</pre>
 
 Now that you have defined your new Car you need to be able to create it. To create a new car you would use:
-<pre class="prettyprint">
+
 myCar = car('black', 'black');
-</pre>
 
-The functional instantiation method creates an instance with its methods defined within it.
+The functional instantiation method creates an instance with its methods defined within it. _To be consistent with programming best practices, the functional method does not use the keyword this or the keyword new to create a new instance. As a result the name of the function - car - is lower case._ **Pros:** The functional method is easy to understand. It is widely used since most beginning programmers create functions in this manner as they learn JavaScript and continue to do it today. The variables are private since they are contained within the closure scope. **Cons:** The properties and methods for car are stored within it. Every time you create a new car then it duplicates the properties and methods for each instance. This redundancy is not only inefficient but will make life harder later if anything changes. If I want to give all cars a property of ‘trim’, I would have to go back and manually add it to each car I have already created.
 
-<em>To be consistent with programming best practices, the functional method does not use the keyword this or the keyword new to create a new instance. As a result the name of the function - car - is lower case.</em>
+## Functional Shared
 
-<strong>Pros:</strong> The functional method is easy to understand. It is widely used since most beginning programmers create functions in this manner as they learn JavaScript and continue to do it today. The variables are private since they are contained within the closure scope.
-<strong>Cons: </strong>The properties and methods for car are stored within it. Every time you create a new car then it duplicates the properties and methods for each instance. This redundancy is not only inefficient but will make life harder later if anything changes. If I want to give all cars a property of ‘trim’, I would have to go back and manually add it to each car I have already created. 
+The full name of this method is Functional instantiation with shared methods. It addresses the redundancy problem you encounter with Functional instantiation. For simplicity sake I will refer to this as Functional Shared in my posts. To reduce the redundancy problem encountered with Functional instantiation, we can move the function definition outside the constructor. The problem is by doing this it will no longer have closure scope access to the constructor _obj_ variable. To overcome this we will use the argument this to retain access to the obj variable. The this argument provides this functionality for us, by treating the object found on the left of the calltime dot as a function input, and providing a name we can use to refer to it. With Functional Shared you define the properties within the function just like with Functional instantiation. Functional shared puts methods in another object. It then extends the function to point to them.
 
-<h2>Functional Shared</h2>
-The full name of this method is Functional instantiation with shared methods. It addresses the redundancy problem you encounter with Functional instantiation. For simplicity sake I will refer to this as Functional Shared in my posts.
-
-To reduce the redundancy problem encountered with Functional instantiation, we can move the function definition outside the constructor. The problem is by doing this it will no longer have closure scope access to the constructor <em>obj</em> variable.
-
-To overcome this we will use the argument this to retain access to the obj variable. The this argument provides this functionality for us, by treating the object found on the left of the calltime dot as a function input, and providing a name we can use to refer to it.
-
-With Functional Shared you define the properties within the function just like with Functional instantiation. Functional shared puts methods in another object. It then extends the function to point to them. 
-
-<pre class="prettyprint">
 var Car = function(exterior, interior){
   var obj = {};
   obj.exterior = exterior;
@@ -78,17 +61,9 @@ carMethods.driveCar = function() {
   this.interior = 'black leather';
   // code to drive car
  };
-</pre>
 
-The functional shared method uses the keyword this. According to JavaScript coding best practices, the Car function is upper case.
+The functional shared method uses the keyword this. According to JavaScript coding best practices, the Car function is upper case. Now that you have defined your new Car you need to be able to create it. To create a new car you would use:
 
-Now that you have defined your new Car you need to be able to create it. To create a new car you would use:
-<pre class="prettyprint">
 myCar = Car('black', 'black');
-</pre>
 
-<strong>Pros:</strong>It removes the redundancy issue that is found in Functional instantiation. For separating out the methods I can create just one instance and the have every new Car that is created point to it. If I want to add a new property like 'trim', I only have to update the carMethods and every car created will have access to it. 
-<strong>Cons:</strong>The variables created in Functional Shared are not private as they are actually properties of the instance and not a variable of the scope of the function.
-
-To learn about Prototypal and Pseudo-classical instantiation methods check out part 2 of my JavaScript instantiation methods post.
-
+**Pros:**It removes the redundancy issue that is found in Functional instantiation. For separating out the methods I can create just one instance and the have every new Car that is created point to it. If I want to add a new property like 'trim', I only have to update the carMethods and every car created will have access to it. **Cons:**The variables created in Functional Shared are not private as they are actually properties of the instance and not a variable of the scope of the function. To learn about Prototypal and Pseudo-classical instantiation methods check out part 2 of my JavaScript instantiation methods post.

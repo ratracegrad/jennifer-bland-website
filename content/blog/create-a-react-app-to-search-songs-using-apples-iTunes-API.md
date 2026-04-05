@@ -26,33 +26,42 @@ Users will be able to input a search term and we will display the results to the
 
 We will be creating a React app using Vite. In your terminal enter this command:
 
+
 ```javascript
 npm create vite@latest react-song-finder -- --template react
 ```
 
+
 When it is finished, you can change into the directory using the command:
+
 
 ```javascript
 cd react-song-finder
 ```
 
+
 We need to install our dependencies so run this command:
+
 
 ```javascript
 npm install
 ```
 
+
 You can start your server by running the command:
+
 
 ```javascript
 npm run dev
 ```
+
 
 ## Styling our App
 
 This article is not to teach you how to style elements in CSS. I want to focus on teaching you the functionality of creating a React App and having it search the iTunes API. So I am going to give you the barebones of CSS used in this app.
 
 Open up the `App.css` file and replace everything in it with this code:
+
 
 ```css
 #root {
@@ -80,6 +89,7 @@ input {
 
 ```
 
+
 ## Creating Our Search Input
 
 Open up the `App.jsx` file. Delete the following:
@@ -89,6 +99,7 @@ Open up the `App.jsx` file. Delete the following:
 - everything inside the div with className of `App`
 
 Your file should look like this:
+
 
 ```javascript
 import { useState } from 'react'
@@ -106,11 +117,13 @@ function App() {
 export default App
 ```
 
+
 We want to add a title, an input field, and a button. The input field. For the input field, we will use the `onChange` method to capture the text the user inputs and store it in a variable called `searchTerm`.
 
 When a user clicks the button we want to call a function `findMusic` that will search the iTunes API.
 
 Add the following code inside the `div` with a className of `App`:
+
 
 ```javascript
       <h1>Song Finder</h1>
@@ -122,6 +135,7 @@ Add the following code inside the `div` with a className of `App`:
       <button className="btn" onClick={(() => findMusic() )}>Search</button>
       <hr></hr>
 ```
+
 
 ## Intro to the Apple iTunes API
 
@@ -139,13 +153,16 @@ The one parameter we will be using is called `term`. Its value will be set to th
 
 We need to create a state variable called `searchTerm`. On the line below the `function App` add the following code:
 
+
 ```javascript
 const [searchTerm, setSearchTerm] = useState('');
 ```
 
+
 Now we will create our `findMusic` function. The first thing we want to check is that the user has actually entered a search term into the input field. If they haven't, show them an alert asking them to enter a search phrase.
 
 If we have a search term, we will use `fetch` to call the iTunes API. For now, add the following code:
+
 
 ```javascript
   const findMusic = () => {
@@ -162,6 +179,7 @@ If we have a search term, we will use `fetch` to call the iTunes API. For now, a
   }
 ```
 
+
 If. you input a search term, you should see results in your console like this:
 
 ![search results](https://res.cloudinary.com/ratracegrad/image/upload/v1673902630/Screenshot_2023-01-16_at_3.56.48_PM_mkyfhd.png)
@@ -170,15 +188,19 @@ We want to store these results in a state variable called `artists` which is an 
 
 Add this line below the other `useState` line:
 
+
 ```javascript
 const [artists, setArtists] = useState([]);
 ```
 
+
 In our `findMusic` function, replace the `console.log` with this code:
+
 
 ```javascript
 setArtists(data.results);
 ```
+
 
 ## Displaying Search Results in a Table
 
@@ -194,6 +216,7 @@ If we have results then we want to create a table. The table will have four colu
 We want one row in the table for each entry returned from the iTunes API. We will iterate over the entries using the Array `map` method.
 
 Add the following code:
+
 
 ```javascript
      {artists.length && (
@@ -225,6 +248,7 @@ Add the following code:
       )}
 ```
 
+
 ## Final Result
 
 If you view the app in your browser, you should see the completed results:
@@ -234,3 +258,4 @@ If you view the app in your browser, you should see the completed results:
 ## Let's Connect
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/react-song-finder).
+

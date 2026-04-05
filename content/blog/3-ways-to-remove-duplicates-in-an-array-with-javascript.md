@@ -22,6 +22,7 @@ With this method, we will create a new empty array. All unique values from our a
 
 
 
+
 ```javascript
 let myData = [1, 2, 2, 4, 5, 5, 5, 7, 'Hello','World', true, false];
 
@@ -35,6 +36,7 @@ myData.forEach((item) => {
 console.log(uniqueValues); // [1, 2, 4, 5, 7, 'Hello', 'World', true, false]
 ```
 
+
 ## 2) Remove duplicates using filter and indexOf
 
 The `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
@@ -42,6 +44,7 @@ The `indexOf()` method returns the first index at which a given element can be f
 The `filter()` method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 
 With this method, we do not have to initially define an empty array. The `filter()` method will return an array so we just assign this array to a value.
+
 
 ```javascript
 let myData = [1, 2, 2, 4, 5, 5, 5, 7, 'Hello','World', true, false];
@@ -53,11 +56,13 @@ let duplicateValues = myData.filter((item, index) => {
 console.log(duplicateValues); // [1, 2, 4, 5, 7, 'Hello', 'World', true, false]
 ```
 
+
 ## 3) Remove duplicates using a Set
 
 The `Set` object lets you store unique values of any type, whether primitive values or object references.
 
 This method requires us to convert our data array to a set. Duplicates will be automatically removed. Then we convert the set back to an array.
+
 
 ```javascript
 let myData = [1, 2, 2, 4, 5, 5, 5, 7, 'Hello','World', true, false];
@@ -65,3 +70,5 @@ let uniqueValues = [...new Set(myData)];
 
 console.log(uniqueValues) // [1, 2, 4, 5, 7, 'Hello', 'World', true, false]
 ```
+
+

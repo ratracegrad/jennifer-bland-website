@@ -33,6 +33,7 @@ We will create the Figma logo in pure CSS. It will look like this:
 
 Let's start by creating two files called `index.html` and `style.css`. In your `index.html` file add the following starter code:
 
+
 ```plaintext
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +50,9 @@ Let's start by creating two files called `index.html` and `style.css`. In your `
 </html>
 ```
 
+
 In the `style.css` file add the following starter code:
+
 
 ```css
 body {
@@ -63,6 +66,7 @@ body {
 }
 ```
 
+
 ## Flex-wrap
 
 We will use Flexbox to create the image. Flexbox has a property called `flex-wrap`. By default, flex items will all try to fit onto one line. You can change that and let the items wrap as needed with this property.
@@ -70,6 +74,7 @@ We will use Flexbox to create the image. Flexbox has a property called `flex-wra
 We will want to have two design elements on both the first and second rows of the logo. There is a single design element on the 3rd row.
 
 Update the `index.html` file with the following code inside the `<body>` tags:
+
 
 ```javascript
 	<div class="figma-logo">
@@ -80,6 +85,7 @@ Update the `index.html` file with the following code inside the `<body>` tags:
 		<div class="element left clip green"></div>
 	</div>
 ```
+
 
 ## Multiple CSS Classes
 
@@ -97,6 +103,7 @@ I will make each element the same height and width of 100px. The class `figma-lo
 
 Add the following styles to your `style.css` file:
 
+
 ```css
 .figma-logo {
 	width: 200px;
@@ -111,6 +118,7 @@ Add the following styles to your `style.css` file:
 }
 ```
 
+
 When we view what we have now it looks like this:
 
 ![partial logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672180441/Screenshot_2022-12-27_at_5.33.51_PM_wmrldi.png)
@@ -122,6 +130,7 @@ Our next step is to use the CSS `border-radius` property to define each of the e
 All three elements on the left side of the logo have a circular border. The top item on the right has the same circular border. The second item on the right is a circle.
 
 Let's add styling for these items. Add the following code to your `style.css` file:
+
 
 ```css
 .left {
@@ -139,11 +148,13 @@ Let's add styling for these items. Add the following code to your `style.css` fi
 }
 ```
 
+
 Now when we look at our logo it looks like this:
 
 ![updated logo](https://res.cloudinary.com/ratracegrad/image/upload/v1672180914/Screenshot_2022-12-27_at_5.41.33_PM_cudeyj.png)
 
 We are getting closer. The last element on the 3rd row has a border on the right side. In the HTML code, I have called this class `clip`. Add this CSS code to your `style.css` file:
+
 
 ```css
 .clip {
@@ -151,11 +162,13 @@ We are getting closer. The last element on the 3rd row has a border on the right
 }
 ```
 
+
 ## Defining Colors
 
 Now our logo looks like the actual Figma logo but without the correct colors. In the `index.html` file I added CSS classes for the colors `orange`, `purple`, `blue` and `green`. The last thing we need to do is to add the background color for these classes.
 
 Add the following to your `style.css` file:
+
 
 ```css
 .orange {
@@ -175,6 +188,7 @@ Add the following to your `style.css` file:
 }
 ```
 
+
 ## Final Logo
 
 If you view your `index.html` file in a browser you should see the completed Figma logo:
@@ -184,4 +198,5 @@ If you view your `index.html` file in a browser you should see the completed Fig
 ## Let's connect!
 
 Thanks for reading my article today. You can get the [source code here](https://github.com/ratracegrad/figma-logo-pure-css).
+
 
