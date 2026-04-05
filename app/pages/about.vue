@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import appConfig from '~/app.config'
+import type appConfig from '~/app.config'
 
 const { data: page } = await useAsyncData('about', () => {
   return queryCollection('about').first()

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import appConfig from '~/app.config'
+import type appConfig from '~/app.config'
 
 const footer = useAppConfig().footer as typeof appConfig.footer
 </script>

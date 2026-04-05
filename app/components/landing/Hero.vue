@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
-import appConfig from '~/app.config'
+import type appConfig from '~/app.config'
 
 const global = useAppConfig().global as typeof appConfig.global
 
