@@ -1,16 +1,10 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { BlogCollectionItem, IndexCollectionItem } from '@nuxt/content'
 
 defineProps<{
   page: IndexCollectionItem
+  posts: BlogCollectionItem[]
 }>()
-
-const { data: posts } = await useAsyncData('index-blogs', () =>
-  queryCollection('blog').order('date', 'DESC').limit(3).all()
-)
-if (!posts.value) {
-  throw createError({ statusCode: 404, statusMessage: 'blogs posts not found', fatal: true })
-}
 </script>
 
 <template>

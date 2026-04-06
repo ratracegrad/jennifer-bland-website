@@ -1,41 +1,20 @@
-# Nuxt Portfolio Template
+# Jennifer Bland — Personal website
 
 [![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
-Use this template to create your own portfolio with [Nuxt UI](https://ui.nuxt.com).
-
-- [Live demo](https://portfolio-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation)
-
-<a href="https://portfolio-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png">
-    <img alt="Nuxt Portfolio Template" src="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-  </picture>
-</a>
-
-## Quick Start
-
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/portfolio
-```
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=portfolio&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fportfolio&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fportfolio-dark.png&demo-url=https%3A%2F%2Fportfolio-template.nuxt.dev%2F&demo-title=Nuxt%20Portfolio%20Template&demo-description=A%20sleek%20portfolio%20template%20to%20showcase%20your%20work%2C%20skills%20and%20blog%20powered%20by%20Nuxt%20Content.)
+Source code for [Jennifer Bland](https://jenniferbland.com)’s personal site: portfolio, blog, and content built with [Nuxt](https://nuxt.com), [Nuxt UI](https://ui.nuxt.com), and [Nuxt Content](https://content.nuxt.com).
 
 ## Setup
 
-Make sure to install the dependencies:
+Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-## Development Server
+## Development
 
-Start the development server on `http://localhost:3000`:
+Start the dev server at `http://localhost:3000`:
 
 ```bash
 pnpm dev
@@ -43,20 +22,28 @@ pnpm dev
 
 ## Production
 
-Build the application for production:
+Build for production:
 
 ```bash
 pnpm build
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
 pnpm preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+See the [Nuxt deployment guide](https://nuxt.com/docs/getting-started/deployment) for hosting options.
 
-## Renovate integration
+## Other scripts
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+| Command        | Description        |
+| -------------- | ------------------ |
+| `pnpm lint`    | Run ESLint         |
+| `pnpm lint:fix`| Fix ESLint issues  |
+| `pnpm typecheck` | Vue/TS typecheck |
+
+## Renovate
+
+This repo can use the [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) to keep dependencies up to date.

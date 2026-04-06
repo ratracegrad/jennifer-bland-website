@@ -1,11 +1,22 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => {
-  return queryCollection('index').first()
-})
+const [{ data: page }, { data: posts }] = await Promise.all([
+  useAsyncData('index', () => queryCollection('index').first()),
+  useAsyncData('index-blogs', () =>
+    queryCollection('blog').order('date', 'DESC').limit(3).all()
+  )
+])
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page not found',
+    fatal: true
+  })
+}
+if (!posts.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Blog posts not found',
     fatal: true
   })
 }
@@ -29,7 +40,10 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection> -->
-    <LandingBlog :page />
+    <LandingBlog
+      :page
+      :posts="posts"
+    />
     <!-- <LandingTestimonials :page /> -->
     <!-- <LandingFAQ :page /> -->
   </UPage>
