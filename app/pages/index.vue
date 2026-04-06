@@ -6,14 +6,17 @@ const [{ data: page }, { data: posts }] = await Promise.all([
   )
 ])
 
-if (!page.value) {
+const pageData = page.value
+if (!pageData) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page not found',
     fatal: true
   })
 }
-if (!posts.value) {
+
+const blogPosts = posts.value
+if (!blogPosts) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Blog posts not found',
@@ -22,29 +25,19 @@ if (!posts.value) {
 }
 
 useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description
+  title: pageData.seo?.title || pageData.title,
+  ogTitle: pageData.seo?.title || pageData.title,
+  description: pageData.seo?.description || pageData.description,
+  ogDescription: pageData.seo?.description || pageData.description
 })
 </script>
 
 <template>
-  <UPage v-if="page">
-    <LandingHero :page />
-    <!-- <UPageSection
-      :ui="{
-        container: '!pt-0 lg:grid lg:grid-cols-2 lg:gap-8'
-      }"
-    >
-      <LandingAbout :page />
-      <LandingWorkExperience :page />
-    </UPageSection> -->
+  <UPage>
+    <LandingHero :page="pageData" />
     <LandingBlog
-      :page
-      :posts="posts"
+      :page="pageData"
+      :posts="blogPosts"
     />
-    <!-- <LandingTestimonials :page /> -->
-    <!-- <LandingFAQ :page /> -->
   </UPage>
 </template>
